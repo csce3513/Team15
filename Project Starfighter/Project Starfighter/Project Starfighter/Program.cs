@@ -10,7 +10,7 @@ namespace Project_Starfighter
         /// </summary>
         static void Main(string[] args)
         {
-            using (Game1 game = new Game1())
+            using (Starfighter game = new Starfighter())
             {
                 game.Run();
             }
