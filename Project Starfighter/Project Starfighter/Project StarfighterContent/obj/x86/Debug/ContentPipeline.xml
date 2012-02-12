@@ -10,6 +10,51 @@
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
       <Time>2012-02-09T11:16:58.0864578-06:00</Time>
     </Item>
+    <Item>
+      <Source>menufont.spritefont</Source>
+      <Name>menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menufont.xnb</Output>
+      <Time>2012-02-10T16:16:28.0372665-06:00</Time>
+    </Item>
+    <Item>
+      <Source>alienmetal.jpg</Source>
+      <Name>alienmetal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\alienmetal.xnb</Output>
+      <Time>2009-12-10T10:42:36-06:00</Time>
+    </Item>
+    <Item>
+      <Source>greenmetal.jpg</Source>
+      <Name>greenmetal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\greenmetal.xnb</Output>
+      <Time>2009-12-10T10:55:26-06:00</Time>
+    </Item>
+    <Item>
+      <Source>header.png</Source>
+      <Name>header</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\header.xnb</Output>
+      <Time>2012-02-10T16:19:46.0895944-06:00</Time>
+    </Item>
+    <Item>
+      <Source>instruction.JPG</Source>
+      <Name>instruction</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\instruction.xnb</Output>
+      <Time>2011-06-26T13:48:30-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

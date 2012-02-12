@@ -107,9 +107,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionScreen.cs" />
+    <Compile Include="CreditScreen.cs" />
+    <Compile Include="GameScreen.cs" />
+    <Compile Include="HighScoreScreen.cs" />
+    <Compile Include="InstructionsScreen.cs" />
+    <Compile Include="MenuComponent.cs" />
+    <Compile Include="PopUpScreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Starfighter.cs" />
+    <Compile Include="StartScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

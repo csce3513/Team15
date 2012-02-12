@@ -19,6 +19,19 @@ namespace Project_Starfighter
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        // MenuComponent menuComponent;
+
+        KeyboardState keyboardState;
+        KeyboardState oldKeyboardState;
+
+        PopUpScreen quitScreen;
+        GameScreen activeScreen;
+        StartScreen startScreen;
+        ActionScreen actionScreen;
+        InstructionsScreen instructionsScreen;
+        CreditScreen creditScreen;
+        HighScoreScreen highScoreScreen;
+
         public Starfighter()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -47,6 +60,42 @@ namespace Project_Starfighter
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            startScreen = new StartScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("alienmetal")
+                , Content.Load<Texture2D>("header"));
+            Components.Add(startScreen);
+            startScreen.Hide();
+
+            actionScreen = new ActionScreen(this, spriteBatch, Content.Load<Texture2D>("greenmetal"));
+            Components.Add(actionScreen);
+            actionScreen.Hide();
+
+            instructionsScreen = new InstructionsScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("instruction"));
+            Components.Add(instructionsScreen);
+            instructionsScreen.Hide();
+
+            creditScreen = new CreditScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("greenmetal"));
+            Components.Add(creditScreen);
+            creditScreen.Hide();
+
+            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("instruction"));
+            Components.Add(highScoreScreen);
+            highScoreScreen.Hide();
+
+            quitScreen = new PopUpScreen(
+                this,
+                spriteBatch,
+                Content.Load<SpriteFont>("menufont"),
+                Content.Load<Texture2D>("alienmetal"));
+            Components.Add(quitScreen);
+            quitScreen.Hide();
+
+            activeScreen = startScreen;
+            activeScreen.Show();
+
+            //string[] menuItems = { "Start Game", "Instructions", "High Scores", "Credit", "Quit" };
+
+            //menuComponent = new MenuComponent(this, spriteBatch, Content.Load<SpriteFont>("menufont"), menuItems);
+            //Components.Add(menuComponent);
             // TODO: use this.Content to load your game content here
         }
 
@@ -66,13 +115,128 @@ namespace Project_Starfighter
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
-
-            // TODO: Add your update logic here
-
+            keyboardState = Keyboard.GetState();
+            if (activeScreen == startScreen)
+            {
+                HandleStartScreen();
+            }
+            else if (activeScreen == actionScreen)
+            {
+                HandleActionScreen();
+            }
+            else if (activeScreen == quitScreen)
+            {
+                HandleQuitScreen();
+            }
+            else if (activeScreen == instructionsScreen)
+            {
+                HandleInstructionsScreen();
+            }
+            else if (activeScreen == creditScreen)
+            {
+                HandleCreditScreen();
+            }
+            else if (activeScreen == highScoreScreen)
+            {
+                HandleHighScoreScreen();
+            }
             base.Update(gameTime);
+            oldKeyboardState = keyboardState;
+        }
+
+        private void HandleStartScreen()
+        {
+            if (CheckKey(Keys.Enter))
+            {
+                if (startScreen.SelectedIndex == 0)
+                {
+                    activeScreen.Hide();
+                    activeScreen = actionScreen;
+                    activeScreen.Show();
+                }
+                if (startScreen.SelectedIndex == 1)
+                {
+                    activeScreen.Hide();
+                    activeScreen = instructionsScreen;
+                    activeScreen.Show();
+                }
+                if (startScreen.SelectedIndex == 2)
+                {
+                    activeScreen.Hide();
+                    activeScreen = highScoreScreen;
+                    activeScreen.Show();
+                }
+                if (startScreen.SelectedIndex == 3)
+                {
+                    activeScreen.Hide();
+                    activeScreen = creditScreen;
+                    activeScreen.Show();
+                }
+                if (startScreen.SelectedIndex == 4)
+                {
+                    this.Exit();
+                }
+            }
+        }
+        private void HandleInstructionsScreen()
+        {
+            if (CheckKey(Keys.Escape))
+            {
+                activeScreen.Hide();
+                activeScreen = startScreen;
+                activeScreen.Show();
+            }
+        }
+
+        private void HandleCreditScreen()
+        {
+            if (CheckKey(Keys.Escape))
+            {
+                activeScreen.Hide();
+                activeScreen = startScreen;
+                activeScreen.Show();
+            }
+        }
+
+        private void HandleHighScoreScreen()
+        {
+            if (CheckKey(Keys.Escape))
+            {
+                activeScreen.Hide();
+                activeScreen = startScreen;
+                activeScreen.Show();
+            }
+        }
+        private void HandleActionScreen()
+        {
+            if (CheckKey(Keys.Escape))
+            {
+                activeScreen.Enabled = false;
+                activeScreen = quitScreen;
+                activeScreen.Show();
+            }
+        }
+
+        private void HandleQuitScreen()
+        {
+            if (CheckKey(Keys.Enter))
+            {
+                if (quitScreen.SelectedIndex == 0)
+                {
+                    this.Exit();
+                }
+                if (quitScreen.SelectedIndex == 1)
+                {
+                    activeScreen.Hide();
+                    activeScreen = actionScreen;
+                    activeScreen.Show();
+                }
+            }
+        }
+
+        private bool CheckKey(Keys theKey)
+        {
+            return keyboardState.IsKeyUp(theKey) && oldKeyboardState.IsKeyDown(theKey);
         }
 
         /// <summary>
@@ -82,10 +246,10 @@ namespace Project_Starfighter
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            // TODO: Add your drawing code here
-
+            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null);
             base.Draw(gameTime);
+            spriteBatch.End();
+
         }
     }
 }
