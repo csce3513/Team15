@@ -25,7 +25,7 @@ namespace Project_Starfighter
         public CreditScreen(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, Texture2D image)
             : base(game, spriteBatch)
         {
-            string[] menuItems = { "Credits:", "Gerald Hogue", "Ben Gooding", "Aarao ....", "Mike Davis" };
+            string[] menuItems = { "Credits:", "Gerald Hogue", "Ben Gooding", "Aarao Gouveia", "Mike Davis" };
              menuComponent = new MenuComponent(game, spriteBatch, spriteFont, menuItems);
               Components.Add(menuComponent);
             this.image = image;

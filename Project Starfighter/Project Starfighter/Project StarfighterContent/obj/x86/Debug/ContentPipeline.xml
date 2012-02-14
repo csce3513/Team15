@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
-      <Time>2012-02-13T15:33:14.6561585-06:00</Time>
+      <Output>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
+      <Time>2012-02-13T17:21:43.7129503-06:00</Time>
     </Item>
     <Item>
       <Source>menufont.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menufont.xnb</Output>
-      <Time>2012-02-13T15:33:57.2055922-06:00</Time>
+      <Output>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menufont.xnb</Output>
+      <Time>2012-02-13T17:24:10.7643612-06:00</Time>
     </Item>
     <Item>
       <Source>alienmetal.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\alienmetal.xnb</Output>
-      <Time>2012-02-13T15:33:57.1705902-06:00</Time>
+      <Output>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\alienmetal.xnb</Output>
+      <Time>2012-02-13T17:24:10.7403598-06:00</Time>
     </Item>
     <Item>
       <Source>greenmetal.jpg</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\greenmetal.xnb</Output>
-      <Time>2012-02-13T15:33:57.1715903-06:00</Time>
+      <Output>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\greenmetal.xnb</Output>
+      <Time>2012-02-13T17:24:10.7403598-06:00</Time>
     </Item>
     <Item>
       <Source>header.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\header.xnb</Output>
-      <Time>2012-02-13T15:33:57.1725903-06:00</Time>
+      <Output>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\header.xnb</Output>
+      <Time>2012-02-13T17:24:10.7413599-06:00</Time>
     </Item>
     <Item>
       <Source>instruction.JPG</Source>
@@ -52,19 +52,19 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\instruction.xnb</Output>
-      <Time>2012-02-13T15:33:57.2035921-06:00</Time>
+      <Output>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\instruction.xnb</Output>
+      <Time>2012-02-13T17:30:22.477622-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
-      <TargetProfile>HiDef</TargetProfile>
+      <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -93,7 +93,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-01-30T17:40:18.0290629-06:00</Value>
+        <Value>2012-02-10T23:09:39.9447875-06:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
