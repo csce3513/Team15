@@ -11,9 +11,7 @@ namespace Project_Starfighter
     {
         MenuComponent menuComponent;
         Texture2D image;
-        Texture2D header;
         Rectangle imageRectangle;
-        Rectangle headerRectangle;
 
         public int SelectedIndex
         {
@@ -21,17 +19,15 @@ namespace Project_Starfighter
             set { menuComponent.SelectedIndex = value; }
         }
 
-        public StartScreen(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, Texture2D image, Texture2D header)
+        public StartScreen(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, Texture2D image)
             : base(game, spriteBatch)
         {
             string[] menuItems = { "Start Game", "Instructions", "High Score", "Credits", "Quit" };
             menuComponent = new MenuComponent(game, spriteBatch, spriteFont, menuItems);
             Components.Add(menuComponent);
             this.image = image;
-            this.header = header;
 
             imageRectangle = new Rectangle(0, 0, Game.Window.ClientBounds.Width, Game.Window.ClientBounds.Height);
-            headerRectangle = new Rectangle(0,0, 666,224);
         }
 
         public override void Update(GameTime gameTime)
@@ -43,7 +39,6 @@ namespace Project_Starfighter
         {
 
             spriteBatch.Draw(image, imageRectangle, Color.White);
-            spriteBatch.Draw(header, headerRectangle, Color.Blue);
             base.Draw(gameTime);
         }
     }

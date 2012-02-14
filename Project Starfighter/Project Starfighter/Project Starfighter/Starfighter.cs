@@ -60,8 +60,7 @@ namespace Project_Starfighter
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            startScreen = new StartScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("alienmetal")
-                , Content.Load<Texture2D>("header"));
+            startScreen = new StartScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
             Components.Add(startScreen);
             startScreen.Hide();
 
@@ -69,15 +68,15 @@ namespace Project_Starfighter
             Components.Add(actionScreen);
             actionScreen.Hide();
 
-            instructionsScreen = new InstructionsScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("instruction"));
+            instructionsScreen = new InstructionsScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
             Components.Add(instructionsScreen);
             instructionsScreen.Hide();
 
-            creditScreen = new CreditScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("greenmetal"));
+            creditScreen = new CreditScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
             Components.Add(creditScreen);
             creditScreen.Hide();
 
-            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("instruction"));
+            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
             Components.Add(highScoreScreen);
             highScoreScreen.Hide();
 
