@@ -32,6 +32,9 @@ namespace Project_Starfighter
         CreditScreen creditScreen;
         HighScoreScreen highScoreScreen;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Starfighter()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -144,6 +147,9 @@ namespace Project_Starfighter
             oldKeyboardState = keyboardState;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void HandleStartScreen()
         {
             if (CheckKey(Keys.Enter))
@@ -178,6 +184,10 @@ namespace Project_Starfighter
                 }
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         private void HandleInstructionsScreen()
         {
             if (CheckKey(Keys.Escape))
@@ -188,6 +198,9 @@ namespace Project_Starfighter
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void HandleCreditScreen()
         {
             if (CheckKey(Keys.Escape))
@@ -198,6 +211,9 @@ namespace Project_Starfighter
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void HandleHighScoreScreen()
         {
             if (CheckKey(Keys.Escape))
@@ -207,6 +223,10 @@ namespace Project_Starfighter
                 activeScreen.Show();
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         private void HandleActionScreen()
         {
             if (CheckKey(Keys.Escape))
@@ -217,6 +237,9 @@ namespace Project_Starfighter
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void HandleQuitScreen()
         {
             if (CheckKey(Keys.Enter))
@@ -234,6 +257,11 @@ namespace Project_Starfighter
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="theKey"></param>
+        /// <returns></returns>
         private bool CheckKey(Keys theKey)
         {
             return keyboardState.IsKeyUp(theKey) && oldKeyboardState.IsKeyDown(theKey);

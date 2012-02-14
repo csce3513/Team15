@@ -35,6 +35,9 @@ namespace Project_Starfighter
         float width = 0f;
         float height = 0f;
 
+        /// <summary>
+        /// Allows the game component to set and return which menu item was selected.
+        /// </summary>
         public int SelectedIndex
         {
             get { return selectedIndex; }
@@ -48,6 +51,13 @@ namespace Project_Starfighter
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="game"></param>
+        /// <param name="spriteBatch"></param>
+        /// <param name="spriteFont"></param>
+        /// <param name="menuItems"></param>
         public MenuComponent(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, string[] menuItems)
             : base(game)
         {
@@ -58,6 +68,9 @@ namespace Project_Starfighter
             MeasureMenu();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void MeasureMenu()
         {
             height = 0;
@@ -118,22 +131,35 @@ namespace Project_Starfighter
             oldKeyboardState = keyboardState;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Vector2 Position
         {
             get { return position; }
             set { position = value; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public float Width
         {
             get { return width; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public float Height
         {
             get { return height; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Draw(GameTime gameTime)
         {
             base.Draw(gameTime);

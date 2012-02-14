@@ -22,6 +22,9 @@ namespace Project_Starfighter
         protected Game game;
         protected SpriteBatch spriteBatch;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public List<GameComponent> Components
         {
             get
@@ -30,6 +33,11 @@ namespace Project_Starfighter
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="game"></param>
+        /// <param name="spriteBatch"></param>
         public GameScreen(Game game, SpriteBatch spriteBatch)
             : base(game)
         {
@@ -62,6 +70,10 @@ namespace Project_Starfighter
                     component.Update(gameTime);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Draw(GameTime gameTime)
         {
             base.Draw(gameTime);
@@ -71,6 +83,9 @@ namespace Project_Starfighter
                     ((DrawableGameComponent)component).Draw(gameTime);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual void Show()
         {
             this.Visible = true;
@@ -83,6 +98,9 @@ namespace Project_Starfighter
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual void Hide()
         {
             this.Visible = false;

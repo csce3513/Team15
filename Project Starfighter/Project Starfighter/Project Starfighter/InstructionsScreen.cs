@@ -15,13 +15,22 @@ namespace Project_Starfighter
         KeyboardState keyboardState;
         Rectangle imageRectangle;
 
-
+        /// <summary>
+        /// Allows the game component to set and return which menu item was selected.
+        /// </summary>
         public int SelectedIndex
         {
             get { return menuComponent.SelectedIndex; }
             set { menuComponent.SelectedIndex = value; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="game"></param>
+        /// <param name="spriteBatch"></param>
+        /// <param name="spriteFont"></param>
+        /// <param name="image"></param>
         public InstructionsScreen(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, Texture2D image)
             : base(game, spriteBatch)
         {
@@ -32,6 +41,10 @@ namespace Project_Starfighter
             imageRectangle = new Rectangle(0, 0, Game.Window.ClientBounds.Width, Game.Window.ClientBounds.Height);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Draw(GameTime gameTime)
         {
             spriteBatch.Draw(image, imageRectangle, Color.White);
