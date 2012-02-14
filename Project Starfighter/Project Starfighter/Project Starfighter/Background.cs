@@ -98,6 +98,10 @@ namespace WindowsGame1
             drawParallax = false;
         }
 
+        // constructor for testing
+        public Background()
+        {
+        }
         public void Draw(SpriteBatch spriteBatch)
         {
             // Draw the background panel, offset by the player's location
