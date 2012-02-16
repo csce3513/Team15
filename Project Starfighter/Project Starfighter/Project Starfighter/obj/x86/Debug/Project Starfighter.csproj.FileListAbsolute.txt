@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\Hud.xnb
@@ -19,7 +18,6 @@ C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfig
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.exe
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.pdb
-=======
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.exe
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.pdb
@@ -46,5 +44,3 @@ C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighte
 C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.pdb
 C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
->>>>>>> Gerald
->>>>>>> Task1_Menu
