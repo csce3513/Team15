@@ -2,13 +2,40 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
+      <Source>Textures\Hud.png</Source>
+      <Name>Textures\Hud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\Hud.xnb</Output>
+      <Time>2012-02-15T19:37:10.9134242-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PrimaryBackground.png</Source>
+      <Name>Textures\PrimaryBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PrimaryBackground.xnb</Output>
+      <Time>2012-02-15T19:37:43.2876321-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PlayerShip.png</Source>
+      <Name>Textures\PlayerShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
+      <Time>2012-02-15T19:42:07.140262-06:00</Time>
+    </Item>
+    <Item>
       <Source>Fonts\Pericles.spritefont</Source>
       <Name>Fonts\Pericles</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
-      <Time>2012-02-13T16:47:33.8332879-06:00</Time>
+      <Output>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
+      <Time>2012-02-15T19:41:26.1934618-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -16,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project StarfighterContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project StarfighterContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

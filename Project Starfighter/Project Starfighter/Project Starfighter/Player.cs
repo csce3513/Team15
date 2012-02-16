@@ -5,22 +5,22 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace WindowsGame1
+namespace Project_Starfighter
 {
-    class Player
+    public class Player
     {
-        AnimatedSprite asSprite; // the ship imabe
-        
+        public AnimatedSprite asSprite; // the ship image
+
         // the next two lines determin the location of the ship on the screen
         int iX = 604;
         int iY = 260;
 
         int iFacing = 0; // what direction the player is facing right = 0, left = 1
-        
+
         bool bThrusting = false; // represents if the ship is moving in a direction
 
         int iScrollRate = 0; // speed and direction that ship is moving positive value = right negative value = left
-                             // the bigger the number more pixels per update frame the screen will move
+        // the bigger the number more pixels per update frame the screen will move
 
         int iShipAccelerationRate = 1; // how fast iScrollRate can change
 
@@ -28,7 +28,7 @@ namespace WindowsGame1
 
         // the next two lines determin how fast iShipAccelerationRate can be applied.
         float fSpeedChangeCount = 0.0f; // accumulates the time since the last speed change When it is greater than fSpeedChangeDelay, 
-                                        // the speed is allowed to change and will be reset to 0 if it does.
+        // the speed is allowed to change and will be reset to 0 if it does.
         float fSpeedChangeDelay = 0.1f;
 
         // the next two lines work in the same way that fSpeedChangeCounnt/Delay work except that they serve to limit how quickly the player 
@@ -74,35 +74,35 @@ namespace WindowsGame1
             set { iShipAccelerationRate = value; }
         }
 
-        public int VerticalMovementRate
-        {
-            get { return iShipVerticalMoveRate; }
-            set { iShipVerticalMoveRate = value; }
-        }
+        //public int VerticalMovementRate
+        //{
+        //    get { return iShipVerticalMoveRate; }
+        //    set { iShipVerticalMoveRate = value; }
+        //}
 
-        public float SpeedChangeCount
-        {
-            get { return fSpeedChangeCount; }
-            set { fSpeedChangeCount = value; }
-        }
+        //public float SpeedChangeCount
+        //{
+        //    get { return fSpeedChangeCount; }
+        //    set { fSpeedChangeCount = value; }
+        //}
 
-        public float SpeedChangeDelay
-        {
-            get { return fSpeedChangeDelay; }
-            set { fSpeedChangeDelay = value; }
-        }
+        //public float SpeedChangeDelay
+        //{
+        //    get { return fSpeedChangeDelay; }
+        //    set { fSpeedChangeDelay = value; }
+        //}
 
-        public float VerticalChangeCount
-        {
-            get { return fVerticalChangeCount; }
-            set { fVerticalChangeCount = value; }
-        }
+        //public float VerticalChangeCount
+        //{
+        //    get { return fVerticalChangeCount; }
+        //    set { fVerticalChangeCount = value; }
+        //}
 
-        public float VerticalChangeDelay
-        {
-            get { return fVerticalChangeDelay; }
-            set { fVerticalChangeDelay = value; }
-        }
+        //public float VerticalChangeDelay
+        //{
+        //    get { return fVerticalChangeDelay; }
+        //    set { fVerticalChangeDelay = value; }
+        //}
 
         // returns a new rectangle based on the position and size of our ship.
         public Rectangle BoundingBox
@@ -115,6 +115,12 @@ namespace WindowsGame1
         {
             asSprite = new AnimatedSprite(texture, 0, 0, 72, 16, 4);
             asSprite.IsAnimating = false;
+        }
+
+        // constructor for testing 
+        public Player()
+        {
+            asSprite = new AnimatedSprite();
         }
 
         public void Draw(SpriteBatch sb)

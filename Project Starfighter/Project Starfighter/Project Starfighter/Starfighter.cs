@@ -18,6 +18,16 @@ namespace Project_Starfighter
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Background background; // create a background object
+
+        // the next 6 lines are related to the ship
+        Player player;
+        public int iPlayAreaTop = 30;
+        public int iPlayAreaBottom = 630;
+        int iMaxHorizontalSpeed = 8;
+
+        Texture2D t2dGameScreen; // screen with game data
+        SpriteFont spriteFont; // pericles font
 
         public Starfighter()
         {
@@ -33,7 +43,10 @@ namespace Project_Starfighter
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            // set display resolution
+            graphics.PreferredBackBufferHeight = 720;
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.ApplyChanges();
 
             base.Initialize();
         }
@@ -47,7 +60,16 @@ namespace Project_Starfighter
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            background = new Background(Content,
+                                              @"Textures\PrimaryBackground");//,
+            //@"Textures\ParallaxStars");
+
+
+            t2dGameScreen = Content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
+            spriteFont = Content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
+
+            // initialize player 
+            player = new Player(Content.Load<Texture2D>(@"Textures\PlayerShip"));
         }
 
         /// <summary>
@@ -81,9 +103,17 @@ namespace Project_Starfighter
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
+            spriteBatch.Begin();
+
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            background.Draw(spriteBatch); // draw background aarao
+
+            spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 1280, 720), Color.White); // draw game "HUB" 
+
+            player.Draw(spriteBatch); // draw the ship
+
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

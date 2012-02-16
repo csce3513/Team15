@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{63998D08-AD72-495F-BE69-B8B39FAB12D5}</ProjectGuid>
+    <ProjectGuid>{BCAB455D-762E-40F2-BEAA-A1468A1BB988}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -14,7 +14,7 @@
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
     <XnaProfile>HiDef</XnaProfile>
-    <XnaCrossPlatformGroupID>4464c53d-5942-42a0-b914-52d146ec3482</XnaCrossPlatformGroupID>
+    <XnaCrossPlatformGroupID>4ce397e0-bb5c-42bc-bd95-b3da5fd995cd</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
     <Thumbnail>GameThumbnail.png</Thumbnail>
@@ -107,6 +107,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimatedSprite.cs" />
+    <Compile Include="Background.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Starfighter.cs" />
@@ -119,7 +122,7 @@
     <ProjectReference Include="..\Project StarfighterContent\Project StarfighterContent.contentproj">
       <Name>Project StarfighterContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
-      <Project>{0942A581-2AED-4642-A188-FCF8A84C19D3}</Project>
+      <Project>{71FE5AAF-D6C6-4B8F-A978-516E968E2414}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

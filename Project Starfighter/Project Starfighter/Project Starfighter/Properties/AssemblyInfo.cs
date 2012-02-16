@@ -8,8 +8,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Project Starfighter")]
 [assembly: AssemblyProduct("Project Starfighter")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCompany("Toshiba")]
+[assembly: AssemblyCopyright("Copyright © Toshiba 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 // On Windows, the following GUID is for the ID of the typelib if this
 // project is exposed to COM. On other platforms, it unique identifies the
 // title storage container when deploying this assembly to the device.
-[assembly: Guid("4594ef48-b6c6-4e8c-98f7-fc1429ae484c")]
+[assembly: Guid("28b92617-51cc-48bf-bdb8-570b07cebe09")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,3 @@ using System.Runtime.InteropServices;
 //      Revision
 //
 [assembly: AssemblyVersion("1.0.0.0")]
-
-[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Project Starfighter Test")]
