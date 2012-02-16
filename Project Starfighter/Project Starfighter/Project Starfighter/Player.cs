@@ -20,7 +20,7 @@ namespace Project_Starfighter
         bool bThrusting = false; // represents if the ship is moving in a direction
 
         int iScrollRate = 0; // speed and direction that ship is moving positive value = right negative value = left
-        // the bigger the number more pixels per update frame the screen will move
+                             // the bigger the number more pixels per update frame the screen will move
 
         int iShipAccelerationRate = 1; // how fast iScrollRate can change
 
@@ -73,36 +73,6 @@ namespace Project_Starfighter
             get { return iShipAccelerationRate; }
             set { iShipAccelerationRate = value; }
         }
-
-        //public int VerticalMovementRate
-        //{
-        //    get { return iShipVerticalMoveRate; }
-        //    set { iShipVerticalMoveRate = value; }
-        //}
-
-        //public float SpeedChangeCount
-        //{
-        //    get { return fSpeedChangeCount; }
-        //    set { fSpeedChangeCount = value; }
-        //}
-
-        //public float SpeedChangeDelay
-        //{
-        //    get { return fSpeedChangeDelay; }
-        //    set { fSpeedChangeDelay = value; }
-        //}
-
-        //public float VerticalChangeCount
-        //{
-        //    get { return fVerticalChangeCount; }
-        //    set { fVerticalChangeCount = value; }
-        //}
-
-        //public float VerticalChangeDelay
-        //{
-        //    get { return fVerticalChangeDelay; }
-        //    set { fVerticalChangeDelay = value; }
-        //}
 
         // returns a new rectangle based on the position and size of our ship.
         public Rectangle BoundingBox

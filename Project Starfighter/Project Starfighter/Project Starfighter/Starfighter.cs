@@ -61,9 +61,7 @@ namespace Project_Starfighter
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             background = new Background(Content,
-                                              @"Textures\PrimaryBackground");//,
-            //@"Textures\ParallaxStars");
-
+                                              @"Textures\PrimaryBackground"); // call background constructor
 
             t2dGameScreen = Content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
             spriteFont = Content.Load<SpriteFont>(@"Fonts\Pericles"); // load font

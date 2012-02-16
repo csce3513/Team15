@@ -8,3 +8,13 @@ C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfig
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.exe
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.pdb
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\Hud.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PrimaryBackground.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.exe
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.pdb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.exe
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.pdb

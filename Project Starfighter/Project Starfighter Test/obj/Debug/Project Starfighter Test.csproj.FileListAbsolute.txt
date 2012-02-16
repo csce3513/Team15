@@ -11,3 +11,16 @@ C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfig
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.dll
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.xml
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\Hud.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PrimaryBackground.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PlayerShip.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Fonts\Pericles.xnb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.pdb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.exe
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.dll
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.pdb
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.xml
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
+C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
