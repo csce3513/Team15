@@ -75,21 +75,20 @@ namespace Project_Starfighter
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-<<<<<<< HEAD
-            background = new Background(Content,
-                                              @"Textures\PrimaryBackground"); // call background constructor
+        //  background = new Background(Content,
+          //                                    @"Textures\PrimaryBackground"); // call background constructor
 
             t2dGameScreen = Content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
             spriteFont = Content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
 
             // initialize player 
             player = new Player(Content.Load<Texture2D>(@"Textures\PlayerShip"));
-=======
+
             startScreen = new StartScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
             Components.Add(startScreen);
             startScreen.Hide();
 
-            actionScreen = new ActionScreen(this, spriteBatch, Content.Load<Texture2D>("greenmetal"));
+            actionScreen = new ActionScreen(this, spriteBatch, Content.Load<Texture2D>(@"Textures\PrimaryBackground"));
             Components.Add(actionScreen);
             actionScreen.Hide();
 
@@ -121,7 +120,7 @@ namespace Project_Starfighter
             //menuComponent = new MenuComponent(this, spriteBatch, Content.Load<SpriteFont>("menufont"), menuItems);
             //Components.Add(menuComponent);
             // TODO: use this.Content to load your game content here
->>>>>>> Task1_Menu
+//>>>>>> Task1_Menu
         }
 
         /// <summary>
@@ -298,7 +297,7 @@ namespace Project_Starfighter
             spriteBatch.Begin();
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
             background.Draw(spriteBatch); // draw background aarao
 
@@ -308,9 +307,9 @@ namespace Project_Starfighter
 
             spriteBatch.End();
 
-=======
+//=======
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null);
->>>>>>> Task1_Menu
+//>>>>>>> Task1_Menu
             base.Draw(gameTime);
             spriteBatch.End();
 

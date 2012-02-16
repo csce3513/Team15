@@ -66,11 +66,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Textures\PlayerShip.png">
       <Name>PlayerShip</Name>
-=======
-    <Folder Include="Audio\" />
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="alienmetal.jpg">
@@ -80,11 +78,6 @@
     </Compile>
     <Compile Include="greenmetal.jpg">
       <Name>greenmetal</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="header.png">
-      <Name>header</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -111,7 +104,6 @@
   <ItemGroup>
     <Compile Include="menu.jpg">
       <Name>menu</Name>
->>>>>>> Task1_Menu
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
