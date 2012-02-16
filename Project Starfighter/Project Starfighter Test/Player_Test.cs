@@ -15,18 +15,13 @@ namespace Project_Starfighter_Test
     {
         Player testplay;
         GameTime gameTime;
-        //SpriteBatch sb;
+        //SpriteBatch sp;
 
         public Player_Test()
         {
             Background background = new Background();
             gameTime = MockRepository.GenerateStub<GameTime>();
-
-
-
-            //Content.RootDirectory = "Content"; 
-
-            testplay = new Player();//Content.Load<Texture2D>(@"Textures\PlayerShip"));
+            testplay = new Player();
             //sb = MockRepository.GenerateStub<SpriteBatch>();
         }
 
