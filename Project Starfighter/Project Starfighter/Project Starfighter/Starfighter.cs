@@ -28,6 +28,22 @@ namespace Project_Starfighter
         Texture2D t2dGameScreen; // screen with game data
         SpriteFont spriteFont; // pericles font
 
+        // MenuComponent menuComponent;
+
+        KeyboardState keyboardState;
+        KeyboardState oldKeyboardState;
+
+        PopUpScreen quitScreen;
+        GameScreen activeScreen;
+        StartScreen startScreen;
+        ActionScreen actionScreen;
+        InstructionsScreen instructionsScreen;
+        CreditScreen creditScreen;
+        HighScoreScreen highScoreScreen;
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Starfighter()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -59,6 +75,7 @@ namespace Project_Starfighter
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+<<<<<<< HEAD
             background = new Background(Content,
                                               @"Textures\PrimaryBackground"); // call background constructor
 
@@ -67,6 +84,44 @@ namespace Project_Starfighter
 
             // initialize player 
             player = new Player(Content.Load<Texture2D>(@"Textures\PlayerShip"));
+=======
+            startScreen = new StartScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
+            Components.Add(startScreen);
+            startScreen.Hide();
+
+            actionScreen = new ActionScreen(this, spriteBatch, Content.Load<Texture2D>("greenmetal"));
+            Components.Add(actionScreen);
+            actionScreen.Hide();
+
+            instructionsScreen = new InstructionsScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
+            Components.Add(instructionsScreen);
+            instructionsScreen.Hide();
+
+            creditScreen = new CreditScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
+            Components.Add(creditScreen);
+            creditScreen.Hide();
+
+            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
+            Components.Add(highScoreScreen);
+            highScoreScreen.Hide();
+
+            quitScreen = new PopUpScreen(
+                this,
+                spriteBatch,
+                Content.Load<SpriteFont>("menufont"),
+                Content.Load<Texture2D>("alienmetal"));
+            Components.Add(quitScreen);
+            quitScreen.Hide();
+
+            activeScreen = startScreen;
+            activeScreen.Show();
+
+            //string[] menuItems = { "Start Game", "Instructions", "High Scores", "Credit", "Quit" };
+
+            //menuComponent = new MenuComponent(this, spriteBatch, Content.Load<SpriteFont>("menufont"), menuItems);
+            //Components.Add(menuComponent);
+            // TODO: use this.Content to load your game content here
+>>>>>>> Task1_Menu
         }
 
         /// <summary>
@@ -85,13 +140,153 @@ namespace Project_Starfighter
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
-
-            // TODO: Add your update logic here
-
+            keyboardState = Keyboard.GetState();
+            if (activeScreen == startScreen)
+            {
+                HandleStartScreen();
+            }
+            else if (activeScreen == actionScreen)
+            {
+                HandleActionScreen();
+            }
+            else if (activeScreen == quitScreen)
+            {
+                HandleQuitScreen();
+            }
+            else if (activeScreen == instructionsScreen)
+            {
+                HandleInstructionsScreen();
+            }
+            else if (activeScreen == creditScreen)
+            {
+                HandleCreditScreen();
+            }
+            else if (activeScreen == highScoreScreen)
+            {
+                HandleHighScoreScreen();
+            }
             base.Update(gameTime);
+            oldKeyboardState = keyboardState;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void HandleStartScreen()
+        {
+            if (CheckKey(Keys.Enter))
+            {
+                if (startScreen.SelectedIndex == 0)
+                {
+                    activeScreen.Hide();
+                    activeScreen = actionScreen;
+                    activeScreen.Show();
+                }
+                if (startScreen.SelectedIndex == 1)
+                {
+                    activeScreen.Hide();
+                    activeScreen = instructionsScreen;
+                    activeScreen.Show();
+                }
+                if (startScreen.SelectedIndex == 2)
+                {
+                    activeScreen.Hide();
+                    activeScreen = highScoreScreen;
+                    activeScreen.Show();
+                }
+                if (startScreen.SelectedIndex == 3)
+                {
+                    activeScreen.Hide();
+                    activeScreen = creditScreen;
+                    activeScreen.Show();
+                }
+                if (startScreen.SelectedIndex == 4)
+                {
+                    this.Exit();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void HandleInstructionsScreen()
+        {
+            if (CheckKey(Keys.Escape))
+            {
+                activeScreen.Hide();
+                activeScreen = startScreen;
+                activeScreen.Show();
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void HandleCreditScreen()
+        {
+            if (CheckKey(Keys.Escape))
+            {
+                activeScreen.Hide();
+                activeScreen = startScreen;
+                activeScreen.Show();
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void HandleHighScoreScreen()
+        {
+            if (CheckKey(Keys.Escape))
+            {
+                activeScreen.Hide();
+                activeScreen = startScreen;
+                activeScreen.Show();
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void HandleActionScreen()
+        {
+            if (CheckKey(Keys.Escape))
+            {
+                activeScreen.Enabled = false;
+                activeScreen = quitScreen;
+                activeScreen.Show();
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void HandleQuitScreen()
+        {
+            if (CheckKey(Keys.Enter))
+            {
+                if (quitScreen.SelectedIndex == 0)
+                {
+                    this.Exit();
+                }
+                if (quitScreen.SelectedIndex == 1)
+                {
+                    activeScreen.Hide();
+                    activeScreen = actionScreen;
+                    activeScreen.Show();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="theKey"></param>
+        /// <returns></returns>
+        private bool CheckKey(Keys theKey)
+        {
+            return keyboardState.IsKeyUp(theKey) && oldKeyboardState.IsKeyDown(theKey);
         }
 
         /// <summary>
@@ -103,6 +298,7 @@ namespace Project_Starfighter
             spriteBatch.Begin();
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
+<<<<<<< HEAD
 
             background.Draw(spriteBatch); // draw background aarao
 
@@ -112,7 +308,12 @@ namespace Project_Starfighter
 
             spriteBatch.End();
 
+=======
+            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null);
+>>>>>>> Task1_Menu
             base.Draw(gameTime);
+            spriteBatch.End();
+
         }
     }
 }

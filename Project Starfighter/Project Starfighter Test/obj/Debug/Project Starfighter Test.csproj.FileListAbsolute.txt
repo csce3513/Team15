@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\Hud.xnb
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PrimaryBackground.xnb
@@ -24,3 +25,7 @@ C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
 C:\Users\Goveia's\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
+=======
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Gerald\workspace\CSCE3513\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
+>>>>>>> Task1_Menu

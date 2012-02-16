@@ -1,0 +1,8 @@
+Content\Fonts\Pericles.xnb
+Content\menufont.xnb
+Content\alienmetal.xnb
+Content\greenmetal.xnb
+Content\header.xnb
+Content\instruction.xnb
+Content\Textures\menu.xnb
+Content\menu.xnb
