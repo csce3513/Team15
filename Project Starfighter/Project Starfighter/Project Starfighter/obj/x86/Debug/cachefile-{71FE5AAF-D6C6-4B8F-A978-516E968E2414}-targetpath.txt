@@ -1,7 +1,6 @@
 Content\Textures\Hud.xnb
 Content\Textures\PrimaryBackground.xnb
 Content\alienmetal.xnb
-Content\greenmetal.xnb
 Content\instruction.xnb
 Content\Textures\menu.xnb
 Content\menu.xnb

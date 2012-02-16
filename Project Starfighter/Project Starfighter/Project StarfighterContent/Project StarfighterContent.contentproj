@@ -76,11 +76,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="greenmetal.jpg">
-      <Name>greenmetal</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="instruction.JPG">
       <Name>instruction</Name>
       <Importer>TextureImporter</Importer>

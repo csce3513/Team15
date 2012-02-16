@@ -2,10 +2,8 @@
 <TestSettings name="Trace and Test Impact" id="55a1c85c-c7a1-419e-8446-1ac95901debe" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>These are test settings for Trace and Test Impact.</Description>
   <Execution>
-<<<<<<< HEAD
     <TestTypeSpecific />
     <AgentRule name="Execution Agents">
-=======
     <TestTypeSpecific>
       <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
         <AssemblyResolution applicationBaseDirectory="%USERPROFILE%\workspace\CSCE3513\Team15\Project Starfighter">
@@ -35,7 +33,6 @@
         <DataCollector uri="datacollector://microsoft/TraceDebugger/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TraceDebuggerDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="IntelliTrace">
         </DataCollector>
       </DataCollectors>
->>>>>>> Task1_Menu
     </AgentRule>
   </Execution>
 </TestSettings>

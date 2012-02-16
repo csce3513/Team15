@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\Hud.xnb</Output>
-      <Time>2012-02-16T08:54:39.573756-06:00</Time>
+      <Time>2012-02-16T10:11:11.4203946-06:00</Time>
     </Item>
     <Item>
       <Source>Textures\PrimaryBackground.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PrimaryBackground.xnb</Output>
-      <Time>2012-02-16T08:54:39.6107582-06:00</Time>
+      <Time>2012-02-16T10:11:11.462397-06:00</Time>
     </Item>
     <Item>
       <Source>alienmetal.jpg</Source>
@@ -27,15 +27,6 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\alienmetal.xnb</Output>
       <Time>2012-02-16T08:26:33.148298-06:00</Time>
-    </Item>
-    <Item>
-      <Source>greenmetal.jpg</Source>
-      <Name>greenmetal</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\greenmetal.xnb</Output>
-      <Time>2012-02-16T08:26:33.1502981-06:00</Time>
     </Item>
     <Item>
       <Source>instruction.JPG</Source>
@@ -71,7 +62,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
-      <Time>2012-02-16T08:54:39.5697558-06:00</Time>
+      <Time>2012-02-16T10:11:11.3893929-06:00</Time>
     </Item>
     <Item>
       <Source>menufont.spritefont</Source>
@@ -88,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
-      <Time>2012-02-16T08:54:39.5757562-06:00</Time>
+      <Time>2012-02-16T10:11:11.4293952-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
