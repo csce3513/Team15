@@ -14,6 +14,12 @@ namespace Project_Starfighter
         Texture2D image;
         Rectangle imageRectangle;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="game"></param>
+        /// <param name="spriteBatch"></param>
+        /// <param name="image"></param>
         public ActionScreen(Game game, SpriteBatch spriteBatch, Texture2D image)
             : base(game, spriteBatch)
         {
@@ -21,6 +27,10 @@ namespace Project_Starfighter
             imageRectangle = new Rectangle(0, 0, Game.Window.ClientBounds.Width, game.Window.ClientBounds.Height);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
@@ -31,6 +41,10 @@ namespace Project_Starfighter
             //    game.Exit();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Draw(GameTime gameTime)
         {
             spriteBatch.Draw(image, imageRectangle, Color.White);
