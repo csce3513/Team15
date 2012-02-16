@@ -12,8 +12,8 @@ namespace Project_Starfighter
         public AnimatedSprite asSprite; // the ship image
 
         // the next two lines determin the location of the ship on the screen
-        int iX = 604;
-        int iY = 260;
+        int iX = 350;
+        int iY = 300;
 
         int iFacing = 0; // what direction the player is facing right = 0, left = 1
 
@@ -73,6 +73,7 @@ namespace Project_Starfighter
             get { return iShipAccelerationRate; }
             set { iShipAccelerationRate = value; }
         }
+
 
         // returns a new rectangle based on the position and size of our ship.
         public Rectangle BoundingBox

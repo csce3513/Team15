@@ -23,9 +23,8 @@ namespace Project_Starfighter
         // the next 6 lines are related to the ship
         Player player;
         public int iPlayAreaTop = 30;
-        public int iPlayAreaBottom = 630;
-        int iMaxHorizontalSpeed = 8;
-
+        public int iPlayAreaBottom = 660;
+        
         Texture2D t2dGameScreen; // screen with game data
         SpriteFont spriteFont; // pericles font
 
@@ -44,8 +43,8 @@ namespace Project_Starfighter
         protected override void Initialize()
         {
             // set display resolution
-            graphics.PreferredBackBufferHeight = 720;
-            graphics.PreferredBackBufferWidth = 1280;
+            graphics.PreferredBackBufferHeight = 600;
+            graphics.PreferredBackBufferWidth = 800;
             graphics.ApplyChanges();
 
             base.Initialize();
@@ -107,7 +106,7 @@ namespace Project_Starfighter
 
             background.Draw(spriteBatch); // draw background aarao
 
-            spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 1280, 720), Color.White); // draw game "HUB" 
+            spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
 
             player.Draw(spriteBatch); // draw the ship
 
