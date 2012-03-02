@@ -18,7 +18,7 @@ namespace Project_Starfighter
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Background background; // create a background object
+        //Background background; // create a background object
 
         // the next 6 lines are related to the ship
         Player player;
@@ -88,7 +88,7 @@ namespace Project_Starfighter
             Components.Add(startScreen);
             startScreen.Hide();
 
-            actionScreen = new ActionScreen(this, spriteBatch, Content.Load<Texture2D>(@"Textures\PrimaryBackground"));
+            actionScreen = new ActionScreen(this, spriteBatch, Content.Load<Texture2D>(@"Textures\PrimaryBackground"), Content, @"Textures\PrimaryBackground");
             Components.Add(actionScreen);
             actionScreen.Hide();
 
@@ -115,12 +115,6 @@ namespace Project_Starfighter
             activeScreen = startScreen;
             activeScreen.Show();
 
-            //string[] menuItems = { "Start Game", "Instructions", "High Scores", "Credit", "Quit" };
-
-            //menuComponent = new MenuComponent(this, spriteBatch, Content.Load<SpriteFont>("menufont"), menuItems);
-            //Components.Add(menuComponent);
-            // TODO: use this.Content to load your game content here
-//>>>>>> Task1_Menu
         }
 
         /// <summary>
@@ -258,9 +252,6 @@ namespace Project_Starfighter
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
         private void HandleQuitScreen()
         {
             if (CheckKey(Keys.Enter))
@@ -278,11 +269,6 @@ namespace Project_Starfighter
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="theKey"></param>
-        /// <returns></returns>
         private bool CheckKey(Keys theKey)
         {
             return keyboardState.IsKeyUp(theKey) && oldKeyboardState.IsKeyDown(theKey);
@@ -294,22 +280,13 @@ namespace Project_Starfighter
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            spriteBatch.Begin();
-
+            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null);
             GraphicsDevice.Clear(Color.CornflowerBlue);
-//<<<<<<< HEAD
-
-            background.Draw(spriteBatch); // draw background aarao
 
             spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
 
             player.Draw(spriteBatch); // draw the ship
-
-            spriteBatch.End();
-
-//=======
-            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null);
-//>>>>>>> Task1_Menu
+           
             base.Draw(gameTime);
             spriteBatch.End();
 
