@@ -81,6 +81,66 @@
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
       <Time>2012-03-01T19:36:42.1921414-06:00</Time>
     </Item>
+    <Item>
+      <Source>GameOver.wma</Source>
+      <Name>GameOver</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.xnb</Output>
+      <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.wma</Extra>
+      <Time>2012-03-02T10:49:50.8161488-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Intro.wma</Source>
+      <Name>Intro</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.xnb</Output>
+      <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.wma</Extra>
+      <Time>2012-03-02T10:49:50.9481564-06:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelOne.wma</Source>
+      <Name>LevelOne</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.xnb</Output>
+      <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.wma</Extra>
+      <Time>2012-03-02T10:49:51.8822098-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameOver.wma</Source>
+      <Name>Audio\GameOver</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.xnb</Output>
+      <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.wma</Extra>
+      <Time>2012-03-02T10:48:08.7533111-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Intro.wma</Source>
+      <Name>Audio\Intro</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.xnb</Output>
+      <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.wma</Extra>
+      <Time>2012-03-02T10:48:10.2113945-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\LevelOne.wma</Source>
+      <Name>Audio\LevelOne</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.xnb</Output>
+      <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.wma</Extra>
+      <Time>2012-03-02T10:48:13.9646092-06:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

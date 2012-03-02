@@ -20,6 +20,12 @@ namespace Project_Starfighter
         SpriteBatch spriteBatch;
         //Background background; // create a background object
 
+        // creates the song stuff
+        Song mainMenuSong;
+        bool startMenuSong = true;
+        Song levelOneSong;
+        bool startLevelOneSong = false;
+
         // the next 6 lines are related to the ship
         Player player;
         public int iPlayAreaTop = 30;
@@ -74,6 +80,11 @@ namespace Project_Starfighter
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            
+            //load song info
+            mainMenuSong = Content.Load<Song>(@"Audio\Intro");
+            levelOneSong = Content.Load<Song>(@"Audio\LevelOne");
+            MediaPlayer.IsRepeating = true;
 
         //  background = new Background(Content,
           //                                    @"Textures\PrimaryBackground"); // call background constructor
@@ -167,11 +178,17 @@ namespace Project_Starfighter
         /// </summary>
         private void HandleStartScreen()
         {
+            if (startMenuSong == true)
+            {
+                startMenuSong = false;
+                MediaPlayer.Play(mainMenuSong);
+            }
             if (CheckKey(Keys.Enter))
             {
                 if (startScreen.SelectedIndex == 0)
                 {
                     activeScreen.Hide();
+                    startLevelOneSong = true;
                     activeScreen = actionScreen;
                     activeScreen.Show();
                 }
@@ -244,6 +261,11 @@ namespace Project_Starfighter
         /// </summary>
         private void HandleActionScreen()
         {
+            if (startLevelOneSong == true)
+            {
+                MediaPlayer.Play(levelOneSong);
+                startLevelOneSong = false;
+            }
             if (CheckKey(Keys.Escape))
             {
                 activeScreen.Enabled = false;

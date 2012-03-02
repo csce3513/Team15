@@ -7,3 +7,15 @@ Content\menu.xnb
 Content\Fonts\Pericles.xnb
 Content\menufont.xnb
 Content\Textures\PlayerShip.xnb
+Content\GameOver.xnb
+Content\GameOver.wma
+Content\Intro.xnb
+Content\Intro.wma
+Content\LevelOne.xnb
+Content\LevelOne.wma
+Content\Audio\GameOver.xnb
+Content\Audio\GameOver.wma
+Content\Audio\Intro.xnb
+Content\Audio\Intro.wma
+Content\Audio\LevelOne.xnb
+Content\Audio\LevelOne.wma
