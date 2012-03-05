@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Content;
 
 namespace Project_Starfighter
 {
-    class ActionScreen : GameScreen
+    public class ActionScreen : GameScreen
     {
         KeyboardState keyboardState;
         Texture2D image;
@@ -44,6 +44,12 @@ namespace Project_Starfighter
         public int pixelsToMoveInXPosition; // The number of pixels the ship should move in the X position when the left/right arrow is pressed
         public int pixelsToMoveBackgroundPosition; // The number of pixels that the background should constantly move
 
+        // constructor for test purposes
+        public ActionScreen()
+            : base(null, null)
+        {
+
+        }
           
 
         // the next two lines defines how many pixels before the screen begins is the background image going to start
