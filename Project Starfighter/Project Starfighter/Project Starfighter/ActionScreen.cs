@@ -50,7 +50,7 @@ namespace Project_Starfighter
             t2dBackground = content.Load<Texture2D>(sBackground);
             backgroundFileWidth = t2dBackground.Width;
             backgroundFileHeight = t2dBackground.Height;
-            imageRectangle = new Rectangle(0, 0, Game.Window.ClientBounds.Width, game.Window.ClientBounds.Height);
+           // imageRectangle = new Rectangle(0, 0, Game.Window.ClientBounds.Width, game.Window.ClientBounds.Height);
 
             // initialize player 
             player = new Player(content.Load<Texture2D>(@"Textures\PlayerShip"));
@@ -67,10 +67,10 @@ namespace Project_Starfighter
         {
             base.Update(gameTime);
 
-           // keyboardState = Keyboard.GetState();
+            //keyboardState = Keyboard.GetState();
 
-           // if (keyboardState.IsKeyDown(Keys.Escape))
-            //    game.Exit();
+            //if (keyboardState.IsKeyDown(Keys.Enter))
+              //  game.Exit();
         }
 
         /// <summary>

@@ -305,9 +305,9 @@ namespace Project_Starfighter
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null);
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
+           // spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
 
-            player.Draw(spriteBatch); // draw the ship
+          //  player.Draw(spriteBatch); // draw the ship
            
             base.Draw(gameTime);
             spriteBatch.End();
