@@ -17,7 +17,7 @@ namespace Project_Starfighter
     public class Starfighter : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        public SpriteBatch spriteBatch;
         //Background background; // create a background object
 
         // creates the song stuff
@@ -26,13 +26,16 @@ namespace Project_Starfighter
         Song levelOneSong;
         bool startLevelOneSong = false;
 
+        // create the instruction page stuff
+        public Texture2D bookpages; //InstructionBook background
+
         // the next 6 lines are related to the ship
         Player player;
         public int iPlayAreaTop = 30;
         public int iPlayAreaBottom = 660;
         
         Texture2D t2dGameScreen; // screen with game data
-        SpriteFont spriteFont; // pericles font
+        public SpriteFont spriteFont; // pericles font
 
         // MenuComponent menuComponent;
 
@@ -86,8 +89,11 @@ namespace Project_Starfighter
             levelOneSong = Content.Load<Song>(@"Audio\LevelOne");
             MediaPlayer.IsRepeating = true;
 
-        //  background = new Background(Content,
-          //                                    @"Textures\PrimaryBackground"); // call background constructor
+            //instruction menu test needs
+            bookpages = Content.Load<Texture2D>("InstructionBook");
+
+            //  background = new Background(Content,
+            //                        @"Textures\PrimaryBackground"); // call background constructor
 
             t2dGameScreen = Content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
             spriteFont = Content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
@@ -103,7 +109,7 @@ namespace Project_Starfighter
             Components.Add(actionScreen);
             actionScreen.Hide();
 
-            instructionsScreen = new InstructionsScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
+            instructionsScreen = new InstructionsScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("InstructionBook"));
             Components.Add(instructionsScreen);
             instructionsScreen.Hide();
 
@@ -111,7 +117,7 @@ namespace Project_Starfighter
             Components.Add(creditScreen);
             creditScreen.Hide();
 
-            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
+            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("InstructionBook"));
             Components.Add(highScoreScreen);
             highScoreScreen.Hide();
 

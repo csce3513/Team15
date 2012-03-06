@@ -34,7 +34,7 @@ namespace Project_Starfighter
         }
 
         /// <summary>
-        /// 
+        /// Constructor for the Game Screen
         /// </summary>
         /// <param name="game"></param>
         /// <param name="spriteBatch"></param>
@@ -45,7 +45,6 @@ namespace Project_Starfighter
             this.game = game;
             this.spriteBatch = spriteBatch;
         }
-
         /// <summary>
         /// Allows the game component to perform any initialization it needs to before starting
         /// to run.  This is where it can query for any required services and load content.

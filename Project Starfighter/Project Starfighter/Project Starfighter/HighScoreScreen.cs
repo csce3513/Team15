@@ -34,7 +34,7 @@ namespace Project_Starfighter
         public HighScoreScreen(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, Texture2D image)
             : base(game, spriteBatch)
         {
-            //string[] menuItems = { "How To Play:", "bob", "Test", "Forever" };
+            //string[] menuItems = { "High Scores", "bob - 38148000", "Test - 12354880", "Forever - 42" };
             // menuComponent = new MenuComponent(game, spriteBatch, spriteFont, menuItems);
             //  Components.Add(menuComponent);
             this.image = image;
