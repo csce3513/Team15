@@ -42,9 +42,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Audio\" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Textures\Hud.png">
       <Name>Hud</Name>
       <Importer>TextureImporter</Importer>
@@ -63,11 +60,6 @@
       <Name>Pericles</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Textures\PlayerShip.png">
-      <Name>PlayerShip</Name>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +91,61 @@
   <ItemGroup>
     <Compile Include="menu.jpg">
       <Name>menu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameOver.wma">
+      <Name>GameOver</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="Intro.wma">
+      <Name>Intro</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="LevelOne.wma">
+      <Name>LevelOne</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\GameOver.wma">
+      <Name>GameOver</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Intro.wma">
+      <Name>Intro</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\LevelOne.wma">
+      <Name>LevelOne</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\PlayerShip.png">
+      <Name>PlayerShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlayerAmmo.png">
+      <Name>PlayerAmmo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\PlayerAmmo.png">
+      <Name>PlayerAmmo</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

@@ -16,7 +16,7 @@ namespace Project_Starfighter
         Rectangle imageRectangle;
 
         /// <summary>
-        /// 
+        /// Method to pass the item number of the menu item for interaction with player.
         /// </summary>
         public int SelectedIndex
         {
@@ -25,7 +25,8 @@ namespace Project_Starfighter
         }
 
         /// <summary>
-        /// 
+        /// Main method to create all the components of this game screen.
+        /// All items are currently selectable but will be converted to non-selectable text.
         /// </summary>
         /// <param name="game"></param>
         /// <param name="spriteBatch"></param>
@@ -42,7 +43,7 @@ namespace Project_Starfighter
         }
 
         /// <summary>
-        /// 
+        /// Method to draw and update the screen 
         /// </summary>
         /// <param name="gameTime"></param>
         public override void Draw(GameTime gameTime)

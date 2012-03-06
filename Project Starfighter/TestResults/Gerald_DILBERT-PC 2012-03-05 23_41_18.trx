@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="45ccb6ee-6256-4d28-b2ad-6f79ab54bd64" name="Gerald@DILBERT-PC 2012-03-05 23:41:18" runUser="Dilbert-PC\Gerald" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8938d3c6-cbd1-4798-a27b-390f29bff55a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Gerald_DILBERT-PC 2012-03-05 23_41_18">
+      <DeploymentItem filename="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.dll" />
+      <DeploymentItem filename="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-05T23:41:18.1602475-06:00" queuing="2012-03-05T23:41:18.1852490-06:00" start="2012-03-05T23:41:18.1982497-06:00" finish="2012-03-05T23:41:18.6402750-06:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="25" executed="25" passed="24" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="BoundingBox_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="976f7abd-3a44-9389-443e-407970b6257c">
+      <Execution id="1fd38840-0016-4b92-8ae3-fbad20c803fd" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Player_Test, Project Starfighter Test" name="BoundingBox_Test" />
+    </UnitTest>
+    <UnitTest name="Thrusting_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="543eb888-c955-88ac-ade4-b08205384b3c">
+      <Execution id="92e3bbda-178d-4e07-b973-8fffb56a40e1" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Player_Test, Project Starfighter Test" name="Thrusting_Test" />
+    </UnitTest>
+    <UnitTest name="TestText" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="9297cff2-77d8-2d67-31cf-7a99c311a5ff">
+      <Execution id="16aba44a-57f5-4631-9c4e-5f177609810d" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.InstructionsScreen_Test, Project Starfighter Test" name="TestText" />
+    </UnitTest>
+    <UnitTest name="Facing_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="9c059ac2-daae-689d-1f4c-38c96bde6e85">
+      <Execution id="e1665ca9-20b3-49c0-8b50-72833c5ed880" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Player_Test, Project Starfighter Test" name="Facing_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundOffset_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="afdaa493-65bf-f260-c382-6723d3f0a59d">
+      <Execution id="56e3bc1e-90fd-4f47-bd1a-08e6ef6ceaea" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Background_Test, Project Starfighter Test" name="BackgroundOffset_Test" />
+    </UnitTest>
+    <UnitTest name="YPosition_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="6ac281c6-5261-f907-da1b-259c563f3a56">
+      <Execution id="8450b069-c625-4fb8-acd1-ee4341ad46e3" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.AnimatedSprite_Test, Project Starfighter Test" name="YPosition_Test" />
+    </UnitTest>
+    <UnitTest name="TestScreen" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="a691e6b4-e492-6f43-4f53-2977f4327922">
+      <Execution id="c8366b29-9e0c-40f8-9cc4-e0077df7173c" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.InstructionsScreen_Test, Project Starfighter Test" name="TestScreen" />
+    </UnitTest>
+    <UnitTest name="GetSourceRectangle_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="05440f39-53b0-99ca-f3bb-be1fb1d2de03">
+      <Execution id="7e84bfe2-d666-4f5f-b0e1-fafbb83b29b2" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.AnimatedSprite_Test, Project Starfighter Test" name="GetSourceRectangle_Test" />
+    </UnitTest>
+    <UnitTest name="XPosition_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="8418000c-0d68-bb60-a56c-50e4bb8c38bc">
+      <Execution id="28747948-432d-4f75-bf9d-837cde43d8a5" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.AnimatedSprite_Test, Project Starfighter Test" name="XPosition_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundFileWidth_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="5612bdfa-8071-6785-2a45-10f6be5e8f26">
+      <Execution id="81f03128-fa8e-454f-8b2b-94fe0c34bb06" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Background_Test, Project Starfighter Test" name="BackgroundFileWidth_Test" />
+    </UnitTest>
+    <UnitTest name="HandleActionScreen_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="cf3104af-12eb-afd7-c3c5-6b833e146551">
+      <Execution id="96539696-6e26-4bce-a454-abcffc53d4a8" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Starfighter_Test, Project Starfighter Test" name="HandleActionScreen_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundWidth_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="f8117bbb-c7e5-e9b5-d0ec-69ac4f2ec7f3">
+      <Execution id="2b0953b0-3fdc-4b6f-9254-bc8a48e3c7dc" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Background_Test, Project Starfighter Test" name="BackgroundWidth_Test" />
+    </UnitTest>
+    <UnitTest name="Test_Load" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="613929a0-eef6-02e0-7b2f-4947c95929bb">
+      <Execution id="8d0a7ecd-b1fd-43d3-b332-afb2fc155daf" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Starfighter_Test, Project Starfighter Test" name="Test_Load" />
+    </UnitTest>
+    <UnitTest name="Frame_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="4e28cde3-2288-16fe-42bd-9acfc8da8ab8">
+      <Execution id="653f5fa5-12b9-4b87-a0d2-8be8e94d76c2" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.AnimatedSprite_Test, Project Starfighter Test" name="Frame_Test" />
+    </UnitTest>
+    <UnitTest name="Update_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="22c222ce-44b6-8dcd-bd1f-08a79cdcc566">
+      <Execution id="2f9f403b-f451-4e20-9687-44ec4b694678" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Player_Test, Project Starfighter Test" name="Update_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundHeight_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="ef2e5a6d-8764-ea3a-2b11-a77da1492a16">
+      <Execution id="a0a7e41a-4238-40ee-a925-d92a880682ea" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Background_Test, Project Starfighter Test" name="BackgroundHeight_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundFileHeight_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="0fa67a85-ae25-69c2-5a09-b8b613f54f76">
+      <Execution id="30071c3b-02f3-42ba-818e-6ac5aa4d8f4f" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Background_Test, Project Starfighter Test" name="BackgroundFileHeight_Test" />
+    </UnitTest>
+    <UnitTest name="XPosition_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="bcb441b9-e647-9f40-49e6-fd9d18cfc62b">
+      <Execution id="519ab5f1-6ef5-4365-87a4-38774fcfba57" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Player_Test, Project Starfighter Test" name="XPosition_Test" />
+    </UnitTest>
+    <UnitTest name="IsAnimating_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="86647a27-2eca-c19f-dae9-e1e0f399b670">
+      <Execution id="1991ce25-626d-4c26-aa35-aa0ca73216e9" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.AnimatedSprite_Test, Project Starfighter Test" name="IsAnimating_Test" />
+    </UnitTest>
+    <UnitTest name="AccelRate_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="9400351a-0176-9c1e-51e1-975e9aa5fcab">
+      <Execution id="7f78d10b-1f17-4ae1-86cb-2f5c080b76bf" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Player_Test, Project Starfighter Test" name="AccelRate_Test" />
+    </UnitTest>
+    <UnitTest name="YPosition_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="c4203e4f-b59e-0d54-085a-1ab34f49edd9">
+      <Execution id="a528f4e0-67b9-4641-9ad8-6159fd294b43" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Player_Test, Project Starfighter Test" name="YPosition_Test" />
+    </UnitTest>
+    <UnitTest name="ScrollRate_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="62798b4c-6487-1c18-a52f-27bcf86f3077">
+      <Execution id="d36a8d3e-3382-4ba6-9bb7-10e1c68e3ab0" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Player_Test, Project Starfighter Test" name="ScrollRate_Test" />
+    </UnitTest>
+    <UnitTest name="HandleStartScreen_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="e6c69646-595b-0ad2-87cb-e2f497a6e635">
+      <Execution id="f90d1e25-71ae-4f6c-be4c-8f3c52d46c6e" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Starfighter_Test, Project Starfighter Test" name="HandleStartScreen_Test" />
+    </UnitTest>
+    <UnitTest name="Update_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="1a398b36-5750-e38c-43d2-347c54381fe9">
+      <Execution id="c2608411-fcd3-4187-8d1e-374f9b279272" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.AnimatedSprite_Test, Project Starfighter Test" name="Update_Test" />
+    </UnitTest>
+    <UnitTest name="FrameLength_Test" storage="c:\users\gerald\workspace\csce3513\team15\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="35329af0-07a5-033a-84c4-7cc0b89d3ef6">
+      <Execution id="90319e96-a740-4f1b-b1a0-cd798625d492" />
+      <TestMethod codeBase="C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.AnimatedSprite_Test, Project Starfighter Test" name="FrameLength_Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="05440f39-53b0-99ca-f3bb-be1fb1d2de03" executionId="7e84bfe2-d666-4f5f-b0e1-fafbb83b29b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0fa67a85-ae25-69c2-5a09-b8b613f54f76" executionId="30071c3b-02f3-42ba-818e-6ac5aa4d8f4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a398b36-5750-e38c-43d2-347c54381fe9" executionId="c2608411-fcd3-4187-8d1e-374f9b279272" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22c222ce-44b6-8dcd-bd1f-08a79cdcc566" executionId="2f9f403b-f451-4e20-9687-44ec4b694678" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="35329af0-07a5-033a-84c4-7cc0b89d3ef6" executionId="90319e96-a740-4f1b-b1a0-cd798625d492" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e28cde3-2288-16fe-42bd-9acfc8da8ab8" executionId="653f5fa5-12b9-4b87-a0d2-8be8e94d76c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="543eb888-c955-88ac-ade4-b08205384b3c" executionId="92e3bbda-178d-4e07-b973-8fffb56a40e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5612bdfa-8071-6785-2a45-10f6be5e8f26" executionId="81f03128-fa8e-454f-8b2b-94fe0c34bb06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="613929a0-eef6-02e0-7b2f-4947c95929bb" executionId="8d0a7ecd-b1fd-43d3-b332-afb2fc155daf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62798b4c-6487-1c18-a52f-27bcf86f3077" executionId="d36a8d3e-3382-4ba6-9bb7-10e1c68e3ab0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ac281c6-5261-f907-da1b-259c563f3a56" executionId="8450b069-c625-4fb8-acd1-ee4341ad46e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8418000c-0d68-bb60-a56c-50e4bb8c38bc" executionId="28747948-432d-4f75-bf9d-837cde43d8a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86647a27-2eca-c19f-dae9-e1e0f399b670" executionId="1991ce25-626d-4c26-aa35-aa0ca73216e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9297cff2-77d8-2d67-31cf-7a99c311a5ff" executionId="16aba44a-57f5-4631-9c4e-5f177609810d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9400351a-0176-9c1e-51e1-975e9aa5fcab" executionId="7f78d10b-1f17-4ae1-86cb-2f5c080b76bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="976f7abd-3a44-9389-443e-407970b6257c" executionId="1fd38840-0016-4b92-8ae3-fbad20c803fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c059ac2-daae-689d-1f4c-38c96bde6e85" executionId="e1665ca9-20b3-49c0-8b50-72833c5ed880" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a691e6b4-e492-6f43-4f53-2977f4327922" executionId="c8366b29-9e0c-40f8-9cc4-e0077df7173c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="afdaa493-65bf-f260-c382-6723d3f0a59d" executionId="56e3bc1e-90fd-4f47-bd1a-08e6ef6ceaea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bcb441b9-e647-9f40-49e6-fd9d18cfc62b" executionId="519ab5f1-6ef5-4365-87a4-38774fcfba57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4203e4f-b59e-0d54-085a-1ab34f49edd9" executionId="a528f4e0-67b9-4641-9ad8-6159fd294b43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf3104af-12eb-afd7-c3c5-6b833e146551" executionId="96539696-6e26-4bce-a454-abcffc53d4a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6c69646-595b-0ad2-87cb-e2f497a6e635" executionId="f90d1e25-71ae-4f6c-be4c-8f3c52d46c6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef2e5a6d-8764-ea3a-2b11-a77da1492a16" executionId="a0a7e41a-4238-40ee-a925-d92a880682ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8117bbb-c7e5-e9b5-d0ec-69ac4f2ec7f3" executionId="2b0953b0-3fdc-4b6f-9254-bc8a48e3c7dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7e84bfe2-d666-4f5f-b0e1-fafbb83b29b2" testId="05440f39-53b0-99ca-f3bb-be1fb1d2de03" testName="GetSourceRectangle_Test" computerName="DILBERT-PC" duration="00:00:00.1350870" startTime="2012-03-05T23:41:18.2002498-06:00" endTime="2012-03-05T23:41:18.5022671-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e84bfe2-d666-4f5f-b0e1-fafbb83b29b2">
+    </UnitTestResult>
+    <UnitTestResult executionId="30071c3b-02f3-42ba-818e-6ac5aa4d8f4f" testId="0fa67a85-ae25-69c2-5a09-b8b613f54f76" testName="BackgroundFileHeight_Test" computerName="DILBERT-PC" duration="00:00:00.0005013" startTime="2012-03-05T23:41:18.5022671-06:00" endTime="2012-03-05T23:41:18.5072674-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30071c3b-02f3-42ba-818e-6ac5aa4d8f4f">
+    </UnitTestResult>
+    <UnitTestResult executionId="c2608411-fcd3-4187-8d1e-374f9b279272" testId="1a398b36-5750-e38c-43d2-347c54381fe9" testName="Update_Test" computerName="DILBERT-PC" duration="00:00:00.0011097" startTime="2012-03-05T23:41:18.5082674-06:00" endTime="2012-03-05T23:41:18.5122677-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2608411-fcd3-4187-8d1e-374f9b279272">
+    </UnitTestResult>
+    <UnitTestResult executionId="2f9f403b-f451-4e20-9687-44ec4b694678" testId="22c222ce-44b6-8dcd-bd1f-08a79cdcc566" testName="Update_Test" computerName="DILBERT-PC" duration="00:00:00.0007644" startTime="2012-03-05T23:41:18.5132677-06:00" endTime="2012-03-05T23:41:18.5172680-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f9f403b-f451-4e20-9687-44ec4b694678">
+    </UnitTestResult>
+    <UnitTestResult executionId="90319e96-a740-4f1b-b1a0-cd798625d492" testId="35329af0-07a5-033a-84c4-7cc0b89d3ef6" testName="FrameLength_Test" computerName="DILBERT-PC" duration="00:00:00.0004198" startTime="2012-03-05T23:41:18.5182680-06:00" endTime="2012-03-05T23:41:18.5212682-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90319e96-a740-4f1b-b1a0-cd798625d492">
+    </UnitTestResult>
+    <UnitTestResult executionId="653f5fa5-12b9-4b87-a0d2-8be8e94d76c2" testId="4e28cde3-2288-16fe-42bd-9acfc8da8ab8" testName="Frame_Test" computerName="DILBERT-PC" duration="00:00:00.0002592" startTime="2012-03-05T23:41:18.5222683-06:00" endTime="2012-03-05T23:41:18.5252684-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="653f5fa5-12b9-4b87-a0d2-8be8e94d76c2">
+    </UnitTestResult>
+    <UnitTestResult executionId="92e3bbda-178d-4e07-b973-8fffb56a40e1" testId="543eb888-c955-88ac-ade4-b08205384b3c" testName="Thrusting_Test" computerName="DILBERT-PC" duration="00:00:00.0002863" startTime="2012-03-05T23:41:18.5262685-06:00" endTime="2012-03-05T23:41:18.5292687-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92e3bbda-178d-4e07-b973-8fffb56a40e1">
+    </UnitTestResult>
+    <UnitTestResult executionId="81f03128-fa8e-454f-8b2b-94fe0c34bb06" testId="5612bdfa-8071-6785-2a45-10f6be5e8f26" testName="BackgroundFileWidth_Test" computerName="DILBERT-PC" duration="00:00:00.0002576" startTime="2012-03-05T23:41:18.5302687-06:00" endTime="2012-03-05T23:41:18.5332689-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81f03128-fa8e-454f-8b2b-94fe0c34bb06">
+    </UnitTestResult>
+    <UnitTestResult executionId="8d0a7ecd-b1fd-43d3-b332-afb2fc155daf" testId="613929a0-eef6-02e0-7b2f-4947c95929bb" testName="Test_Load" computerName="DILBERT-PC" duration="00:00:00.0002615" startTime="2012-03-05T23:41:18.5342689-06:00" endTime="2012-03-05T23:41:18.5502699-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d0a7ecd-b1fd-43d3-b332-afb2fc155daf">
+    </UnitTestResult>
+    <UnitTestResult executionId="d36a8d3e-3382-4ba6-9bb7-10e1c68e3ab0" testId="62798b4c-6487-1c18-a52f-27bcf86f3077" testName="ScrollRate_Test" computerName="DILBERT-PC" duration="00:00:00.0004105" startTime="2012-03-05T23:41:18.5502699-06:00" endTime="2012-03-05T23:41:18.5552701-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d36a8d3e-3382-4ba6-9bb7-10e1c68e3ab0">
+    </UnitTestResult>
+    <UnitTestResult executionId="8450b069-c625-4fb8-acd1-ee4341ad46e3" testId="6ac281c6-5261-f907-da1b-259c563f3a56" testName="YPosition_Test" computerName="DILBERT-PC" duration="00:00:00.0003850" startTime="2012-03-05T23:41:18.5552701-06:00" endTime="2012-03-05T23:41:18.5592704-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8450b069-c625-4fb8-acd1-ee4341ad46e3">
+    </UnitTestResult>
+    <UnitTestResult executionId="28747948-432d-4f75-bf9d-837cde43d8a5" testId="8418000c-0d68-bb60-a56c-50e4bb8c38bc" testName="XPosition_Test" computerName="DILBERT-PC" duration="00:00:00.0003229" startTime="2012-03-05T23:41:18.5592704-06:00" endTime="2012-03-05T23:41:18.5632706-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28747948-432d-4f75-bf9d-837cde43d8a5">
+    </UnitTestResult>
+    <UnitTestResult executionId="1991ce25-626d-4c26-aa35-aa0ca73216e9" testId="86647a27-2eca-c19f-dae9-e1e0f399b670" testName="IsAnimating_Test" computerName="DILBERT-PC" duration="00:00:00.0002767" startTime="2012-03-05T23:41:18.5642707-06:00" endTime="2012-03-05T23:41:18.5672708-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1991ce25-626d-4c26-aa35-aa0ca73216e9">
+    </UnitTestResult>
+    <UnitTestResult executionId="16aba44a-57f5-4631-9c4e-5f177609810d" testId="9297cff2-77d8-2d67-31cf-7a99c311a5ff" testName="TestText" computerName="DILBERT-PC" duration="00:00:00.0000891" startTime="2012-03-05T23:41:18.5682709-06:00" endTime="2012-03-05T23:41:18.5712711-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16aba44a-57f5-4631-9c4e-5f177609810d">
+    </UnitTestResult>
+    <UnitTestResult executionId="7f78d10b-1f17-4ae1-86cb-2f5c080b76bf" testId="9400351a-0176-9c1e-51e1-975e9aa5fcab" testName="AccelRate_Test" computerName="DILBERT-PC" duration="00:00:00.0003688" startTime="2012-03-05T23:41:18.5712711-06:00" endTime="2012-03-05T23:41:18.5752713-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f78d10b-1f17-4ae1-86cb-2f5c080b76bf">
+    </UnitTestResult>
+    <UnitTestResult executionId="1fd38840-0016-4b92-8ae3-fbad20c803fd" testId="976f7abd-3a44-9389-443e-407970b6257c" testName="BoundingBox_Test" computerName="DILBERT-PC" duration="00:00:00.0007377" startTime="2012-03-05T23:41:18.5762713-06:00" endTime="2012-03-05T23:41:18.5802716-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fd38840-0016-4b92-8ae3-fbad20c803fd">
+    </UnitTestResult>
+    <UnitTestResult executionId="e1665ca9-20b3-49c0-8b50-72833c5ed880" testId="9c059ac2-daae-689d-1f4c-38c96bde6e85" testName="Facing_Test" computerName="DILBERT-PC" duration="00:00:00.0003357" startTime="2012-03-05T23:41:18.5802716-06:00" endTime="2012-03-05T23:41:18.5842718-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1665ca9-20b3-49c0-8b50-72833c5ed880">
+    </UnitTestResult>
+    <UnitTestResult executionId="c8366b29-9e0c-40f8-9cc4-e0077df7173c" testId="a691e6b4-e492-6f43-4f53-2977f4327922" testName="TestScreen" computerName="DILBERT-PC" duration="00:00:00.0122848" startTime="2012-03-05T23:41:18.5852719-06:00" endTime="2012-03-05T23:41:18.6002727-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8366b29-9e0c-40f8-9cc4-e0077df7173c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNotNull failed. </Message>
+          <StackTrace>   at Project_Starfighter_Test.InstructionsScreen_Test.TestScreen() in C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\InstructionsScreen_Test.cs:line 31
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="56e3bc1e-90fd-4f47-bd1a-08e6ef6ceaea" testId="afdaa493-65bf-f260-c382-6723d3f0a59d" testName="BackgroundOffset_Test" computerName="DILBERT-PC" duration="00:00:00.0003175" startTime="2012-03-05T23:41:18.6012728-06:00" endTime="2012-03-05T23:41:18.6052730-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56e3bc1e-90fd-4f47-bd1a-08e6ef6ceaea">
+    </UnitTestResult>
+    <UnitTestResult executionId="519ab5f1-6ef5-4365-87a4-38774fcfba57" testId="bcb441b9-e647-9f40-49e6-fd9d18cfc62b" testName="XPosition_Test" computerName="DILBERT-PC" duration="00:00:00.0003220" startTime="2012-03-05T23:41:18.6052730-06:00" endTime="2012-03-05T23:41:18.6092732-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="519ab5f1-6ef5-4365-87a4-38774fcfba57">
+    </UnitTestResult>
+    <UnitTestResult executionId="a528f4e0-67b9-4641-9ad8-6159fd294b43" testId="c4203e4f-b59e-0d54-085a-1ab34f49edd9" testName="YPosition_Test" computerName="DILBERT-PC" duration="00:00:00.0003405" startTime="2012-03-05T23:41:18.6102733-06:00" endTime="2012-03-05T23:41:18.6132735-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a528f4e0-67b9-4641-9ad8-6159fd294b43">
+    </UnitTestResult>
+    <UnitTestResult executionId="96539696-6e26-4bce-a454-abcffc53d4a8" testId="cf3104af-12eb-afd7-c3c5-6b833e146551" testName="HandleActionScreen_Test" computerName="DILBERT-PC" duration="00:00:00.0000707" startTime="2012-03-05T23:41:18.6142735-06:00" endTime="2012-03-05T23:41:18.6172737-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="96539696-6e26-4bce-a454-abcffc53d4a8">
+    </UnitTestResult>
+    <UnitTestResult executionId="f90d1e25-71ae-4f6c-be4c-8f3c52d46c6e" testId="e6c69646-595b-0ad2-87cb-e2f497a6e635" testName="HandleStartScreen_Test" computerName="DILBERT-PC" duration="00:00:00.0000831" startTime="2012-03-05T23:41:18.6182737-06:00" endTime="2012-03-05T23:41:18.6212739-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f90d1e25-71ae-4f6c-be4c-8f3c52d46c6e">
+    </UnitTestResult>
+    <UnitTestResult executionId="a0a7e41a-4238-40ee-a925-d92a880682ea" testId="ef2e5a6d-8764-ea3a-2b11-a77da1492a16" testName="BackgroundHeight_Test" computerName="DILBERT-PC" duration="00:00:00.0003175" startTime="2012-03-05T23:41:18.6222740-06:00" endTime="2012-03-05T23:41:18.6252741-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0a7e41a-4238-40ee-a925-d92a880682ea">
+    </UnitTestResult>
+    <UnitTestResult executionId="2b0953b0-3fdc-4b6f-9254-bc8a48e3c7dc" testId="f8117bbb-c7e5-e9b5-d0ec-69ac4f2ec7f3" testName="BackgroundWidth_Test" computerName="DILBERT-PC" duration="00:00:00.0003271" startTime="2012-03-05T23:41:18.6262742-06:00" endTime="2012-03-05T23:41:18.6292744-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b0953b0-3fdc-4b6f-9254-bc8a48e3c7dc">
+    </UnitTestResult>
+  </Results>
+</TestRun>

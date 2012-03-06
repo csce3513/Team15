@@ -17,8 +17,17 @@ namespace Project_Starfighter
     public class Starfighter : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        public SpriteBatch spriteBatch;
         //Background background; // create a background object
+
+        // creates the song stuff
+        Song mainMenuSong;
+        bool startMenuSong = true;
+        Song levelOneSong;
+        bool startLevelOneSong = false;
+
+        // create the instruction page stuff
+        public Texture2D bookpages; //InstructionBook background
 
         // the next 6 lines are related to the ship
         Player player;
@@ -26,7 +35,7 @@ namespace Project_Starfighter
         public int iPlayAreaBottom = 660;
         
         Texture2D t2dGameScreen; // screen with game data
-        SpriteFont spriteFont; // pericles font
+        public SpriteFont spriteFont; // pericles font
 
         // MenuComponent menuComponent;
 
@@ -63,6 +72,7 @@ namespace Project_Starfighter
             graphics.PreferredBackBufferWidth = 800;
             graphics.ApplyChanges();
 
+
             base.Initialize();
         }
 
@@ -74,9 +84,17 @@ namespace Project_Starfighter
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            
+            //load song info
+            mainMenuSong = Content.Load<Song>(@"Audio\Intro");
+            levelOneSong = Content.Load<Song>(@"Audio\LevelOne");
+            MediaPlayer.IsRepeating = true;
 
-        //  background = new Background(Content,
-          //                                    @"Textures\PrimaryBackground"); // call background constructor
+            //instruction menu test needs
+            bookpages = Content.Load<Texture2D>("InstructionBook");
+
+            //  background = new Background(Content,
+            //                        @"Textures\PrimaryBackground"); // call background constructor
 
             t2dGameScreen = Content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
             spriteFont = Content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
@@ -92,7 +110,7 @@ namespace Project_Starfighter
             Components.Add(actionScreen);
             actionScreen.Hide();
 
-            instructionsScreen = new InstructionsScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
+            instructionsScreen = new InstructionsScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("InstructionBook"));
             Components.Add(instructionsScreen);
             instructionsScreen.Hide();
 
@@ -100,7 +118,7 @@ namespace Project_Starfighter
             Components.Add(creditScreen);
             creditScreen.Hide();
 
-            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
+            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("InstructionBook"));
             Components.Add(highScoreScreen);
             highScoreScreen.Hide();
 
@@ -111,6 +129,22 @@ namespace Project_Starfighter
                 Content.Load<Texture2D>("alienmetal"));
             Components.Add(quitScreen);
             quitScreen.Hide();
+
+
+            //aarao 3/5/2012
+            actionScreen.desiredHeight = 600;
+            actionScreen.desiredWidth = 800;
+            // set display resolution
+            graphics.PreferredBackBufferHeight = actionScreen.desiredHeight;
+            graphics.PreferredBackBufferWidth = actionScreen.desiredWidth;
+            graphics.ApplyChanges();
+            actionScreen.lowerLimitShipPosition = actionScreen.desiredHeight - 53; // sets lowest position of the ship to be 53 pixels less than height of game because of the HUB
+            actionScreen.upperLimitShipPosition = 36; // sets highest position that the ship can move 36 because of the HUB
+            actionScreen.leftLimitShipPosition = 0;
+            actionScreen.rightLimitShipPosition = actionScreen.desiredWidth - 72; // 72 is the size of the ship sprite. 
+            actionScreen.pixelsToMoveInYPosition = 2;
+            actionScreen.pixelsToMoveInXPosition = 2;
+            actionScreen.pixelsToMoveBackgroundPosition = 6;
 
             activeScreen = startScreen;
             activeScreen.Show();
@@ -167,11 +201,17 @@ namespace Project_Starfighter
         /// </summary>
         private void HandleStartScreen()
         {
+            if (startMenuSong == true)
+            {
+                startMenuSong = false;
+                MediaPlayer.Play(mainMenuSong);
+            }
             if (CheckKey(Keys.Enter))
             {
                 if (startScreen.SelectedIndex == 0)
                 {
                     activeScreen.Hide();
+                    startLevelOneSong = true;
                     activeScreen = actionScreen;
                     activeScreen.Show();
                 }
@@ -244,6 +284,11 @@ namespace Project_Starfighter
         /// </summary>
         private void HandleActionScreen()
         {
+            if (startLevelOneSong == true)
+            {
+                MediaPlayer.Play(levelOneSong);
+                startLevelOneSong = false;
+            }
             if (CheckKey(Keys.Escape))
             {
                 activeScreen.Enabled = false;
@@ -283,9 +328,9 @@ namespace Project_Starfighter
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null);
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
+           // spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
 
-            player.Draw(spriteBatch); // draw the ship
+          //  player.Draw(spriteBatch); // draw the ship
            
             base.Draw(gameTime);
             spriteBatch.End();

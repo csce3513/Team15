@@ -11,7 +11,7 @@ using Rhino.Mocks;
 namespace Project_Starfighter_Test
 {
     [TestClass]
-    public class Player_Test : Microsoft.Xna.Framework.Game
+    public class Player_Test 
     {
         Player testplay;
         GameTime gameTime;

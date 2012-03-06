@@ -52,7 +52,7 @@ namespace Project_Starfighter
         }
 
         /// <summary>
-        /// 
+        /// Main method to create all the components of this game screen.
         /// </summary>
         /// <param name="game"></param>
         /// <param name="spriteBatch"></param>
@@ -69,7 +69,7 @@ namespace Project_Starfighter
         }
 
         /// <summary>
-        /// 
+        /// Measures the game menu screen and finds the center.
         /// </summary>
         private void MeasureMenu()
         {
