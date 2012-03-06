@@ -19,3 +19,5 @@ Content\Audio\Intro.wma
 Content\Audio\LevelOne.xnb
 Content\Audio\LevelOne.wma
 Content\Textures\PlayerShip.xnb
+Content\PlayerAmmo.xnb
+Content\Textures\PlayerAmmo.xnb

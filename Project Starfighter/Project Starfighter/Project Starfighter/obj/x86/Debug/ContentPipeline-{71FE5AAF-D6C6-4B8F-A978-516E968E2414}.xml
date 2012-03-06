@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\Hud.xnb</Output>
-      <Time>2012-03-01T19:36:42.1921414-06:00</Time>
+      <Time>2012-03-06T10:05:53.0662913-06:00</Time>
     </Item>
     <Item>
       <Source>Textures\PrimaryBackground.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PrimaryBackground.xnb</Output>
-      <Time>2012-03-01T19:36:42.2001419-06:00</Time>
+      <Time>2012-03-06T10:05:53.0752919-06:00</Time>
     </Item>
     <Item>
       <Source>alienmetal.jpg</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\alienmetal.xnb</Output>
-      <Time>2012-03-01T18:49:02.4875757-06:00</Time>
+      <Time>2012-03-06T10:05:53.0872925-06:00</Time>
     </Item>
     <Item>
       <Source>instruction.JPG</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\instruction.xnb</Output>
-      <Time>2012-03-01T18:49:02.4915759-06:00</Time>
+      <Time>2012-03-06T10:05:53.0922928-06:00</Time>
     </Item>
     <Item>
       <Source>Textures\menu.jpg</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\menu.xnb</Output>
-      <Time>2012-03-01T19:35:34.0742453-06:00</Time>
+      <Time>2012-03-06T10:05:53.0852924-06:00</Time>
     </Item>
     <Item>
       <Source>menu.jpg</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menu.xnb</Output>
-      <Time>2012-03-01T19:35:34.0832458-06:00</Time>
+      <Time>2012-03-06T10:05:53.1012933-06:00</Time>
     </Item>
     <Item>
       <Source>Fonts\Pericles.spritefont</Source>
@@ -62,7 +62,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
-      <Time>2012-03-01T19:36:42.1891412-06:00</Time>
+      <Time>2012-03-06T10:05:53.0212888-06:00</Time>
     </Item>
     <Item>
       <Source>menufont.spritefont</Source>
@@ -71,15 +71,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menufont.xnb</Output>
-      <Time>2012-03-01T18:49:02.5025765-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\PlayerShip.png</Source>
-      <Name>Textures\PlayerShip</Name>
-      <Importer>TextureImporter</Importer>
-      <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
-      <Time>2012-03-01T19:36:42.1921414-06:00</Time>
+      <Time>2012-03-06T10:05:53.1022934-06:00</Time>
     </Item>
     <Item>
       <Source>GameOver.wma</Source>
@@ -89,7 +81,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.wma</Extra>
-      <Time>2012-03-05T13:37:12.2432009-06:00</Time>
+      <Time>2012-03-06T10:49:23.6610148-06:00</Time>
     </Item>
     <Item>
       <Source>Intro.wma</Source>
@@ -99,7 +91,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.wma</Extra>
-      <Time>2012-03-05T13:37:12.3032044-06:00</Time>
+      <Time>2012-03-06T10:49:23.6970169-06:00</Time>
     </Item>
     <Item>
       <Source>LevelOne.wma</Source>
@@ -109,7 +101,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.wma</Extra>
-      <Time>2012-03-05T13:37:12.7052274-06:00</Time>
+      <Time>2012-03-06T10:49:24.2120463-06:00</Time>
     </Item>
     <Item>
       <Source>Audio\GameOver.wma</Source>
@@ -119,7 +111,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.wma</Extra>
-      <Time>2012-03-05T13:37:10.723114-06:00</Time>
+      <Time>2012-03-06T10:49:23.2279901-06:00</Time>
     </Item>
     <Item>
       <Source>Audio\Intro.wma</Source>
@@ -129,7 +121,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.wma</Extra>
-      <Time>2012-03-05T13:37:10.9251255-06:00</Time>
+      <Time>2012-03-06T10:49:23.261992-06:00</Time>
     </Item>
     <Item>
       <Source>Audio\LevelOne.wma</Source>
@@ -139,7 +131,34 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.wma</Extra>
-      <Time>2012-03-05T13:37:12.2071989-06:00</Time>
+      <Time>2012-03-06T10:49:23.6410137-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PlayerShip.png</Source>
+      <Name>Textures\PlayerShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
+      <Time>2012-03-06T10:05:53.0672914-06:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerAmmo.png</Source>
+      <Name>PlayerAmmo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\PlayerAmmo.xnb</Output>
+      <Time>2012-03-06T11:14:15.5723473-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PlayerAmmo.png</Source>
+      <Name>Textures\PlayerAmmo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerAmmo.xnb</Output>
+      <Time>2012-03-06T09:26:12-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

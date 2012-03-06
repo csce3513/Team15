@@ -35,7 +35,7 @@ namespace Project_Starfighter
         public InstructionsScreen(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, Texture2D image)
             : base(game, spriteBatch)
         {
-            string[] menuItems = { "W - move up", "S - move down", "A - move left", "D - move right", "Space - shoot laser" };
+            string[] menuItems = { "Up Arrow - move up", "Down Arrow - move down", "Left Arrow - move left", "Right Arrow - move right", "Space - shoot laser" };
             menuComponent = new MenuComponent(game, spriteBatch, spriteFont, menuItems);
             Components.Add(menuComponent);
             this.image = image;

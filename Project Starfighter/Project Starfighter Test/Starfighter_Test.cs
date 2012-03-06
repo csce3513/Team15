@@ -9,12 +9,14 @@ namespace Project_Starfighter_Test
     [TestClass]
     public class Starfighter_Test
     {
+        bool startMenuSong = true;
+        bool startLevelOneSong = false; 
+
          public Starfighter_Test()
         {
             Test_Load();
-            //
-            // TODO: Add constructor logic here
-            //
+            HandleStartScreen_Test();
+            HandleActionScreen_Test();
         }
 
         private TestContext testContextInstance;
@@ -69,17 +71,21 @@ namespace Project_Starfighter_Test
             // TODO: Add test logic here
             //
         }
-
         [TestMethod]
         public void HandleStartScreen_Test()
         {
-
+            Assert.IsTrue(startMenuSong);
+            startMenuSong = false;
+            Assert.IsFalse(startMenuSong);
         }
-
         [TestMethod]
         public void HandleActionScreen_Test()
         {
-
+            Assert.IsFalse(startLevelOneSong);
+            startLevelOneSong = true;
+            Assert.IsTrue(startMenuSong);
+            startLevelOneSong = false;
+            Assert.IsFalse(startLevelOneSong);
         }
     }
 }

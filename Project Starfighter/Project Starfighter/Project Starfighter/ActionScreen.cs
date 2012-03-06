@@ -44,6 +44,13 @@ namespace Project_Starfighter
         public int pixelsToMoveInXPosition; // The number of pixels the ship should move in the X position when the left/right arrow is pressed
         public int pixelsToMoveBackgroundPosition; // The number of pixels that the background should constantly move
 
+        //Mike Ammo variables
+        int iBoltVerticalOffset = 12;   //added to ship position so it looks like it comes from front instead of cockpit
+        static int iMaxBolts = 40;      //Maximum number of ammo
+        Ammo[] bolts = new Ammo[iMaxBolts]; //array holding ammo
+        float fBulletDelayTimer = 0.0f;     //timer delay for spriteanimator
+        float fFireDelay = 0.15f;           //timer delay for firing rate
+            
         // constructor for test purposes
         public ActionScreen()
             : base(null, null)
@@ -74,16 +81,27 @@ namespace Project_Starfighter
 
             t2dGameScreen = content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
             spriteFont = content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
+            //initialize ammo
+            bolts[0] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
+            for (int x = 1; x < iMaxBolts; x++)
+                bolts[x] = new Ammo();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="gameTime"></param>
+        //Helper function for updating Ammo
+        protected void UpdateAmmo(GameTime gameTime)
+        {
+            // Updates the location of all of the active player bullets. 
+            for (int x = 0; x < iMaxBolts; x++)
+            {
+                if (bolts[x].IsActive)
+                    bolts[x].Update(gameTime);
+            }
+        }
+
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-
+            fBulletDelayTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
             //keyboardState = Keyboard.GetState();
 
             //if (keyboardState.IsKeyDown(Keys.Enter))
@@ -134,12 +152,46 @@ namespace Project_Starfighter
                     player.Y += pixelsToMoveInYPosition;
                 }
             }
+            CheckOtherKeys(Keyboard.GetState());
+
+            UpdateAmmo(gameTime);
+
+
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="gameTime"></param>
+        //Helper Function for Ammo Firing
+        protected void FireBullet(int iVerticalOffset)
+        {
+            // Find and fire a free bullet
+            for (int x = 0; x < iMaxBolts; x++)
+            {
+                if (!bolts[x].IsActive)
+                {
+                    bolts[x].Fire(player.X + 65, player.Y + iBoltVerticalOffset + iVerticalOffset);
+                    break;
+                }
+            }
+        }
+
+        //Helper function for Ammo firing - player pressed the key
+        protected void CheckOtherKeys(KeyboardState ksKeys)
+        {
+
+            // Space Bar or Game Pad A button fire the 
+            // player's weapon.  The weapon has it's
+            // own regulating delay (fBulletDelayTimer) 
+            // to pace the firing of the player's weapon.
+            if (ksKeys.IsKeyDown(Keys.Space))
+            {
+                if (fBulletDelayTimer >= fFireDelay)
+                {
+                    FireBullet(0);
+                    fBulletDelayTimer = 0.0f;
+                }
+            }
+        }
+
+
         public override void Draw(GameTime gameTime)
         {
             // Draw the background panel, offset by the player's location
@@ -166,6 +218,17 @@ namespace Project_Starfighter
             spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
 
             player.Draw(spriteBatch); // draw the ship
+
+            // Draw any active player ammo on the screen
+            for (int i = 0; i < iMaxBolts; i++)
+            {
+                // Only draw active bullets
+                if (bolts[i].IsActive)
+                {
+                    bolts[i].Draw(spriteBatch);
+                }
+            }
+
             base.Draw(gameTime);
         }
 

@@ -41,7 +41,6 @@ C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starf
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.pdb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.exe
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.pdb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.xml
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.xnb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.xnb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.xnb
@@ -84,3 +83,5 @@ C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bi
 C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
 C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\PlayerAmmo.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PlayerAmmo.xnb
