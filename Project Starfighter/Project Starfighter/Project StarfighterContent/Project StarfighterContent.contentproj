@@ -63,11 +63,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Textures\PlayerShip.png">
-      <Name>PlayerShip</Name>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="alienmetal.jpg">
       <Name>alienmetal</Name>
       <Importer>TextureImporter</Importer>
@@ -132,6 +127,13 @@
       <Name>LevelOne</Name>
       <Importer>WmaImporter</Importer>
       <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\PlayerShip.png">
+      <Name>PlayerShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

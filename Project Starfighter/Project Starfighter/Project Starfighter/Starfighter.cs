@@ -72,6 +72,7 @@ namespace Project_Starfighter
             graphics.PreferredBackBufferWidth = 800;
             graphics.ApplyChanges();
 
+
             base.Initialize();
         }
 
@@ -128,6 +129,22 @@ namespace Project_Starfighter
                 Content.Load<Texture2D>("alienmetal"));
             Components.Add(quitScreen);
             quitScreen.Hide();
+
+
+            //aarao 3/5/2012
+            actionScreen.desiredHeight = 600;
+            actionScreen.desiredWidth = 800;
+            // set display resolution
+            graphics.PreferredBackBufferHeight = actionScreen.desiredHeight;
+            graphics.PreferredBackBufferWidth = actionScreen.desiredWidth;
+            graphics.ApplyChanges();
+            actionScreen.lowerLimitShipPosition = actionScreen.desiredHeight - 53; // sets lowest position of the ship to be 53 pixels less than height of game because of the HUB
+            actionScreen.upperLimitShipPosition = 36; // sets highest position that the ship can move 36 because of the HUB
+            actionScreen.leftLimitShipPosition = 0;
+            actionScreen.rightLimitShipPosition = actionScreen.desiredWidth - 72; // 72 is the size of the ship sprite. 
+            actionScreen.pixelsToMoveInYPosition = 2;
+            actionScreen.pixelsToMoveInXPosition = 2;
+            actionScreen.pixelsToMoveBackgroundPosition = 6;
 
             activeScreen = startScreen;
             activeScreen.Show();

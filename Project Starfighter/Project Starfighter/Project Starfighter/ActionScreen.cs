@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Content;
 
 namespace Project_Starfighter
 {
-    class ActionScreen : GameScreen
+    public class ActionScreen : GameScreen
     {
         KeyboardState keyboardState;
         Texture2D image;
@@ -33,10 +33,27 @@ namespace Project_Starfighter
         private int backgroundFileWidth = 0;
         private int backgroundFileHeight = 0;
 
+        // aarao 3/5/2012
+        public int desiredHeight; // The height of the screen which the game will be shown
+        public int desiredWidth; // The width of the screen which the game will be shown
+        public int leftLimitShipPosition; // The left position which the ship can't cross
+        public int rightLimitShipPosition; // The right position which the ship can't cross
+        public int upperLimitShipPosition; // The upper position which the ship can't cross
+        public int lowerLimitShipPosition; // The lower position which the ship can't cross
+        public int pixelsToMoveInYPosition; // The number of pixels the ship should move in the Y position when the up/down arrow is pressed
+        public int pixelsToMoveInXPosition; // The number of pixels the ship should move in the X position when the left/right arrow is pressed
+        public int pixelsToMoveBackgroundPosition; // The number of pixels that the background should constantly move
+
+        // constructor for test purposes
+        public ActionScreen()
+            : base(null, null)
+        {
+
+        }
+          
 
         // the next two lines defines how many pixels before the screen begins is the background image going to start
         private int iBackgroundOffset;
-        private int iParallaxOffset;
         /// <summary>
         /// 
         /// </summary>
@@ -71,6 +88,52 @@ namespace Project_Starfighter
 
             //if (keyboardState.IsKeyDown(Keys.Enter))
               //  game.Exit();
+
+            BackgroundOffset += pixelsToMoveBackgroundPosition; // Automatically move background as soon as the game starts. 
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Left))
+            {
+
+                if ((player.X - pixelsToMoveInXPosition) > leftLimitShipPosition) // Check if ship will be within left limit
+                {
+                    //BackgroundOffset -= 1;
+                    player.X -= pixelsToMoveInXPosition;
+                    if (pixelsToMoveBackgroundPosition > 3)
+                    {
+                        pixelsToMoveBackgroundPosition -= 1;
+                    }
+
+                }
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Right))
+            {
+                if ((player.X + pixelsToMoveInXPosition) < rightLimitShipPosition)// Check if ship will be within right limit
+                {
+                    BackgroundOffset += 1;
+                    player.X += pixelsToMoveInXPosition;
+                    if (pixelsToMoveBackgroundPosition < 6)
+                    {
+                        pixelsToMoveBackgroundPosition += 1;
+                    }
+                }
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Up))
+            {
+                if ((player.Y - pixelsToMoveInYPosition) > upperLimitShipPosition) // Make sure ship does not go over upper part of the HUB
+                {
+                    player.Y -= pixelsToMoveInYPosition;
+                }
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Down))
+            {
+                if ((player.Y + pixelsToMoveInYPosition) < lowerLimitShipPosition) // Make sure ship does not go over lower part of the HUB
+                {
+                    player.Y += pixelsToMoveInYPosition;
+                }
+            }
         }
 
         /// <summary>

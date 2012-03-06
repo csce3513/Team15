@@ -54,31 +54,33 @@ C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starf
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.wma
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.wma
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.wma
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\Hud.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PrimaryBackground.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\alienmetal.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\instruction.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\menu.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\menu.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Fonts\Pericles.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\menufont.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PlayerShip.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\GameOver.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Intro.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\LevelOne.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.xnb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\GameOver.wma
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Intro.wma
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\LevelOne.wma
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.wma
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.wma
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.wma
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.pdb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.exe
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.pdb
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
-C:\Users\Gerald\workspace\CSCE3513\Team15\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\Hud.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PrimaryBackground.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\alienmetal.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\instruction.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\menu.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\menu.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Fonts\Pericles.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\menufont.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\GameOver.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Intro.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\LevelOne.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PlayerShip.xnb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\GameOver.wma
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Intro.wma
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\LevelOne.wma
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.wma
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.wma
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.wma
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.pdb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.exe
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.dll
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.pdb
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.xml
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
+C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
