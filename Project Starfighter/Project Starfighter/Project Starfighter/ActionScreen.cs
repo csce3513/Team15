@@ -51,6 +51,8 @@ namespace Project_Starfighter
         public int pixelsToMoveInXPosition; // The number of pixels the ship should move in the X position when the left/right arrow is pressed
         public int pixelsToMoveBackgroundPosition; // The number of pixels that the background should constantly move
 
+        public HudValues hud = new HudValues(); // creates new hud values (lives, credits...)
+
         //Mike Ammo variables
         int iBoltVerticalOffset = 12;   //added to ship position so it looks like it comes from front instead of cockpit
         static int iMaxBolts = 40;      //Maximum number of ammo
@@ -63,6 +65,8 @@ namespace Project_Starfighter
         int activeEnemy1 = 10;
         static int iTotalMaxEnemies = 10;
         Enemy1[] EnemiesType1 = new Enemy1[iTotalMaxEnemies];
+
+        public bool outOfLivesFlag = false; // used to restart menu screen in case player is out of lives.
             
         // constructor for test purposes
         public ActionScreen()
@@ -135,7 +139,16 @@ namespace Project_Starfighter
                     // If the enemy and ship sprites  collide...
                     if (Intersects(player.BoundingBox, EnemiesType1[x].CollisionBox))
                     {
-                        // NEED CODE HERE FOR ADJUSTING LIVES
+                        DestroyEnemy(x); // destroy enemy 
+
+                        if (hud.lives > 0)
+                        {
+                            hud.lives -= 1;  // subtract one life from player.
+                        }
+                        else
+                        {
+                            outOfLivesFlag = true;
+                        }
                         playerDestroyed.Play();
                         return;
                     }
@@ -161,10 +174,10 @@ namespace Project_Starfighter
                 {
                     //BackgroundOffset -= 1;
                     player.X -= pixelsToMoveInXPosition;
-                    if (pixelsToMoveBackgroundPosition > 3)
-                    {
-                        pixelsToMoveBackgroundPosition -= 1;
-                    }
+                    //if (pixelsToMoveBackgroundPosition > 3)
+                    //{
+                 //       pixelsToMoveBackgroundPosition -= 1;
+                   // }
 
                 }
             }
@@ -175,10 +188,10 @@ namespace Project_Starfighter
                 {
                     BackgroundOffset += 1;
                     player.X += pixelsToMoveInXPosition;
-                    if (pixelsToMoveBackgroundPosition < 6)
-                    {
-                        pixelsToMoveBackgroundPosition += 1;
-                    }
+                    //if (pixelsToMoveBackgroundPosition < 6)
+                    //{
+                    //    pixelsToMoveBackgroundPosition += 1;
+                    //}
                 }
             }
 
@@ -284,6 +297,7 @@ namespace Project_Starfighter
 
         protected void DestroyEnemy(int iEnemy)
         {
+            hud.score += 100;// aarao 4-9-12
             enemy1Destroyed.Play();
             EnemiesType1[iEnemy].Deactivate();
             
@@ -338,6 +352,8 @@ namespace Project_Starfighter
             //spriteBatch.Draw(image, imageRectangle, Color.White);
             spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
 
+            // Pass drawing style to hud function
+            hud.Draw(spriteBatch, spriteFont);
             player.Draw(spriteBatch); // draw the ship
 
             // Draw any active player ammo on the screen

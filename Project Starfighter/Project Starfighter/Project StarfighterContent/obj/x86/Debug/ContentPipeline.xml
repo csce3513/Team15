@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\Hud.xnb</Output>
-      <Time>2012-03-05T16:02:05.6575526-06:00</Time>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\Hud.xnb</Output>
+      <Time>2012-04-09T18:37:56.2196917-05:00</Time>
     </Item>
     <Item>
       <Source>Textures\PrimaryBackground.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PrimaryBackground.xnb</Output>
-      <Time>2012-03-05T16:02:06.3415917-06:00</Time>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PrimaryBackground.xnb</Output>
+      <Time>2012-04-09T18:37:56.3386985-05:00</Time>
     </Item>
     <Item>
       <Source>alienmetal.jpg</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\alienmetal.xnb</Output>
-      <Time>2012-03-05T16:02:06.3545925-06:00</Time>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\alienmetal.xnb</Output>
+      <Time>2012-04-09T18:37:56.451705-05:00</Time>
     </Item>
     <Item>
       <Source>instruction.JPG</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\instruction.xnb</Output>
-      <Time>2012-03-05T16:02:06.5006008-06:00</Time>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\instruction.xnb</Output>
+      <Time>2012-04-09T18:37:56.5177087-05:00</Time>
     </Item>
     <Item>
       <Source>Textures\menu.jpg</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\menu.xnb</Output>
-      <Time>2012-03-05T16:02:06.3515923-06:00</Time>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\menu.xnb</Output>
+      <Time>2012-04-09T18:37:56.4437045-05:00</Time>
     </Item>
     <Item>
       <Source>menu.jpg</Source>
@@ -52,86 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menu.xnb</Output>
-      <Time>2012-03-05T16:02:06.5106014-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\Pericles.spritefont</Source>
-      <Name>Fonts\Pericles</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
-      <Time>2012-03-05T16:02:05.5815483-06:00</Time>
-    </Item>
-    <Item>
-      <Source>menufont.spritefont</Source>
-      <Name>menufont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menufont.xnb</Output>
-      <Time>2012-03-05T16:02:06.5116015-06:00</Time>
-    </Item>
-    <Item>
-      <Source>GameOver.wma</Source>
-      <Name>GameOver</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.xnb</Output>
-      <Extra>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.wma</Extra>
-      <Time>2012-03-05T16:04:36.0561549-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Intro.wma</Source>
-      <Name>Intro</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.xnb</Output>
-      <Extra>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.wma</Extra>
-      <Time>2012-03-05T16:04:36.0911569-06:00</Time>
-    </Item>
-    <Item>
-      <Source>LevelOne.wma</Source>
-      <Name>LevelOne</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.xnb</Output>
-      <Extra>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.wma</Extra>
-      <Time>2012-03-05T16:04:36.372173-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Audio\GameOver.wma</Source>
-      <Name>Audio\GameOver</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.xnb</Output>
-      <Extra>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.wma</Extra>
-      <Time>2012-03-05T16:04:34.5550691-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Audio\Intro.wma</Source>
-      <Name>Audio\Intro</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.xnb</Output>
-      <Extra>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.wma</Extra>
-      <Time>2012-03-05T16:04:34.7250788-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Audio\LevelOne.wma</Source>
-      <Name>Audio\LevelOne</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.xnb</Output>
-      <Extra>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.wma</Extra>
-      <Time>2012-03-05T16:04:36.0031519-06:00</Time>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menu.xnb</Output>
+      <Time>2012-04-09T18:37:56.5297094-05:00</Time>
     </Item>
     <Item>
       <Source>Textures\PlayerShip.png</Source>
@@ -139,8 +61,140 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
-      <Time>2012-03-05T16:35:06.6308578-06:00</Time>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
+      <Time>2012-04-09T18:37:56.2266921-05:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerAmmo.png</Source>
+      <Name>PlayerAmmo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\PlayerAmmo.xnb</Output>
+      <Time>2012-04-09T18:37:56.1586882-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PlayerAmmo.png</Source>
+      <Name>Textures\PlayerAmmo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerAmmo.xnb</Output>
+      <Time>2012-04-09T18:37:56.2216918-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\TurtleRobot.png</Source>
+      <Name>Textures\TurtleRobot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\TurtleRobot.xnb</Output>
+      <Time>2012-04-09T18:37:56.3416987-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Pericles.spritefont</Source>
+      <Name>Fonts\Pericles</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
+      <Time>2012-04-09T18:37:53.6285435-05:00</Time>
+    </Item>
+    <Item>
+      <Source>menufont.spritefont</Source>
+      <Name>menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menufont.xnb</Output>
+      <Time>2012-04-09T18:37:56.5327096-05:00</Time>
+    </Item>
+    <Item>
+      <Source>GameOver.wma</Source>
+      <Name>GameOver</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.xnb</Output>
+      <Extra>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.wma</Extra>
+      <Time>2012-04-09T18:37:53.6485446-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Intro.wma</Source>
+      <Name>Intro</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.xnb</Output>
+      <Extra>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.wma</Extra>
+      <Time>2012-04-09T18:37:54.3685858-05:00</Time>
+    </Item>
+    <Item>
+      <Source>LevelOne.wma</Source>
+      <Name>LevelOne</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.xnb</Output>
+      <Extra>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.wma</Extra>
+      <Time>2012-04-09T18:37:56.1486876-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameOver.wma</Source>
+      <Name>Audio\GameOver</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.xnb</Output>
+      <Extra>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.wma</Extra>
+      <Time>2012-04-09T18:37:50.4063592-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Intro.wma</Source>
+      <Name>Audio\Intro</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.xnb</Output>
+      <Extra>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.wma</Extra>
+      <Time>2012-04-09T18:37:51.0753975-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\LevelOne.wma</Source>
+      <Name>Audio\LevelOne</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.xnb</Output>
+      <Extra>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.wma</Extra>
+      <Time>2012-04-09T18:37:53.3625283-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Enemy1Explosion.wav</Source>
+      <Name>Audio\Enemy1Explosion</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Enemy1Explosion.xnb</Output>
+      <Time>2012-04-09T18:37:49.1592879-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Laser.wav</Source>
+      <Name>Audio\Laser</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Laser.xnb</Output>
+      <Time>2012-04-09T18:37:51.1123996-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\ShipExplosion.wav</Source>
+      <Name>Audio\ShipExplosion</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\ShipExplosion.xnb</Output>
+      <Time>2012-04-09T18:37:53.619543-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -148,10 +202,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -103,7 +103,7 @@ namespace Project_Starfighter
             spriteFont = Content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
 
             // initialize player 
-            player = new Player(Content.Load<Texture2D>(@"Textures\PlayerShip"));
+            //player = new Player(Content.Load<Texture2D>(@"Textures\PlayerShip"));
 
             startScreen = new StartScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("menu"));
             Components.Add(startScreen);
@@ -145,8 +145,8 @@ namespace Project_Starfighter
             actionScreen.upperLimitShipPosition = 36; // sets highest position that the ship can move 36 because of the HUB
             actionScreen.leftLimitShipPosition = 0;
             actionScreen.rightLimitShipPosition = actionScreen.desiredWidth - 72; // 72 is the size of the ship sprite. 
-            actionScreen.pixelsToMoveInYPosition = 2;
-            actionScreen.pixelsToMoveInXPosition = 2;
+            actionScreen.pixelsToMoveInYPosition = 3;
+            actionScreen.pixelsToMoveInXPosition = 3;
             actionScreen.pixelsToMoveBackgroundPosition = 6;
 
             activeScreen = startScreen;
@@ -190,29 +190,43 @@ namespace Project_Starfighter
         protected override void Update(GameTime gameTime)
         {
             keyboardState = Keyboard.GetState();
-            if (activeScreen == startScreen)
+            // aarao
+            if (!actionScreen.outOfLivesFlag)
             {
-                HandleStartScreen();
+                if (activeScreen == startScreen)
+                {
+                    HandleStartScreen();
+                }
+                else if (activeScreen == actionScreen)
+                {
+                    HandleActionScreen();
+                }
+                else if (activeScreen == quitScreen)
+                {
+                    HandleQuitScreen();
+                }
+                else if (activeScreen == instructionsScreen)
+                {
+                    HandleInstructionsScreen();
+                }
+                else if (activeScreen == creditScreen)
+                {
+                    HandleCreditScreen();
+                }
+                else if (activeScreen == highScoreScreen)
+                {
+                    HandleHighScoreScreen();
+                }
             }
-            else if (activeScreen == actionScreen)
+            else
             {
-                HandleActionScreen();
-            }
-            else if (activeScreen == quitScreen)
-            {
-                HandleQuitScreen();
-            }
-            else if (activeScreen == instructionsScreen)
-            {
-                HandleInstructionsScreen();
-            }
-            else if (activeScreen == creditScreen)
-            {
-                HandleCreditScreen();
-            }
-            else if (activeScreen == highScoreScreen)
-            {
-                HandleHighScoreScreen();
+                activeScreen.Hide();
+                activeScreen.Enabled = false;
+                activeScreen = startScreen;
+                MediaPlayer.Play(mainMenuSong);
+                activeScreen.Show();
+
+                actionScreen.outOfLivesFlag = false;
             }
             base.Update(gameTime);
             oldKeyboardState = keyboardState;
@@ -312,6 +326,7 @@ namespace Project_Starfighter
                 MediaPlayer.Play(levelOneSong);
                 startLevelOneSong = false;
             }
+
             if (CheckKey(Keys.Escape))
             {
                 activeScreen.Enabled = false;
