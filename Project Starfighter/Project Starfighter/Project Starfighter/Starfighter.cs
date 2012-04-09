@@ -50,6 +50,13 @@ namespace Project_Starfighter
         CreditScreen creditScreen;
         HighScoreScreen highScoreScreen;
 
+        ////For enemy type 1
+        //int maxEnemy1 = 9;
+        //int activeEnemy1 = 9;
+        //static int iTotalMaxEnemies = 9;
+        //Enemy1[] EnemiesType1 = new Enemy1[iTotalMaxEnemies];
+        //Texture2D t2dEnemy1Ship;
+
         /// <summary>
         /// 
         /// </summary>
@@ -92,6 +99,9 @@ namespace Project_Starfighter
 
             //instruction menu test needs
             bookpages = Content.Load<Texture2D>("InstructionBook");
+
+            ////enemy texture
+            //t2dEnemy1Ship = Content.Load<Texture2D>(@"Textures\TurtleRobot");
 
             //  background = new Background(Content,
             //                        @"Textures\PrimaryBackground"); // call background constructor
@@ -160,6 +170,25 @@ namespace Project_Starfighter
             // TODO: Unload any non ContentManager content here
         }
 
+        //protected void GenerateEnemies1()
+        //{
+        //    if (maxEnemy1 < iTotalMaxEnemies)
+        //        maxEnemy1++;
+
+        //    activeEnemy1 = 0;
+
+        //    for (int x = 0; x < maxEnemy1; x++)
+        //    {
+        //        EnemiesType1[x].Generate(x);
+        //        activeEnemy1 += 1;
+        //    }
+        //}
+
+        //protected void StartNewWave()
+        //{
+        //    GenerateEnemies1();
+        //}
+
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
@@ -194,6 +223,7 @@ namespace Project_Starfighter
             }
             base.Update(gameTime);
             oldKeyboardState = keyboardState;
+
         }
 
         /// <summary>

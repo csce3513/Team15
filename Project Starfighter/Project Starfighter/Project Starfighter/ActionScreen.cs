@@ -11,6 +11,7 @@ namespace Project_Starfighter
 {
     public class ActionScreen : GameScreen
     {
+        int counter = 0;
         KeyboardState keyboardState;
         Texture2D image;
         Rectangle imageRectangle;
@@ -50,6 +51,12 @@ namespace Project_Starfighter
         Ammo[] bolts = new Ammo[iMaxBolts]; //array holding ammo
         float fBulletDelayTimer = 0.0f;     //timer delay for spriteanimator
         float fFireDelay = 0.15f;           //timer delay for firing rate
+
+        //For enemy type 1
+        int maxEnemy1 = 10;
+        int activeEnemy1 = 10;
+        static int iTotalMaxEnemies = 10;
+        Enemy1[] EnemiesType1 = new Enemy1[iTotalMaxEnemies];
             
         // constructor for test purposes
         public ActionScreen()
@@ -78,6 +85,16 @@ namespace Project_Starfighter
 
             // initialize player 
             player = new Player(content.Load<Texture2D>(@"Textures\PlayerShip"));
+
+
+            //enemy texture
+           // t2dEnemy1Ship = Content.Load<Texture2D>(@"Textures\TurtleRobot");
+
+            for (int i = 0; i < iTotalMaxEnemies; i++)
+            {
+                EnemiesType1[i] = new Enemy1(content.Load<Texture2D>(@"Textures\TurtleRobot"), 0, 0, 73, 45, 1);
+            }
+            //StartNewWave();
 
             t2dGameScreen = content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
             spriteFont = content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
@@ -156,7 +173,40 @@ namespace Project_Starfighter
 
             UpdateAmmo(gameTime);
 
+            counter++;
+            if (counter == 10)
+            {
+                StartNewWave();
+                counter = 0;
+            }
 
+            for (int i = 0; i < iTotalMaxEnemies; i++)
+            {
+                if (EnemiesType1[i].IsActive)
+                    EnemiesType1[i].Update(gameTime,
+                      BackgroundOffset);
+            }
+
+
+        }
+
+        protected void GenerateEnemies1()
+        {
+            if (maxEnemy1 < iTotalMaxEnemies)
+                maxEnemy1++;
+
+            activeEnemy1 = 0;
+
+            for (int x = 0; x < maxEnemy1; x++)
+            {
+                EnemiesType1[x].Generate(x);
+                activeEnemy1 += 1;
+            }
+        }
+
+        protected void StartNewWave()
+        {
+            GenerateEnemies1();
         }
 
         //Helper Function for Ammo Firing
@@ -227,6 +277,13 @@ namespace Project_Starfighter
                 {
                     bolts[i].Draw(spriteBatch);
                 }
+            }
+
+            for (int i = 0; i < maxEnemy1; i++)
+            {
+                if (EnemiesType1[i].IsActive)
+                    EnemiesType1[i].Draw(spriteBatch,
+                      BackgroundOffset);
             }
 
             base.Draw(gameTime);

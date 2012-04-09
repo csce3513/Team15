@@ -112,6 +112,7 @@
     <Compile Include="Ammo.cs" />
     <Compile Include="AnimatedSprite.cs" />
     <Compile Include="Background.cs" />
+    <Compile Include="Enemy1.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="ActionScreen.cs" />
     <Compile Include="CreditScreen.cs" />

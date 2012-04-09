@@ -78,13 +78,13 @@ namespace Project_Starfighter_Test
             Assert.AreEqual(r, testammo.BoundingBox);
         }
 
-        [TestMethod]
-        public void Ammo_Update_Test()
-        {
-            testammo.Fire(21, 33);
-            testammo.Update(gameTime);
-            Assert.AreEqual(33, testammo.aLocation.X);
-        }
+        //[TestMethod]
+        //public void Ammo_Update_Test()
+        //{
+        //    testammo.Fire(21, 33);
+        //    testammo.Update(gameTime);
+        //    Assert.AreEqual(33, testammo.aLocation.X);
+        //}
     }
 }
 

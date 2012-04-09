@@ -21,3 +21,4 @@ Content\Audio\LevelOne.wma
 Content\Textures\PlayerShip.xnb
 Content\PlayerAmmo.xnb
 Content\Textures\PlayerAmmo.xnb
+Content\Textures\TurtleRobot.xnb
