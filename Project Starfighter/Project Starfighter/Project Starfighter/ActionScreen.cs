@@ -126,6 +126,23 @@ namespace Project_Starfighter
             }
         }
 
+        protected void CheckPlayerHits()
+        {
+            for (int x = 0; x < iTotalMaxEnemies; x++)
+            {
+                if (EnemiesType1[x].IsActive)
+                {
+                    // If the enemy and ship sprites  collide...
+                    if (Intersects(player.BoundingBox, EnemiesType1[x].CollisionBox))
+                    {
+                        // NEED CODE HERE FOR ADJUSTING LIVES
+                        playerDestroyed.Play();
+                        return;
+                    }
+                }
+            }
+        }
+
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
@@ -184,6 +201,7 @@ namespace Project_Starfighter
 
             UpdateAmmo(gameTime);
             CheckBulletHits();
+            CheckPlayerHits();
 
             
             if (counter == 0)
