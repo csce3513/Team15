@@ -87,3 +87,6 @@ C:\Users\Goveia's\SoftEng\Team15\Project Starfighter\Project Starfighter\Project
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\PlayerAmmo.xnb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerAmmo.xnb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\TurtleRobot.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Enemy1Explosion.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Laser.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\ShipExplosion.xnb

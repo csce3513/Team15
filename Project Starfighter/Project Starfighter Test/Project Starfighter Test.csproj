@@ -72,7 +72,6 @@
     <Compile Include="Ammo_Test.cs" />
     <Compile Include="AnimatedSprite_Test.cs" />
     <Compile Include="Enemy1Test.cs" />
-    <Compile Include="Enemy1_Test.cs" />
     <Compile Include="InstructionsScreen_Test.cs" />
     <Compile Include="Player_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

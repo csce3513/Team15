@@ -4,6 +4,10 @@ Content\alienmetal.xnb
 Content\instruction.xnb
 Content\Textures\menu.xnb
 Content\menu.xnb
+Content\Textures\PlayerShip.xnb
+Content\PlayerAmmo.xnb
+Content\Textures\PlayerAmmo.xnb
+Content\Textures\TurtleRobot.xnb
 Content\Fonts\Pericles.xnb
 Content\menufont.xnb
 Content\GameOver.xnb
@@ -18,7 +22,6 @@ Content\Audio\Intro.xnb
 Content\Audio\Intro.wma
 Content\Audio\LevelOne.xnb
 Content\Audio\LevelOne.wma
-Content\Textures\PlayerShip.xnb
-Content\PlayerAmmo.xnb
-Content\Textures\PlayerAmmo.xnb
-Content\Textures\TurtleRobot.xnb
+Content\Audio\Enemy1Explosion.xnb
+Content\Audio\Laser.xnb
+Content\Audio\ShipExplosion.xnb

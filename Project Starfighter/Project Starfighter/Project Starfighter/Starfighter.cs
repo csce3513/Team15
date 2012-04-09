@@ -50,12 +50,6 @@ namespace Project_Starfighter
         CreditScreen creditScreen;
         HighScoreScreen highScoreScreen;
 
-        ////For enemy type 1
-        //int maxEnemy1 = 9;
-        //int activeEnemy1 = 9;
-        //static int iTotalMaxEnemies = 9;
-        //Enemy1[] EnemiesType1 = new Enemy1[iTotalMaxEnemies];
-        //Texture2D t2dEnemy1Ship;
 
         /// <summary>
         /// 
@@ -100,8 +94,7 @@ namespace Project_Starfighter
             //instruction menu test needs
             bookpages = Content.Load<Texture2D>("InstructionBook");
 
-            ////enemy texture
-            //t2dEnemy1Ship = Content.Load<Texture2D>(@"Textures\TurtleRobot");
+
 
             //  background = new Background(Content,
             //                        @"Textures\PrimaryBackground"); // call background constructor

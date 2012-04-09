@@ -64,6 +64,20 @@ namespace Project_Starfighter
             bActive = true;
         }
 
+        public Rectangle CollisionBox
+        {
+            get
+            {
+                int X = aX - iBackgroundOffset;
+                if (X > MapWidth)
+                    X -= MapWidth;
+                if (X < 0)
+                    X += MapWidth;
+                return new Rectangle(X+2, aY+2, 69, 41);
+            }
+        }
+ 
+
         public int X
         {
             get { return aX; }

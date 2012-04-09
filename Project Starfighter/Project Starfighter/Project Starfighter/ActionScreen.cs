@@ -5,12 +5,18 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 
 namespace Project_Starfighter
 {
     public class ActionScreen : GameScreen
     {
+        //create sound effects
+        SoundEffect laserFire;
+        SoundEffect playerDestroyed;
+        SoundEffect enemy1Destroyed;
+
         int counter = 0;
         KeyboardState keyboardState;
         Texture2D image;
@@ -96,12 +102,17 @@ namespace Project_Starfighter
             }
             //StartNewWave();
 
+            //load content for sound effects
+            laserFire = content.Load<SoundEffect>(@"Audio\Laser");
+            enemy1Destroyed = content.Load<SoundEffect>(@"Audio\Enemy1Explosion");
+            playerDestroyed = content.Load<SoundEffect>(@"Audio\ShipExplosion");
+
             t2dGameScreen = content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
             spriteFont = content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
             //initialize ammo
             bolts[0] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
             for (int x = 1; x < iMaxBolts; x++)
-                bolts[x] = new Ammo();
+                bolts[x] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
         }
 
         //Helper function for updating Ammo
@@ -172,12 +183,13 @@ namespace Project_Starfighter
             CheckOtherKeys(Keyboard.GetState());
 
             UpdateAmmo(gameTime);
+            CheckBulletHits();
 
-            counter++;
-            if (counter == 10)
+            
+            if (counter == 0)
             {
                 StartNewWave();
-                counter = 0;
+                counter=1;
             }
 
             for (int i = 0; i < iTotalMaxEnemies; i++)
@@ -218,6 +230,7 @@ namespace Project_Starfighter
                 if (!bolts[x].IsActive)
                 {
                     bolts[x].Fire(player.X + 65, player.Y + iBoltVerticalOffset + iVerticalOffset);
+                    laserFire.Play();
                     break;
                 }
             }
@@ -238,6 +251,46 @@ namespace Project_Starfighter
                     FireBullet(0);
                     fBulletDelayTimer = 0.0f;
                 }
+            }
+        }
+
+        // method for detecting item collisions
+        protected bool Intersects(Rectangle rectA, Rectangle rectB)
+        {
+            // Returns True if rectA and rectB contain any overlapping points
+            return (rectA.Right > rectB.Left && rectA.Left < rectB.Right &&
+                    rectA.Bottom > rectB.Top && rectA.Top < rectB.Bottom);
+        }
+
+        //helper methods after collision detection
+
+        protected void DestroyEnemy(int iEnemy)
+        {
+            enemy1Destroyed.Play();
+            EnemiesType1[iEnemy].Deactivate();
+            
+        }
+        protected void RemoveBullet(int iBullet)
+        {
+            bolts[iBullet].IsActive = false;
+        }
+
+        //Method to check for bullet - enemy hits
+        protected void CheckBulletHits()
+        {
+            // Check to see of any of the players bullets have 
+            // impacted any of the enemies.
+            for (int i = 0; i < iMaxBolts; i++)
+            {
+                if (bolts[i].IsActive)
+                    for (int x = 0; x < iTotalMaxEnemies; x++)
+                        if (EnemiesType1[x].IsActive)
+                            if (Intersects(bolts[i].BoundingBox,
+                                           EnemiesType1[x].CollisionBox))
+                            {
+                                DestroyEnemy(x);
+                                RemoveBullet(i);
+                            }
             }
         }
 

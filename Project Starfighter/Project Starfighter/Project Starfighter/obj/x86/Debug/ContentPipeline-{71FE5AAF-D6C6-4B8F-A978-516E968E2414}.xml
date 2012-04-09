@@ -56,6 +56,42 @@
       <Time>2012-03-06T12:00:59.4487198-06:00</Time>
     </Item>
     <Item>
+      <Source>Textures\PlayerShip.png</Source>
+      <Name>Textures\PlayerShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
+      <Time>2012-03-06T10:05:53.0672914-06:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerAmmo.png</Source>
+      <Name>PlayerAmmo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\PlayerAmmo.xnb</Output>
+      <Time>2012-03-06T12:00:59.3697153-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PlayerAmmo.png</Source>
+      <Name>Textures\PlayerAmmo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerAmmo.xnb</Output>
+      <Time>2012-03-06T12:00:59.3767157-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\TurtleRobot.png</Source>
+      <Name>Textures\TurtleRobot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\TurtleRobot.xnb</Output>
+      <Time>2012-04-08T19:28:34.310934-05:00</Time>
+    </Item>
+    <Item>
       <Source>Fonts\Pericles.spritefont</Source>
       <Name>Fonts\Pericles</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -134,40 +170,31 @@
       <Time>2012-03-06T12:00:58.4446624-06:00</Time>
     </Item>
     <Item>
-      <Source>Textures\PlayerShip.png</Source>
-      <Name>Textures\PlayerShip</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>Audio\Enemy1Explosion.wav</Source>
+      <Name>Audio\Enemy1Explosion</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
-      <Time>2012-03-06T10:05:53.0672914-06:00</Time>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Enemy1Explosion.xnb</Output>
+      <Time>2012-04-09T14:28:54.6511655-05:00</Time>
     </Item>
     <Item>
-      <Source>PlayerAmmo.png</Source>
-      <Name>PlayerAmmo</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>Audio\Laser.wav</Source>
+      <Name>Audio\Laser</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\PlayerAmmo.xnb</Output>
-      <Time>2012-03-06T12:00:59.3697153-06:00</Time>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Laser.xnb</Output>
+      <Time>2012-04-09T14:28:54.9071801-05:00</Time>
     </Item>
     <Item>
-      <Source>Textures\PlayerAmmo.png</Source>
-      <Name>Textures\PlayerAmmo</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>Audio\ShipExplosion.wav</Source>
+      <Name>Audio\ShipExplosion</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerAmmo.xnb</Output>
-      <Time>2012-03-06T12:00:59.3767157-06:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\TurtleRobot.png</Source>
-      <Name>Textures\TurtleRobot</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\TurtleRobot.xnb</Output>
-      <Time>2012-04-08T19:28:34.310934-05:00</Time>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\ShipExplosion.xnb</Output>
+      <Time>2012-04-09T14:28:55.2011969-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
