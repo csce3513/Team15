@@ -26,6 +26,19 @@ namespace Project_Starfighter
             asSprite = new AnimatedSprite(texture, X, Y, W, H, Frames);
         }
 
+        public void newGame()
+        {
+            aX = 0;
+            aY = -100;
+            fSpeed = 1f;
+            enemyMoveCount = 0.0f;
+            enemyDelay = 0.01f;
+            bActive = false;
+            iBackgroundOffset = 0;
+            vmotion.X = 0f;
+            vmotion.Y = 0f;
+        }
+
         public void Deactivate()
         {
             bActive = false;

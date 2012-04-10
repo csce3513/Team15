@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\Hud.xnb</Output>
-      <Time>2012-03-06T10:05:53.0662913-06:00</Time>
+      <Time>2012-04-09T19:42:12.9750994-05:00</Time>
     </Item>
     <Item>
       <Source>Textures\PrimaryBackground.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PrimaryBackground.xnb</Output>
-      <Time>2012-03-06T10:05:53.0752919-06:00</Time>
+      <Time>2012-04-09T19:42:13.0241022-05:00</Time>
     </Item>
     <Item>
       <Source>alienmetal.jpg</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\alienmetal.xnb</Output>
-      <Time>2012-03-06T12:00:59.4227183-06:00</Time>
+      <Time>2012-04-09T19:42:13.0421033-05:00</Time>
     </Item>
     <Item>
       <Source>instruction.JPG</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\instruction.xnb</Output>
-      <Time>2012-03-06T12:00:59.433719-06:00</Time>
+      <Time>2012-04-09T19:42:13.0461035-05:00</Time>
     </Item>
     <Item>
       <Source>Textures\menu.jpg</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\menu.xnb</Output>
-      <Time>2012-03-06T12:00:59.4177181-06:00</Time>
+      <Time>2012-04-09T19:42:13.0401031-05:00</Time>
     </Item>
     <Item>
       <Source>menu.jpg</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menu.xnb</Output>
-      <Time>2012-03-06T12:00:59.4487198-06:00</Time>
+      <Time>2012-04-09T19:42:13.054104-05:00</Time>
     </Item>
     <Item>
       <Source>Textures\PlayerShip.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerShip.xnb</Output>
-      <Time>2012-03-06T10:05:53.0672914-06:00</Time>
+      <Time>2012-04-09T19:42:12.9760995-05:00</Time>
     </Item>
     <Item>
       <Source>PlayerAmmo.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\PlayerAmmo.xnb</Output>
-      <Time>2012-03-06T12:00:59.3697153-06:00</Time>
+      <Time>2012-04-09T19:42:12.9720993-05:00</Time>
     </Item>
     <Item>
       <Source>Textures\PlayerAmmo.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\PlayerAmmo.xnb</Output>
-      <Time>2012-03-06T12:00:59.3767157-06:00</Time>
+      <Time>2012-04-09T19:42:12.9750994-05:00</Time>
     </Item>
     <Item>
       <Source>Textures\TurtleRobot.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\TurtleRobot.xnb</Output>
-      <Time>2012-04-08T19:28:34.310934-05:00</Time>
+      <Time>2012-04-09T19:42:13.0261023-05:00</Time>
     </Item>
     <Item>
       <Source>Fonts\Pericles.spritefont</Source>
@@ -98,7 +98,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Fonts\Pericles.xnb</Output>
-      <Time>2012-03-06T10:05:53.0212888-06:00</Time>
+      <Time>2012-04-09T19:42:12.0170446-05:00</Time>
     </Item>
     <Item>
       <Source>menufont.spritefont</Source>
@@ -107,7 +107,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\menufont.xnb</Output>
-      <Time>2012-03-06T12:00:59.4497199-06:00</Time>
+      <Time>2012-04-09T19:42:13.055104-05:00</Time>
     </Item>
     <Item>
       <Source>GameOver.wma</Source>
@@ -117,7 +117,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\GameOver.wma</Extra>
-      <Time>2012-03-06T12:00:58.4646635-06:00</Time>
+      <Time>2012-04-09T19:42:12.0330455-05:00</Time>
     </Item>
     <Item>
       <Source>Intro.wma</Source>
@@ -127,7 +127,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Intro.wma</Extra>
-      <Time>2012-03-06T12:00:58.4996656-06:00</Time>
+      <Time>2012-04-09T19:42:12.0680476-05:00</Time>
     </Item>
     <Item>
       <Source>LevelOne.wma</Source>
@@ -137,7 +137,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\LevelOne.wma</Extra>
-      <Time>2012-03-06T12:00:59.3627149-06:00</Time>
+      <Time>2012-04-09T19:42:12.968099-05:00</Time>
     </Item>
     <Item>
       <Source>Audio\GameOver.wma</Source>
@@ -147,7 +147,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\GameOver.wma</Extra>
-      <Time>2012-03-06T12:00:58.0576403-06:00</Time>
+      <Time>2012-04-09T19:42:11.6120215-05:00</Time>
     </Item>
     <Item>
       <Source>Audio\Intro.wma</Source>
@@ -157,7 +157,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Intro.wma</Extra>
-      <Time>2012-03-06T12:00:58.0916422-06:00</Time>
+      <Time>2012-04-09T19:42:11.6470235-05:00</Time>
     </Item>
     <Item>
       <Source>Audio\LevelOne.wma</Source>
@@ -167,7 +167,7 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.xnb</Output>
       <Extra>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\LevelOne.wma</Extra>
-      <Time>2012-03-06T12:00:58.4446624-06:00</Time>
+      <Time>2012-04-09T19:42:11.9960434-05:00</Time>
     </Item>
     <Item>
       <Source>Audio\Enemy1Explosion.wav</Source>
@@ -176,7 +176,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Enemy1Explosion.xnb</Output>
-      <Time>2012-04-09T14:28:54.6511655-05:00</Time>
+      <Time>2012-04-09T19:42:11.5960206-05:00</Time>
     </Item>
     <Item>
       <Source>Audio\Laser.wav</Source>
@@ -185,7 +185,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Laser.xnb</Output>
-      <Time>2012-04-09T14:28:54.9071801-05:00</Time>
+      <Time>2012-04-09T19:42:11.6540239-05:00</Time>
     </Item>
     <Item>
       <Source>Audio\ShipExplosion.wav</Source>
@@ -194,7 +194,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\ShipExplosion.xnb</Output>
-      <Time>2012-04-09T14:28:55.2011969-05:00</Time>
+      <Time>2012-04-09T19:42:12.0150445-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

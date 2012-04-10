@@ -44,6 +44,13 @@ namespace Project_Starfighter
             level = 1;
         }
 
+        public void resetHud()
+        {
+            lives = 3;
+            score = 0;
+            level = 1;
+        }
+
         public Vector2 livesPosition = new Vector2(75, 574);
         public Vector2 scorePosition = new Vector2(480, 4);
         public Vector2 levelPosition = new Vector2(700, 4);

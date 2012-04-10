@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5497cec8-0b53-413c-9ac8-aa45bb19ecf2" name="Ben@BENGOODING 2012-04-09 20:27:00" runUser="BenGooding\Ben" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8938d3c6-cbd1-4798-a27b-390f29bff55a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="Ben_BENGOODING 2012-04-09 20_27_00">
+      <DeploymentItem filename="C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.dll" />
+      <DeploymentItem filename="C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project StarfighterContent\obj\x86\Debug\Project StarfighterContent.dll" />
+      <DeploymentItem filename="C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-09T20:27:00.0707925-05:00" queuing="2012-04-09T20:27:03.7730043-05:00" start="2012-04-09T20:27:03.9040118-05:00" finish="2012-04-09T20:27:05.5411054-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="13a2b77f-a479-ee36-9305-265bae173238">
+      <Execution id="06b43651-aa16-413a-802c-466844d02616" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.Enemy1_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="13a2b77f-a479-ee36-9305-265bae173238" executionId="06b43651-aa16-413a-802c-466844d02616" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="06b43651-aa16-413a-802c-466844d02616" testId="13a2b77f-a479-ee36-9305-265bae173238" testName="TestMethod1" computerName="BENGOODING" duration="00:00:00.0142415" startTime="2012-04-09T20:27:04.0150181-05:00" endTime="2012-04-09T20:27:05.3820963-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06b43651-aa16-413a-802c-466844d02616">
+    </UnitTestResult>
+  </Results>
+</TestRun>

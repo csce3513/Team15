@@ -163,24 +163,8 @@ namespace Project_Starfighter
             // TODO: Unload any non ContentManager content here
         }
 
-        //protected void GenerateEnemies1()
-        //{
-        //    if (maxEnemy1 < iTotalMaxEnemies)
-        //        maxEnemy1++;
+        
 
-        //    activeEnemy1 = 0;
-
-        //    for (int x = 0; x < maxEnemy1; x++)
-        //    {
-        //        EnemiesType1[x].Generate(x);
-        //        activeEnemy1 += 1;
-        //    }
-        //}
-
-        //protected void StartNewWave()
-        //{
-        //    GenerateEnemies1();
-        //}
 
         /// <summary>
         /// Allows the game to run logic such as updating the world,
@@ -223,6 +207,7 @@ namespace Project_Starfighter
                 activeScreen.Hide();
                 activeScreen.Enabled = false;
                 activeScreen = startScreen;
+                activeScreen.Enabled = true;
                 MediaPlayer.Play(mainMenuSong);
                 activeScreen.Show();
 
@@ -324,6 +309,7 @@ namespace Project_Starfighter
             if (startLevelOneSong == true)
             {
                 MediaPlayer.Play(levelOneSong);
+                actionScreen.StartNewWave();
                 startLevelOneSong = false;
             }
 

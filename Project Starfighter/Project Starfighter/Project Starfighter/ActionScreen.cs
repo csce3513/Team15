@@ -148,12 +148,22 @@ namespace Project_Starfighter
                         else
                         {
                             outOfLivesFlag = true;
+                            hud.resetHud();
+                            newGame();
+                            StartNewWave();
                         }
                         playerDestroyed.Play();
                         return;
                     }
                 }
             }
+        }
+
+        public void newGame()
+        {
+            for (int x = 0; x < maxEnemy1; x++)
+                EnemiesType1[x].newGame();
+            
         }
 
         public override void Update(GameTime gameTime)
@@ -247,7 +257,7 @@ namespace Project_Starfighter
             }
         }
 
-        protected void StartNewWave()
+        public void StartNewWave()
         {
             GenerateEnemies1();
         }
