@@ -5,7 +5,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Project_Starfighter;
 using Microsoft.Xna.Framework;
-using Rhino.Mocks;
+
 
 
 namespace Project_Starfighter_Test
@@ -14,13 +14,13 @@ namespace Project_Starfighter_Test
     public class Player_Test 
     {
         Player testplay;
-        GameTime gameTime;
+        //GameTime gameTime;
         //SpriteBatch sp;
 
         public Player_Test()
         {
             Background background = new Background();
-            gameTime = MockRepository.GenerateStub<GameTime>();
+          //  gameTime = MockRepository.GenerateStub<GameTime>();
             testplay = new Player();
             //sb = MockRepository.GenerateStub<SpriteBatch>();
         }
@@ -81,7 +81,7 @@ namespace Project_Starfighter_Test
         {
             testplay.Facing = 2;
             testplay.Thrusting = true;
-            testplay.Update(gameTime);
+          //  testplay.Update(gameTime);
 
             Assert.IsTrue(3 == testplay.asSprite.Frame);
         }

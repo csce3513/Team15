@@ -196,6 +196,15 @@
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\ShipExplosion.xnb</Output>
       <Time>2012-04-09T19:42:12.0150445-05:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\spacerabbit.png</Source>
+      <Name>Textures\spacerabbit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\spacerabbit.xnb</Output>
+      <Time>2012-04-18T14:44:11.6395162-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{71FE5AAF-D6C6-4B8F-A978-516E968E2414}</ContentProjectGUID>

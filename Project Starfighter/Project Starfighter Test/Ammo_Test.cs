@@ -6,7 +6,6 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Project_Starfighter;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Rhino.Mocks;
 
 namespace Project_Starfighter_Test
 {
@@ -14,11 +13,11 @@ namespace Project_Starfighter_Test
     public class Ammo_Test
     {
         Ammo testammo;
-        GameTime gameTime;
+       // GameTime gameTime;
 
         public Ammo_Test()
         {
-            gameTime = MockRepository.GenerateStub<GameTime>();
+         //   gameTime = MockRepository.GenerateStub<GameTime>();
             testammo = new Ammo();
         }
 

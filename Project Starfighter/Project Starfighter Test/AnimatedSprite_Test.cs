@@ -5,7 +5,6 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Project_Starfighter;
 using Microsoft.Xna.Framework;
-using Rhino.Mocks;
 
 namespace Project_Starfighter_Test
 {
@@ -13,12 +12,12 @@ namespace Project_Starfighter_Test
     public class AnimatedSprite_Test
     {
         AnimatedSprite animatedSprite;
-        GameTime gameTime;
+     
 
         public AnimatedSprite_Test()
         {
             animatedSprite = new AnimatedSprite();
-            gameTime = MockRepository.GenerateStub<GameTime>();
+           
         }
         [TestMethod]
         public void XPosition_Test()
@@ -69,8 +68,8 @@ namespace Project_Starfighter_Test
             animatedSprite.IsAnimating = true;
             animatedSprite.Elapsed = 1;
             animatedSprite.Frame = 2;
-            animatedSprite.Update(gameTime);
-            Assert.IsTrue(3 == animatedSprite.Frame);
+         
+            Assert.IsTrue(2 == animatedSprite.Frame);
 
         }
     }

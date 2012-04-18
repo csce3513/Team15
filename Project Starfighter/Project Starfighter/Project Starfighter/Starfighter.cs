@@ -309,7 +309,8 @@ namespace Project_Starfighter
             if (startLevelOneSong == true)
             {
                 MediaPlayer.Play(levelOneSong);
-                actionScreen.StartNewWave();
+                //actionScreen.StartNewWave();
+                //actionScreen.StartSecondWave();
                 startLevelOneSong = false;
             }
 

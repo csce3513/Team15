@@ -66,6 +66,16 @@ namespace Project_Starfighter
         static int iTotalMaxEnemies = 10;
         Enemy1[] EnemiesType1 = new Enemy1[iTotalMaxEnemies];
 
+        //For enemy type 2
+        int maxEnemy2 = 6;
+        int activeEnemy2 = 6;
+        static int iTotalMaxEnemies2 = 6;
+        Enemy2[] EnemiesType2 = new Enemy2[iTotalMaxEnemies2];
+
+        //for keeping track of the end of a wave
+        int endOfWave1 = 0;
+        int endOfWave2 = 0;
+
         public bool outOfLivesFlag = false; // used to restart menu screen in case player is out of lives.
             
         // constructor for test purposes
@@ -104,7 +114,11 @@ namespace Project_Starfighter
             {
                 EnemiesType1[i] = new Enemy1(content.Load<Texture2D>(@"Textures\TurtleRobot"), 0, 0, 73, 45, 1);
             }
-            //StartNewWave();
+
+            for (int i = 0; i < iTotalMaxEnemies2; i++)
+            {
+                EnemiesType2[i] = new Enemy2(content.Load<Texture2D>(@"Textures\spacerabbit"), 0, 0, 46, 75, 1);
+            }
 
             //load content for sound effects
             laserFire = content.Load<SoundEffect>(@"Audio\Laser");
@@ -141,7 +155,7 @@ namespace Project_Starfighter
                     {
                         DestroyEnemy(x); // destroy enemy 
 
-                        if (hud.lives > 0)
+                        if (hud.lives > 1)
                         {
                             hud.lives -= 1;  // subtract one life from player.
                         }
@@ -149,8 +163,34 @@ namespace Project_Starfighter
                         {
                             outOfLivesFlag = true;
                             hud.resetHud();
-                            newGame();
-                            StartNewWave();
+                           // newGame();
+                       //     StartNewWave();
+                        }
+                        playerDestroyed.Play();
+                        return;
+                    }
+                    
+                }
+            }
+            for (int x = 0; x < iTotalMaxEnemies2; x++)
+            {
+                if (EnemiesType2[x].IsActive)
+                {
+                    // If the enemy2 and ship sprites  collide...
+                    if (Intersects(player.BoundingBox, EnemiesType2[x].CollisionBox))
+                    {
+                        DestroyEnemy2(x); // destroy enemy 
+
+                        if (hud.lives > 1)
+                        {
+                            hud.lives -= 1;  // subtract one life from player.
+                        }
+                        else
+                        {
+                            outOfLivesFlag = true;
+                            hud.resetHud();
+                            // newGame();
+                            //     StartNewWave();
                         }
                         playerDestroyed.Play();
                         return;
@@ -225,22 +265,48 @@ namespace Project_Starfighter
             UpdateAmmo(gameTime);
             CheckBulletHits();
             CheckPlayerHits();
+            CheckEndofWave1();
 
-            
+
             if (counter == 0)
             {
                 StartNewWave();
-                counter=1;
+                counter = 1;
             }
 
             for (int i = 0; i < iTotalMaxEnemies; i++)
             {
                 if (EnemiesType1[i].IsActive)
+                {
                     EnemiesType1[i].Update(gameTime,
                       BackgroundOffset);
+                }
+            }
+
+            for (int i = 0; i < iTotalMaxEnemies2; i++)
+            {
+                if (EnemiesType2[i].IsActive)
+                    EnemiesType2[i].Update(gameTime);
             }
 
 
+        }
+
+        public void CheckEndofWave1()
+        {
+            if (endOfWave1 == 10)
+            {
+                endOfWave1++;
+                StartSecondWave();
+            }
+        }
+
+        public void CheckEndOfWave2()
+        {
+            if (endOfWave2 == 6)
+            {
+                endOfWave2++; //PLACEHOLDER FOR BOSS WAVE CALL
+            }
         }
 
         protected void GenerateEnemies1()
@@ -257,9 +323,28 @@ namespace Project_Starfighter
             }
         }
 
+        protected void GenerateEnemies2()
+        {
+            if (maxEnemy2 < iTotalMaxEnemies2)
+                maxEnemy2++;
+
+            activeEnemy2 = 0;
+
+            for (int x = 0; x < maxEnemy2; x++)
+            {
+                EnemiesType2[x].Generate(x);
+                activeEnemy2 += 1;
+            }
+        }
+
         public void StartNewWave()
         {
             GenerateEnemies1();
+        }
+
+        public void StartSecondWave()
+        {
+            GenerateEnemies2();
         }
 
         //Helper Function for Ammo Firing
@@ -309,9 +394,19 @@ namespace Project_Starfighter
         {
             hud.score += 100;// aarao 4-9-12
             enemy1Destroyed.Play();
+            endOfWave1++;
             EnemiesType1[iEnemy].Deactivate();
             
         }
+
+        protected void DestroyEnemy2(int iEnemy)
+        {
+            hud.score += 200;// aarao 4-9-12
+            enemy1Destroyed.Play();
+            endOfWave2++;
+            EnemiesType2[iEnemy].Deactivate();
+        }
+           
         protected void RemoveBullet(int iBullet)
         {
             bolts[iBullet].IsActive = false;
@@ -325,6 +420,7 @@ namespace Project_Starfighter
             for (int i = 0; i < iMaxBolts; i++)
             {
                 if (bolts[i].IsActive)
+                {
                     for (int x = 0; x < iTotalMaxEnemies; x++)
                         if (EnemiesType1[x].IsActive)
                             if (Intersects(bolts[i].BoundingBox,
@@ -333,6 +429,16 @@ namespace Project_Starfighter
                                 DestroyEnemy(x);
                                 RemoveBullet(i);
                             }
+
+                    for (int x = 0; x < iTotalMaxEnemies2; x++)
+                        if (EnemiesType2[x].IsActive)
+                            if (Intersects(bolts[i].BoundingBox,
+                                       EnemiesType2[x].CollisionBox))
+                            {
+                                DestroyEnemy2(x);
+                                RemoveBullet(i);
+                            }
+                }
             }
         }
 
@@ -380,6 +486,13 @@ namespace Project_Starfighter
             {
                 if (EnemiesType1[i].IsActive)
                     EnemiesType1[i].Draw(spriteBatch,
+                      BackgroundOffset);
+            }
+
+            for (int i = 0; i < maxEnemy2; i++)
+            {
+                if (EnemiesType2[i].IsActive)
+                    EnemiesType2[i].Draw(spriteBatch,
                       BackgroundOffset);
             }
 

@@ -25,3 +25,4 @@ Content\Audio\LevelOne.wma
 Content\Audio\Enemy1Explosion.xnb
 Content\Audio\Laser.xnb
 Content\Audio\ShipExplosion.xnb
+Content\Textures\spacerabbit.xnb
