@@ -196,6 +196,42 @@
       <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\ShipExplosion.xnb</Output>
       <Time>2012-04-09T18:37:53.619543-05:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\spacerabbit.png</Source>
+      <Name>Textures\spacerabbit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\spacerabbit.xnb</Output>
+      <Time>2012-04-19T17:02:38.5958492-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\maroonLouder.wav</Source>
+      <Name>Audio\maroonLouder</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\maroonLouder.xnb</Output>
+      <Time>2012-04-20T12:23:55.2740521-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\ultramaroonLouder.wav</Source>
+      <Name>Audio\ultramaroonLouder</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\ultramaroonLouder.xnb</Output>
+      <Time>2012-04-20T12:33:14.2632992-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\sorryLouder.wav</Source>
+      <Name>Audio\sorryLouder</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\sorryLouder.xnb</Output>
+      <Time>2012-04-20T12:42:54.7374134-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

@@ -14,6 +14,8 @@ namespace Project_Starfighter
         bool ammoActive;
         float fElapsed = 0f;
         float fUpdateInterval = 0.015f;
+        private int bulletHeight = 3;
+        private int bulletWidth = 16;
         //public int iSpeed;
         public float iSpeed = 12f;
 
@@ -36,7 +38,7 @@ namespace Project_Starfighter
         // returns a box around the Ammo to check for collisions
         public Rectangle BoundingBox
         {
-            get { return new Rectangle((int)aLocation.X, (int)aLocation.Y, 16, 3); }
+            get { return new Rectangle((int)aLocation.X, (int)aLocation.Y, bulletWidth, bulletHeight); }
         }
 
         public Ammo(Texture2D texture)
@@ -75,6 +77,26 @@ namespace Project_Starfighter
                 {
                     fElapsed = 0f;
                     aLocation.X += iSpeed;
+                    // If the bullet has moved off of the screen, 
+                    // set it to inactive
+                    if ((aLocation.X > 800f) || (aLocation.X < 1f))
+                    {
+                        ammoActive = false;
+                    }
+                }   //end If
+            }   // end If
+        }   //end method Update
+
+        //A method to update the ammo's position for the enemy2 in GameTime
+        public void UpdateEnemyAmmo(GameTime gameTime)
+        {
+            if (ammoActive)
+            {
+                fElapsed += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (fElapsed > fUpdateInterval)
+                {
+                    fElapsed = 0f;
+                    aLocation.X -= iSpeed;
                     // If the bullet has moved off of the screen, 
                     // set it to inactive
                     if ((aLocation.X > 800f) || (aLocation.X < 1f))

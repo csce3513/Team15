@@ -20,6 +20,9 @@ Content\Audio\Enemy1Explosion.xnb
 Content\Audio\Laser.xnb
 Content\Audio\ShipExplosion.xnb
 Content\Textures\spacerabbit.xnb
+Content\Audio\maroonLouder.xnb
+Content\Audio\ultramaroonLouder.xnb
+Content\Audio\sorryLouder.xnb
 Content\GameOver.wma
 Content\Intro.wma
 Content\LevelOne.wma

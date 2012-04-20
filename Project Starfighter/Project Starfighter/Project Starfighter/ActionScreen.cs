@@ -13,9 +13,18 @@ namespace Project_Starfighter
     public class ActionScreen : GameScreen
     {
         //create sound effects
-        SoundEffect laserFire;
-        SoundEffect playerDestroyed;
-        SoundEffect enemy1Destroyed;
+        private SoundEffect laserFire;
+        private SoundEffect sorry;
+        private SoundEffect maroon;
+        private SoundEffect ultraMaroon;
+        private SoundEffect playerDestroyed;
+        private SoundEffect enemy1Destroyed;
+        //SoundEffectInstance enemy1DestroyedInstance;
+        private SoundEffectInstance maroonSoundInstance;
+        private SoundEffectInstance ultraMaroonSoundInstance;
+        private SoundEffectInstance sorrySoundInstance;
+        private int maroonSoundDuration;
+        private int maroonTimeControll;
 
         int counter = 0;
         KeyboardState keyboardState;
@@ -77,6 +86,13 @@ namespace Project_Starfighter
         int endOfWave2 = 0;
 
         public bool outOfLivesFlag = false; // used to restart menu screen in case player is out of lives.
+
+        // generate a random number to control when enemy shots
+        private int numb;
+        private Random randomNumber = new Random();
+        private int hitsByEnemy2 = 0;
+        public bool hitTwice = false;
+        private int position = 0;
             
         // constructor for test purposes
         public ActionScreen()
@@ -86,7 +102,7 @@ namespace Project_Starfighter
         }
           
 
-        // the next two lines defines how many pixels before the screen begins is the background image going to start
+        // defines how many pixels before the screen begins is the background image going to start
         private int iBackgroundOffset;
         /// <summary>
         /// 
@@ -117,20 +133,43 @@ namespace Project_Starfighter
 
             for (int i = 0; i < iTotalMaxEnemies2; i++)
             {
+                
                 EnemiesType2[i] = new Enemy2(content.Load<Texture2D>(@"Textures\spacerabbit"), 0, 0, 46, 75, 1);
+                
+
+                //5/19/2012 innitialize sprites for the bullets in each enemy
+                for(int j = 0;j < EnemiesType2[i].TotalOfBullets;j++)
+                {
+                    EnemiesType2[i].bolts[j] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
+                }
+
             }
 
             //load content for sound effects
             laserFire = content.Load<SoundEffect>(@"Audio\Laser");
             enemy1Destroyed = content.Load<SoundEffect>(@"Audio\Enemy1Explosion");
             playerDestroyed = content.Load<SoundEffect>(@"Audio\ShipExplosion");
+            sorry = content.Load<SoundEffect>(@"Audio\sorryLouder");
+            maroon = content.Load<SoundEffect>(@"Audio\maroonLouder");
+            ultraMaroon = content.Load<SoundEffect>(@"Audio\ultraMaroonLouder");
 
-            t2dGameScreen = content.Load<Texture2D>(@"Textures\hud"); // load "HUB"
+            maroonSoundDuration = maroon.Duration.Seconds; // get duration of maroon effect
+
+
+            maroonSoundInstance = maroon.CreateInstance();
+            ultraMaroonSoundInstance = ultraMaroon.CreateInstance();
+
+            sorrySoundInstance = sorry.CreateInstance();
+            //enemy1DestroyedInstance = enemy1Destroyed.CreateInstance();
+            t2dGameScreen = content.Load<Texture2D>(@"Textures\hud"); // load "HUD"
             spriteFont = content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
             //initialize ammo
             bolts[0] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
             for (int x = 1; x < iMaxBolts; x++)
                 bolts[x] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
+
+            maroonSoundInstance.Volume = 1;
+            ultraMaroonSoundInstance.Volume = 1;
         }
 
         //Helper function for updating Ammo
@@ -144,6 +183,12 @@ namespace Project_Starfighter
             }
         }
 
+
+        //public void stopExplosionSound()
+        //{
+        //    enemy1Destroyed.Dispose();
+        //}
+
         protected void CheckPlayerHits()
         {
             for (int x = 0; x < iTotalMaxEnemies; x++)
@@ -155,17 +200,7 @@ namespace Project_Starfighter
                     {
                         DestroyEnemy(x); // destroy enemy 
 
-                        if (hud.lives > 1)
-                        {
-                            hud.lives -= 1;  // subtract one life from player.
-                        }
-                        else
-                        {
-                            outOfLivesFlag = true;
-                            hud.resetHud();
-                           // newGame();
-                       //     StartNewWave();
-                        }
+                        UpdateLives();
                         playerDestroyed.Play();
                         return;
                     }
@@ -180,30 +215,54 @@ namespace Project_Starfighter
                     if (Intersects(player.BoundingBox, EnemiesType2[x].CollisionBox))
                     {
                         DestroyEnemy2(x); // destroy enemy 
+                        UpdateLives();
 
-                        if (hud.lives > 1)
-                        {
-                            hud.lives -= 1;  // subtract one life from player.
-                        }
-                        else
-                        {
-                            outOfLivesFlag = true;
-                            hud.resetHud();
-                            // newGame();
-                            //     StartNewWave();
-                        }
+                        //if (hud.lives > 1)
+                        //{
+                        //    hud.lives -= 1;  // subtract one life from player.
+                        //}
+                        //else
+                        //{
+                        //    outOfLivesFlag = true;
+                        //    hud.resetHud();
+                        //    // newGame();
+                        //    //     StartNewWave();
+                        //}
                         playerDestroyed.Play();
                         return;
                     }
                 }
             }
         }
-
+        private void UpdateLives()
+        {
+            if (hud.lives > 1)
+            {
+                hud.lives -= 1;  // subtract one life from player.
+            }
+            else
+            {
+                outOfLivesFlag = true;
+                hud.resetHud();
+            }
+        }
         public void newGame()
         {
             for (int x = 0; x < maxEnemy1; x++)
                 EnemiesType1[x].newGame();
             
+        }
+        
+        public SoundEffectInstance Marron
+        {
+            get { return maroonSoundInstance; }
+            set { maroonSoundInstance = value; }
+        }
+
+        public SoundEffectInstance UltraMarron
+        {
+            get { return ultraMaroonSoundInstance; }
+            set { ultraMaroonSoundInstance = value; }
         }
 
         public override void Update(GameTime gameTime)
@@ -214,6 +273,8 @@ namespace Project_Starfighter
 
             //if (keyboardState.IsKeyDown(Keys.Enter))
               //  game.Exit();
+
+                        
 
             BackgroundOffset += pixelsToMoveBackgroundPosition; // Automatically move background as soon as the game starts. 
 
@@ -263,6 +324,24 @@ namespace Project_Starfighter
             CheckOtherKeys(Keyboard.GetState());
 
             UpdateAmmo(gameTime);
+
+            //5/19/2012 update position of bullets sent from enemy 2
+            for (int i = 0; i < iTotalMaxEnemies2; i++)
+            {
+                EnemiesType2[i].UpdateAmmo(gameTime);
+                if (endOfWave1 >= 10)
+                {
+                    numb = (int)randomNumber.Next(1000);
+                    if (numb % 49 == 0)
+                    {
+                        EnemiesType2[i].FireBullet(0, laserFire);
+                        EnemiesType2[i].BulletDelayTimer = 0.0f;
+                    } 
+                }
+            }
+
+            
+            
             CheckBulletHits();
             CheckPlayerHits();
             CheckEndofWave1();
@@ -297,7 +376,10 @@ namespace Project_Starfighter
             if (endOfWave1 == 10)
             {
                 endOfWave1++;
+                sorrySoundInstance.Volume = 1;
+                sorrySoundInstance.Play();
                 StartSecondWave();
+
             }
         }
 
@@ -380,6 +462,8 @@ namespace Project_Starfighter
             }
         }
 
+
+
         // method for detecting item collisions
         protected bool Intersects(Rectangle rectA, Rectangle rectB)
         {
@@ -432,16 +516,62 @@ namespace Project_Starfighter
 
                     for (int x = 0; x < iTotalMaxEnemies2; x++)
                         if (EnemiesType2[x].IsActive)
-                            if (Intersects(bolts[i].BoundingBox,
-                                       EnemiesType2[x].CollisionBox))
+                            if (Intersects(bolts[i].BoundingBox, EnemiesType2[x].CollisionBox))
                             {
                                 DestroyEnemy2(x);
                                 RemoveBullet(i);
                             }
                 }
             }
+
+            
+            //check if enemy2's bullet collides with player 5/19/2012
+            for (int j = 0; j < iTotalMaxEnemies2; j++)
+            {
+                //check only for valid enemies
+                if (EnemiesType2[j].IsActive)
+                {
+                    for (int k = 0; k < EnemiesType2[j].TotalOfBullets; k++)
+                    {   
+                        //check only for valid bullets
+                        if (EnemiesType2[j].bolts[k].IsActive)
+                        { 
+                            if(Intersects(EnemiesType2[j].bolts[k].BoundingBox, player.BoundingBox))
+                            {
+                                UpdateLives();
+
+                                if (!outOfLivesFlag)
+                                {
+                                    hitsByEnemy2 += 1;
+                                    if (hitsByEnemy2 == 2)
+                                        hitTwice = true;
+                                    // make sure that enemy will only say second sound effect if first sound effect is over - in case player gets hit my bullets in short time.
+                                    if (hitTwice && (DateTime.Now.Second > maroonTimeControll + maroonSoundDuration))
+                                    {
+                                        ultraMaroonSoundInstance.Play();
+                                    }
+                                    else
+                                    {
+                                        maroonSoundInstance.Play();
+                                        maroonTimeControll = DateTime.Now.Second;                                        
+                                    }
+                                }
+                                EnemiesType2[j].RemoveBullet(k);
+                                
+
+                            }
+                        }
+                    }
+                }
+            }
         }
 
+        //public void ResetSoundEffects()
+        //{
+        //    //hitsByEnemy2 = 0;
+        //    //hitTwice = false;
+        //    enemy1DestroyedInstance.Pause();
+        //}
 
         public override void Draw(GameTime gameTime)
         {
@@ -466,7 +596,7 @@ namespace Project_Starfighter
                                     Color.White);
             }
             //spriteBatch.Draw(image, imageRectangle, Color.White);
-            spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUB" 
+            spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUD" 
 
             // Pass drawing style to hud function
             hud.Draw(spriteBatch, spriteFont);
@@ -491,9 +621,12 @@ namespace Project_Starfighter
 
             for (int i = 0; i < maxEnemy2; i++)
             {
+                EnemiesType2[i].DrawBullets(spriteBatch); //5/19/2012
+
                 if (EnemiesType2[i].IsActive)
-                    EnemiesType2[i].Draw(spriteBatch,
-                      BackgroundOffset);
+                {
+                    EnemiesType2[i].Draw(spriteBatch, BackgroundOffset);   
+                }
             }
 
             base.Draw(gameTime);

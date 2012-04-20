@@ -204,14 +204,23 @@ namespace Project_Starfighter
             }
             else
             {
+                actionScreen.outOfLivesFlag = false;
                 activeScreen.Hide();
                 activeScreen.Enabled = false;
                 activeScreen = startScreen;
                 activeScreen.Enabled = true;
+                
+                //actionScreen.ResetSoundEffects();
+                actionScreen.Marron.Stop(); // stop enemy sound effect before playing menu sound
+                actionScreen.UltraMarron.Stop();// stop enemy sound effect before playing menu sound
+                //actionScreen.ResetSoundEffects();
+                //Components.Remove(actionScreen);
+                LoadContent(); // reset game and start from beginning
+
+                
                 MediaPlayer.Play(mainMenuSong);
                 activeScreen.Show();
-
-                actionScreen.outOfLivesFlag = false;
+                
             }
             base.Update(gameTime);
             oldKeyboardState = keyboardState;
