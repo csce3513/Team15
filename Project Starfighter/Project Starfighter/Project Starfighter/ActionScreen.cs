@@ -680,20 +680,7 @@ namespace Project_Starfighter
                                 hitsByBoss += 1; // increase counter for sound purposes
 
                                 dealSoundInstance.Play();
-                                //// if player has been hit twice by boss do something
-                                //if (hitsByBoss == 2)
-                                //    isPlayerHitTwiceByBoss = true;
-
-                                //// make sure that boss will only say second sound effect if first sound effect is over - in case player gets hit my bullets in short time.
-                                //if (isPlayerHitTwiceByBoss && (DateTime.Now > youFiredTimeControll + youFiredSoundDuration))
-                                //{
-                                //    youFired.Play();
-                                //}
-                                //else
-                                //{
-                                //    youFired.Play();
-                                //    youFiredTimeControll = DateTime.Now;
-                                //}
+                               
                             }
                             boss.RemoveBullet(k);
 
