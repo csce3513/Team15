@@ -224,15 +224,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Audio\Alien.wav">
-      <Name>Alien</Name>
+    <Compile Include="Audio\deal.wav">
+      <Name>deal</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Audio\deal.wav">
-      <Name>deal</Name>
+    <Compile Include="Audio\Laser2.wav">
+      <Name>Laser2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Alien.wav">
+      <Name>Alien</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
     </Compile>

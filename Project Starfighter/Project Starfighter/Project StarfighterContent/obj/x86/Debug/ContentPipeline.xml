@@ -266,7 +266,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Alien.xnb</Output>
-      <Time>2012-04-28T09:04:01.2934021-05:00</Time>
+      <Time>2012-04-28T09:53:19.65823-05:00</Time>
     </Item>
     <Item>
       <Source>Audio\deal.wav</Source>
@@ -276,6 +276,15 @@
       <Options>None</Options>
       <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\deal.xnb</Output>
       <Time>2012-04-28T09:35:13.2402752-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Laser2.wav</Source>
+      <Name>Audio\Laser2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Laser2.xnb</Output>
+      <Time>2012-04-28T09:51:00.9059455-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

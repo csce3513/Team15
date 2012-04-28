@@ -14,6 +14,7 @@ namespace Project_Starfighter
     {
         //create sound effects
         private SoundEffect laserFire;
+        private SoundEffect laserFire2;
         private SoundEffect sorry;
         private SoundEffect maroon;
         private SoundEffect ultraMaroon;
@@ -160,6 +161,7 @@ namespace Project_Starfighter
 
             // load content for sound effects
             laserFire = content.Load<SoundEffect>(@"Audio\Laser");
+            laserFire2 = content.Load<SoundEffect>(@"Audio\Laser2");
             enemy1Destroyed = content.Load<SoundEffect>(@"Audio\Enemy1Explosion");
             playerDestroyed = content.Load<SoundEffect>(@"Audio\ShipExplosion");
             sorry = content.Load<SoundEffect>(@"Audio\sorryLouder");
@@ -319,6 +321,12 @@ namespace Project_Starfighter
             set { alienSoundInstance = value; }
         }
 
+        public SoundEffectInstance DealSound
+        {
+            get { return dealSoundInstance; }
+            set { dealSoundInstance = value; }
+        }
+
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime); // allows the game component to update itself
@@ -397,7 +405,7 @@ namespace Project_Starfighter
                 numb = (int)randomNumber.Next(1000);
                 if (numb % 10  == 0)
                 {
-                    boss.FireBullet(0, laserFire);
+                    boss.FireBullet(0, laserFire2);
                     boss.BulletDelayTimer = 0.0f;
                 }
             }

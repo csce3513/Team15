@@ -217,6 +217,7 @@ namespace Project_Starfighter
                 actionScreen.UltraMarron.Stop();// stop enemy sound effect before playing menu sound
                 actionScreen.YouFiredSound.Stop();
                 actionScreen.AlienSound.Stop();
+                actionScreen.DealSound.Stop();
                 //actionScreen.ResetSoundEffects();
                 //Components.Remove(actionScreen);
                 LoadContent(); // reset game and start from beginning
