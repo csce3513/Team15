@@ -232,6 +232,42 @@
       <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\sorryLouder.xnb</Output>
       <Time>2012-04-20T12:42:54.7374134-05:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\boss.jpg</Source>
+      <Name>Textures\boss</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\boss.xnb</Output>
+      <Time>2012-04-27T18:46:38.1607278-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\donald2.jpg</Source>
+      <Name>Textures\donald2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\donald2.xnb</Output>
+      <Time>2012-04-27T20:49:12.8659158-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\youFiredLoud.wav</Source>
+      <Name>Audio\youFiredLoud</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\youFiredLoud.xnb</Output>
+      <Time>2012-04-27T22:19:45.9306693-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Alien.wav</Source>
+      <Name>Audio\Alien</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Alien.xnb</Output>
+      <Time>2012-04-27T23:44:34.0086907-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

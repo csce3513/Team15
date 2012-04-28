@@ -71,3 +71,7 @@ C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighte
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\maroonLouder.xnb
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\ultramaroonLouder.xnb
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\sorryLouder.xnb
+C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\boss.xnb
+C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\donald2.xnb
+C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\youFiredLoud.xnb
+C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Alien.xnb

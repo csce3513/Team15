@@ -59,6 +59,14 @@ namespace Project_Starfighter
             ammoActive = false;
         }
 
+        public int X
+        {
+            get { return (int)aLocation.X; }
+            //set { xPosition = value; }
+        }
+
+        
+
         //A method for Starfighter to instantiate ammo firing from player
         public void Fire(int X, int Y)
         {

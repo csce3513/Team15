@@ -13,19 +13,18 @@ namespace Project_Starfighter_Test
     [TestClass]
     public class Player_Test 
     {
+        // Create a variable of type player
         Player testplay;
-        //GameTime gameTime;
-        //SpriteBatch sp;
 
+        // constructor for the test class
         public Player_Test()
         {
-            Background background = new Background();
-          //  gameTime = MockRepository.GenerateStub<GameTime>();
+            //create a new player instance and invoke constructor 
             testplay = new Player();
-            //sb = MockRepository.GenerateStub<SpriteBatch>();
+          
         }
 
-
+        // The next two tests make sure we can initiate the player position.
         [TestMethod]
         public void XPosition_Test()
         {
@@ -40,34 +39,7 @@ namespace Project_Starfighter_Test
             Assert.IsTrue(12 == testplay.Y);
         }
 
-        [TestMethod]
-        public void Facing_Test()
-        {
-            testplay.Facing = 1;
-            Assert.IsTrue(1 == testplay.Facing);
-        }
-
-        [TestMethod]
-        public void Thrusting_Test()
-        {
-            testplay.Thrusting = true;
-            Assert.IsTrue(true == testplay.Thrusting);
-        }
-
-        [TestMethod]
-        public void ScrollRate_Test()
-        {
-            testplay.ScrollRate = 2;
-            Assert.IsTrue(2 == testplay.ScrollRate);
-        }
-
-        [TestMethod]
-        public void AccelRate_Test()
-        {
-            testplay.AccelerationRate = 3;
-            Assert.IsTrue(3 == testplay.AccelerationRate);
-        }
-
+        // makes sure the bounding box is working properly
         [TestMethod]
         public void BoundingBox_Test()
         {
@@ -76,19 +48,6 @@ namespace Project_Starfighter_Test
             testplay.Y = 12;
             Assert.AreEqual(r, testplay.BoundingBox);
         }
-        [TestMethod]
-        public void Update_Test()
-        {
-            testplay.Facing = 2;
-            testplay.Thrusting = true;
-          //  testplay.Update(gameTime);
 
-            Assert.IsTrue(3 == testplay.asSprite.Frame);
-        }
-        //[TestMethod]
-        //public void Draw_Test()
-        //{
-        //    testplay.Draw(sb);
-        //}
     }
 }

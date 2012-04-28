@@ -19,39 +19,44 @@ namespace Project_Starfighter
         private SoundEffect ultraMaroon;
         private SoundEffect playerDestroyed;
         private SoundEffect enemy1Destroyed;
-        //SoundEffectInstance enemy1DestroyedInstance;
-        private SoundEffectInstance maroonSoundInstance;
-        private SoundEffectInstance ultraMaroonSoundInstance;
-        private SoundEffectInstance sorrySoundInstance;
-        private int maroonSoundDuration;
-        private int maroonTimeControll;
+        private SoundEffect youFired;
+        private SoundEffect alien;
+        private SoundEffectInstance maroonSoundInstance; // the type SoundEffectInstance gives options to modify values such as pitch and volume
+        private SoundEffectInstance ultraMaroonSoundInstance; // the type SoundEffectInstance gives options to modify values such as pitch and volume
+        private SoundEffectInstance sorrySoundInstance; // the type SoundEffectInstance gives options to modify values such as pitch and volume
+        public SoundEffectInstance youFiredSoundInstance;
+        private SoundEffectInstance alienSoundInstance;
+        
+        private TimeSpan maroonSoundDuration; // used to check the duration of the sound maroon. 
+        private DateTime maroonTimeControll; // holds the datetime when the maroon sound is played
 
-        int counter = 0;
-        KeyboardState keyboardState;
-        Texture2D image;
-        Rectangle imageRectangle;
+        private TimeSpan youFiredSoundDuration;
+        //private DateTime youFiredTimeControll;
 
-        // Textures to hold the two background images
-        Texture2D t2dBackground;
-        Texture2D t2dGameScreen; // screen with game data
-        SpriteFont spriteFont; // pericles font
+        private int startNewWaveCounter = 0; // Counter used to start the first wave
+        //KeyboardState keyboardState;
+        //private Texture2D image;
+        //Rectangle imageRectangle;
 
-        // the next 6 lines are related to the ship
-        Player player;
-        public int iPlayAreaTop = 30;
-        public int iPlayAreaBottom = 660;
+        
+        private Texture2D gameBackgroundImage; // texture to hold background image
+        private Texture2D gameHudImage; // texture to hold screen with game data
+        private SpriteFont spriteFont; // pericles font
 
-        // the next two lines determine how large the background will have when displayed
+        // the next two lines determine how large the background should be when displayed
         private int widthOfBackgroundToBeDisplayed = 1280;
         private int heightOfBackgroundToBeDisplayed = 720;
 
-        // the next four lines hold the width and height of the background images. 
+        // the next two lines hold the original width and height of the background image files. 
         private int backgroundFileWidth = 0;
         private int backgroundFileHeight = 0;
 
-        // aarao 3/5/2012
-        public int desiredHeight; // The height of the screen which the game will be shown
-        public int desiredWidth; // The width of the screen which the game will be shown
+        // defines how many pixels before the screen begins is the background image going to start
+        private int gameBackgroundOffset;
+ 
+
+        public int desiredHeight; // The height of the screen in which the game will be shown
+        public int desiredWidth; // The width of the screen in which the game will be shown
         public int leftLimitShipPosition; // The left position which the ship can't cross
         public int rightLimitShipPosition; // The right position which the ship can't cross
         public int upperLimitShipPosition; // The upper position which the ship can't cross
@@ -60,116 +65,124 @@ namespace Project_Starfighter
         public int pixelsToMoveInXPosition; // The number of pixels the ship should move in the X position when the left/right arrow is pressed
         public int pixelsToMoveBackgroundPosition; // The number of pixels that the background should constantly move
 
+        // Create an instance of the class HudValues that will hold the values to be displayed on the screen
         public HudValues hud = new HudValues(); // creates new hud values (lives, credits...)
 
         //Mike Ammo variables
-        int iBoltVerticalOffset = 12;   //added to ship position so it looks like it comes from front instead of cockpit
-        static int iMaxBolts = 40;      //Maximum number of ammo
-        Ammo[] bolts = new Ammo[iMaxBolts]; //array holding ammo
-        float fBulletDelayTimer = 0.0f;     //timer delay for spriteanimator
-        float fFireDelay = 0.15f;           //timer delay for firing rate
+        private int iBoltVerticalOffset = 12;   //added to ship position so it looks like it comes from front instead of cockpit
+        private static int iMaxBolts = 40;      //Maximum number of ammo
+        private Ammo[] bolts = new Ammo[iMaxBolts]; //array holding ammo
+        private float fBulletDelayTimer = 0.0f;     //timer delay for spriteanimator
+        private float fFireDelay = 0.15f;           //timer delay for firing rate
 
         //For enemy type 1
-        int maxEnemy1 = 10;
-        int activeEnemy1 = 10;
-        static int iTotalMaxEnemies = 10;
-        Enemy1[] EnemiesType1 = new Enemy1[iTotalMaxEnemies];
+        private int numberOfEnemiesType1 = 10; // define the number of enemies of type 1 to create
+        private int numberOfActiveEnemiesType1 = 10; // holds the number of active enemies of type 1
+        private static int iTotalMaxEnemies = 10;
+        private Enemy1[] EnemiesType1 = new Enemy1[iTotalMaxEnemies]; // create an array of enemies type 1
 
         //For enemy type 2
-        int maxEnemy2 = 6;
-        int activeEnemy2 = 6;
-        static int iTotalMaxEnemies2 = 6;
-        Enemy2[] EnemiesType2 = new Enemy2[iTotalMaxEnemies2];
+        private int numberOfEnemiesType2 = 6; // define the number of enemies of type 2 to create
+        private int numberOfActiveEnemiesType2 = 6; // holds the number of active enemies of type 1
+        private static int iTotalMaxEnemies2 = 6;
+        private Enemy2[] EnemiesType2 = new Enemy2[iTotalMaxEnemies2];
 
         //for keeping track of the end of a wave
-        int endOfWave1 = 0;
-        int endOfWave2 = 0;
+        private int endOfWave1 = 0;
+        private int endOfWave2 = 0;
+        private bool isWave1Over = false;
+        private bool isWave2Over = false;
 
-        public bool outOfLivesFlag = false; // used to restart menu screen in case player is out of lives.
+        // create an instance of the class player
+        private Player player;
 
-        // generate a random number to control when enemy shots
+        private Boss boss; // create a boss
+        public bool isBossActive = false;
+        private int hitsByBoss = 0;
+        private bool isPlayerHitTwiceByBoss = false;
+        
+        public bool isOutOfLives = false; // used to restart menu screen in case player is out of lives.
+        public bool isBossDefeated = false;
+
+        // generate a random number to control when enemy shoots
         private int numb;
         private Random randomNumber = new Random();
         private int hitsByEnemy2 = 0;
-        public bool hitTwice = false;
-        private int position = 0;
-            
+        public bool isPlayerHitTwiceByEnemy2 = false; // tells if player is hit twice by enemy2
+               
         // constructor for test purposes
         public ActionScreen()
             : base(null, null)
         {
 
         }
-          
 
-        // defines how many pixels before the screen begins is the background image going to start
-        private int iBackgroundOffset;
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="game"></param>
-        /// <param name="spriteBatch"></param>
-        /// <param name="image"></param>
-        public ActionScreen(Game game, SpriteBatch spriteBatch, Texture2D image, ContentManager content, string sBackground)
+        // Constructor
+        public ActionScreen(Game game, SpriteBatch spriteBatch, Texture2D background, ContentManager content, string sBackground)
             : base(game, spriteBatch)
         {
-            this.image = image;
-            t2dBackground = content.Load<Texture2D>(sBackground);
-            backgroundFileWidth = t2dBackground.Width;
-            backgroundFileHeight = t2dBackground.Height;
-           // imageRectangle = new Rectangle(0, 0, Game.Window.ClientBounds.Width, game.Window.ClientBounds.Height);
+            gameBackgroundImage = background; // give an image to the background
+            backgroundFileWidth = gameBackgroundImage.Width; // give the width to the background
+            backgroundFileHeight = gameBackgroundImage.Height; // give the height to the background
 
-            // initialize player 
-            player = new Player(content.Load<Texture2D>(@"Textures\PlayerShip"));
+            player = new Player(content.Load<Texture2D>(@"Textures\PlayerShip")); // initialize player 
 
-
-            //enemy texture
-           // t2dEnemy1Ship = Content.Load<Texture2D>(@"Textures\TurtleRobot");
-
+            // fill EnemiesType1 array with enemies of type 1
             for (int i = 0; i < iTotalMaxEnemies; i++)
             {
                 EnemiesType1[i] = new Enemy1(content.Load<Texture2D>(@"Textures\TurtleRobot"), 0, 0, 73, 45, 1);
             }
 
+            // fill EnemiesType2 array with enemies of type 2
             for (int i = 0; i < iTotalMaxEnemies2; i++)
             {
-                
                 EnemiesType2[i] = new Enemy2(content.Load<Texture2D>(@"Textures\spacerabbit"), 0, 0, 46, 75, 1);
-                
-
-                //5/19/2012 innitialize sprites for the bullets in each enemy
-                for(int j = 0;j < EnemiesType2[i].TotalOfBullets;j++)
-                {
-                    EnemiesType2[i].bolts[j] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
-                }
-
+                EnemiesType2[i].InitializeBullets(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
             }
 
-            //load content for sound effects
+            boss = new Boss(content.Load<Texture2D>(@"Textures\donald2"), 0, 0, 150, 104, 1); // Create boss
+            boss.InitializeBullets(content.Load<Texture2D>(@"Textures\PlayerAmmo")); // 4/27 innitialize sprites for the boss's bullets
+
+            // set boss's limits in y axes to limits of the ship
+            boss.lowerLimitPosition = lowerLimitShipPosition;
+            boss.upperLimitPosition = upperLimitShipPosition;
+
+            gameHudImage = content.Load<Texture2D>(@"Textures\hud"); // load "HUD"
+            spriteFont = content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
+            
+            //initialize ammo
+            bolts[0] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
+
+            for (int x = 1; x < iMaxBolts; x++)
+                bolts[x] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
+
+            // load content for sound effects
             laserFire = content.Load<SoundEffect>(@"Audio\Laser");
             enemy1Destroyed = content.Load<SoundEffect>(@"Audio\Enemy1Explosion");
             playerDestroyed = content.Load<SoundEffect>(@"Audio\ShipExplosion");
             sorry = content.Load<SoundEffect>(@"Audio\sorryLouder");
             maroon = content.Load<SoundEffect>(@"Audio\maroonLouder");
             ultraMaroon = content.Load<SoundEffect>(@"Audio\ultraMaroonLouder");
+            
+            youFired = content.Load<SoundEffect>(@"Audio\YouFiredLoud");
+            youFiredSoundInstance = youFired.CreateInstance();
+            youFiredSoundInstance.Volume = 1;
+            youFiredSoundInstance.Pitch = 0.1f;
 
-            maroonSoundDuration = maroon.Duration.Seconds; // get duration of maroon effect
+            alien = content.Load<SoundEffect>(@"Audio\Alien");
+            alienSoundInstance = alien.CreateInstance();
+            alienSoundInstance.Volume = 1;
 
+            youFiredSoundDuration = alien.Duration;
 
-            maroonSoundInstance = maroon.CreateInstance();
-            ultraMaroonSoundInstance = ultraMaroon.CreateInstance();
+            maroonSoundInstance = maroon.CreateInstance(); // Create maroon sound instance
+            ultraMaroonSoundInstance = ultraMaroon.CreateInstance(); // create ultra maroon sound instance
+            sorrySoundInstance = sorry.CreateInstance(); // create sorry sound instance
+            
+            maroonSoundDuration = maroon.Duration; // get duration of maroon effect
 
-            sorrySoundInstance = sorry.CreateInstance();
-            //enemy1DestroyedInstance = enemy1Destroyed.CreateInstance();
-            t2dGameScreen = content.Load<Texture2D>(@"Textures\hud"); // load "HUD"
-            spriteFont = content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
-            //initialize ammo
-            bolts[0] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
-            for (int x = 1; x < iMaxBolts; x++)
-                bolts[x] = new Ammo(content.Load<Texture2D>(@"Textures\PlayerAmmo"));
-
-            maroonSoundInstance.Volume = 1;
-            ultraMaroonSoundInstance.Volume = 1;
+            maroonSoundInstance.Volume = 1; // set volume 0 - 1
+            ultraMaroonSoundInstance.Volume = 1; // set volume 0 - 1 
         }
 
         //Helper function for updating Ammo
@@ -179,133 +192,155 @@ namespace Project_Starfighter
             for (int x = 0; x < iMaxBolts; x++)
             {
                 if (bolts[x].IsActive)
+                {
                     bolts[x].Update(gameTime);
+                }
             }
         }
 
-
-        //public void stopExplosionSound()
-        //{
-        //    enemy1Destroyed.Dispose();
-        //}
-
+        // check if player hits any of the enemies
         protected void CheckPlayerHits()
         {
-            for (int x = 0; x < iTotalMaxEnemies; x++)
+            //check only if wave 1 is not over
+            if (!isWave1Over)
             {
-                if (EnemiesType1[x].IsActive)
+                // check for all enemies
+                for (int x = 0; x < iTotalMaxEnemies; x++)
                 {
-                    // If the enemy and ship sprites  collide...
-                    if (Intersects(player.BoundingBox, EnemiesType1[x].CollisionBox))
+                    // check if enemy type 1 is active
+                    if (EnemiesType1[x].IsActive)
                     {
-                        DestroyEnemy(x); // destroy enemy 
+                        // If the enemy and ship sprites  collide...
+                        if (Intersects(player.BoundingBox, EnemiesType1[x].CollisionBox))
+                        {
+                            DestroyEnemy(x); // destroy enemy 
+                            UpdateLives(); // update lives to -= 1
+                            playerDestroyed.Play(); // play sound that represents player being hit
+                            return;
+                        }
 
-                        UpdateLives();
-                        playerDestroyed.Play();
-                        return;
                     }
-                    
                 }
             }
-            for (int x = 0; x < iTotalMaxEnemies2; x++)
-            {
-                if (EnemiesType2[x].IsActive)
-                {
-                    // If the enemy2 and ship sprites  collide...
-                    if (Intersects(player.BoundingBox, EnemiesType2[x].CollisionBox))
-                    {
-                        DestroyEnemy2(x); // destroy enemy 
-                        UpdateLives();
 
-                        //if (hud.lives > 1)
-                        //{
-                        //    hud.lives -= 1;  // subtract one life from player.
-                        //}
-                        //else
-                        //{
-                        //    outOfLivesFlag = true;
-                        //    hud.resetHud();
-                        //    // newGame();
-                        //    //     StartNewWave();
-                        //}
-                        playerDestroyed.Play();
-                        return;
+            // check if boss is active
+            if (isBossActive)
+            {
+                // check if boss is in contact with player
+                if (Intersects(player.BoundingBox, boss.CollisionBox))
+                {
+                    boss.Life -= 10; // subtract 10 from the life of the boss
+
+                    // check if boss has no life if so destroy boss
+                    if (boss.Life <= 0)
+                    {
+                        DestroyBoss(); // destroy boss
+                    }
+
+                    UpdateLives(); // update user lives
+
+                    return;
+                }
+            }
+
+            // only check collision with enemy in wave 2 if wave is not over
+            if (!isWave2Over)
+            {
+                // check each enemy in wave 2
+                for (int x = 0; x < iTotalMaxEnemies2; x++)
+                {
+                    // check if the enemy is active
+                    if (EnemiesType2[x].IsActive)
+                    {
+                        // If the enemy2 and ship sprites  collide...
+                        if (Intersects(player.BoundingBox, EnemiesType2[x].CollisionBox))
+                        {
+                            DestroyEnemy2(x); // destroy enemy 2
+                            UpdateLives(); // update lives
+                            playerDestroyed.Play(); // play sound
+                            return;
+                        }
                     }
                 }
             }
         }
+      
+        // update player lives
         private void UpdateLives()
         {
-            if (hud.lives > 1)
+            // check if player has any life left
+            if (hud.lives > 0)
             {
                 hud.lives -= 1;  // subtract one life from player.
             }
             else
             {
-                outOfLivesFlag = true;
-                hud.resetHud();
+                isOutOfLives = true; // allow starfighter driver class to change screen to menu CALL GAME OVER SCREEN FROM HERE TOO
+                hud.resetHud(); // reset values in hud
             }
         }
+       
         public void newGame()
         {
-            for (int x = 0; x < maxEnemy1; x++)
+            for (int x = 0; x < numberOfEnemiesType1; x++)
                 EnemiesType1[x].newGame();
             
         }
         
+        // method used to stop enemy 2 sound in case screen has to change to game over screen or any other screen. It is called from starfighter
         public SoundEffectInstance Marron
         {
             get { return maroonSoundInstance; }
             set { maroonSoundInstance = value; }
         }
 
+        // method used to stop enemy 2 sound in case screen has to change to game over screen or any other screen. It is called from starfighter
         public SoundEffectInstance UltraMarron
         {
             get { return ultraMaroonSoundInstance; }
             set { ultraMaroonSoundInstance = value; }
         }
 
+        public SoundEffectInstance YouFiredSound
+        {
+            get { return youFiredSoundInstance; }
+            set { youFiredSoundInstance = value; }
+        }
+
+        public SoundEffectInstance AlienSound
+        {
+            get { return alienSoundInstance; }
+            set { alienSoundInstance = value; }
+        }
+
         public override void Update(GameTime gameTime)
         {
-            base.Update(gameTime);
+            base.Update(gameTime); // allows the game component to update itself
+
             fBulletDelayTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
-            //keyboardState = Keyboard.GetState();
-
-            //if (keyboardState.IsKeyDown(Keys.Enter))
-              //  game.Exit();
-
-                        
-
+       
             BackgroundOffset += pixelsToMoveBackgroundPosition; // Automatically move background as soon as the game starts. 
 
+            // decides what happens when left arrow key is pressed
             if (Keyboard.GetState().IsKeyDown(Keys.Left))
             {
-
                 if ((player.X - pixelsToMoveInXPosition) > leftLimitShipPosition) // Check if ship will be within left limit
                 {
-                    //BackgroundOffset -= 1;
-                    player.X -= pixelsToMoveInXPosition;
-                    //if (pixelsToMoveBackgroundPosition > 3)
-                    //{
-                 //       pixelsToMoveBackgroundPosition -= 1;
-                   // }
-
+                    player.X -= pixelsToMoveInXPosition; //  move ship to the left
                 }
             }
 
+            // decides what happens when right arrow key is pressed
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
             {
                 if ((player.X + pixelsToMoveInXPosition) < rightLimitShipPosition)// Check if ship will be within right limit
                 {
-                    BackgroundOffset += 1;
-                    player.X += pixelsToMoveInXPosition;
-                    //if (pixelsToMoveBackgroundPosition < 6)
-                    //{
-                    //    pixelsToMoveBackgroundPosition += 1;
-                    //}
+                    BackgroundOffset += 1; // gives the impression that the ship is moving faster by moving background faster
+                    player.X += pixelsToMoveInXPosition; // moves ship to the right
                 }
             }
 
+            // decides what happens when up arrow key is pressed
             if (Keyboard.GetState().IsKeyDown(Keys.Up))
             {
                 if ((player.Y - pixelsToMoveInYPosition) > upperLimitShipPosition) // Make sure ship does not go over upper part of the HUB
@@ -314,6 +349,7 @@ namespace Project_Starfighter
                 }
             }
 
+            // decides what happens when down arrow key is pressed
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
             {
                 if ((player.Y + pixelsToMoveInYPosition) < lowerLimitShipPosition) // Make sure ship does not go over lower part of the HUB
@@ -323,107 +359,168 @@ namespace Project_Starfighter
             }
             CheckOtherKeys(Keyboard.GetState());
 
-            UpdateAmmo(gameTime);
+            UpdateAmmo(gameTime); // update position of active player bullets
 
-            //5/19/2012 update position of bullets sent from enemy 2
-            for (int i = 0; i < iTotalMaxEnemies2; i++)
+            // Update position of enemy 2 bullets and randomly shoot from enemy 2
+            if (isWave1Over) // enemy will shoot only after wave 2 is over
             {
-                EnemiesType2[i].UpdateAmmo(gameTime);
-                if (endOfWave1 >= 10)
+                //4/19/2012 update position of bullets sent from enemy 2
+                for (int i = 0; i < iTotalMaxEnemies2; i++)
                 {
-                    numb = (int)randomNumber.Next(1000);
-                    if (numb % 49 == 0)
+                    EnemiesType2[i].UpdateAmmo(gameTime); // update position of enemy 2 bullets
+                    
+                    // check if wave 2 is not over if so enemy 2 need to shoot
+                    if(!isWave2Over)
                     {
-                        EnemiesType2[i].FireBullet(0, laserFire);
-                        EnemiesType2[i].BulletDelayTimer = 0.0f;
-                    } 
+                        numb = (int)randomNumber.Next(1000);
+                        if (numb % 49 == 0) // shoot only if random number is a divisible by 49
+                        {
+                            EnemiesType2[i].FireBullet(0, laserFire); // fire
+                            EnemiesType2[i].BulletDelayTimer = 0.0f; // delay between bullets
+                        }
+                    }
                 }
             }
 
-            
-            
-            CheckBulletHits();
-            CheckPlayerHits();
-            CheckEndofWave1();
+            // Only need to update and shoot bullets if boss is active
+            if (boss.IsActive)
+            {
+                boss.UpdateAmmo(gameTime);// 4/27 update position of bullets sent from boss
 
+                // shoot code below
+                numb = (int)randomNumber.Next(1000);
+                if (numb % 10  == 0)
+                {
+                    boss.FireBullet(0, laserFire);
+                    boss.BulletDelayTimer = 0.0f;
+                }
+            }
 
-            if (counter == 0)
+            CheckBulletHits();// check if any bullets are hittin anybody
+            
+            CheckPlayerHits(); // check if player is colliding with any enemy
+
+            //update values necessary to start wave 2
+            if (!isWave1Over)
+            {
+                CheckEndofWave1();
+            }
+
+            //update values necessary to start boss
+            if (!isWave2Over)
+            {
+                CheckEndOfWave2();
+            }
+
+            // check if it is beginning of game
+            if (startNewWaveCounter == 0)
             {
                 StartNewWave();
-                counter = 1;
+                startNewWaveCounter = 1;
             }
 
-            for (int i = 0; i < iTotalMaxEnemies; i++)
+            // update enemies 1 positions
+            if (!isWave1Over)
             {
-                if (EnemiesType1[i].IsActive)
+                for (int i = 0; i < iTotalMaxEnemies; i++)
                 {
-                    EnemiesType1[i].Update(gameTime,
-                      BackgroundOffset);
+                    if (EnemiesType1[i].IsActive)
+                    {
+                        EnemiesType1[i].Update(gameTime,
+                          BackgroundOffset);
+                    }
                 }
             }
 
-            for (int i = 0; i < iTotalMaxEnemies2; i++)
+            // update enemies 2 positions
+            if (!isWave2Over)
             {
-                if (EnemiesType2[i].IsActive)
-                    EnemiesType2[i].Update(gameTime);
+                for (int i = 0; i < iTotalMaxEnemies2; i++)
+                {
+                    if (EnemiesType2[i].IsActive)
+                        EnemiesType2[i].Update(gameTime);
+                }
             }
 
+            // Update boss
+            if (boss.IsActive)
+                boss.Update(gameTime);
 
         }
 
+        // update values for wave 1, and check if it is over
         public void CheckEndofWave1()
         {
             if (endOfWave1 == 10)
             {
+                isWave1Over = true;
                 endOfWave1++;
                 sorrySoundInstance.Volume = 1;
                 sorrySoundInstance.Play();
                 StartSecondWave();
+                
 
             }
         }
 
+        //update values for wave 2, and check if it is over
         public void CheckEndOfWave2()
         {
             if (endOfWave2 == 6)
             {
-                endOfWave2++; //PLACEHOLDER FOR BOSS WAVE CALL
+                isWave2Over = true;
+                endOfWave2++;
+                alienSoundInstance.IsLooped = true;
+                alienSoundInstance.Play();
+                StartBoss();
             }
         }
 
+        // start the boss
+        private void StartBoss()
+        {
+            isBossActive = true;
+            boss.Generate(0);
+        }
+
+        // generate enemies of type 1
         protected void GenerateEnemies1()
         {
-            if (maxEnemy1 < iTotalMaxEnemies)
-                maxEnemy1++;
+            if (numberOfEnemiesType1 < iTotalMaxEnemies)
+                numberOfEnemiesType1++;
 
-            activeEnemy1 = 0;
+            numberOfActiveEnemiesType1 = 0;
 
-            for (int x = 0; x < maxEnemy1; x++)
+            for (int x = 0; x < numberOfEnemiesType1; x++)
             {
                 EnemiesType1[x].Generate(x);
-                activeEnemy1 += 1;
+                numberOfActiveEnemiesType1 += 1;
             }
         }
 
+        // generate enemies of type 2
         protected void GenerateEnemies2()
         {
-            if (maxEnemy2 < iTotalMaxEnemies2)
-                maxEnemy2++;
+            if (numberOfEnemiesType2 < iTotalMaxEnemies2)
+                numberOfEnemiesType2++;
 
-            activeEnemy2 = 0;
+            numberOfActiveEnemiesType2 = 0;
 
-            for (int x = 0; x < maxEnemy2; x++)
+            for (int x = 0; x < numberOfEnemiesType2; x++)
             {
                 EnemiesType2[x].Generate(x);
-                activeEnemy2 += 1;
+                numberOfActiveEnemiesType2 += 1;
             }
         }
 
+        // start wave 1
         public void StartNewWave()
         {
             GenerateEnemies1();
         }
 
+
+        //Start wave 2
         public void StartSecondWave()
         {
             GenerateEnemies2();
@@ -462,8 +559,6 @@ namespace Project_Starfighter
             }
         }
 
-
-
         // method for detecting item collisions
         protected bool Intersects(Rectangle rectA, Rectangle rectB)
         {
@@ -471,31 +566,43 @@ namespace Project_Starfighter
             return (rectA.Right > rectB.Left && rectA.Left < rectB.Right &&
                     rectA.Bottom > rectB.Top && rectA.Top < rectB.Bottom);
         }
-
-        //helper methods after collision detection
-
+   
+        // method called to destroy enemy type 1
         protected void DestroyEnemy(int iEnemy)
         {
-            hud.score += 100;// aarao 4-9-12
-            enemy1Destroyed.Play();
-            endOfWave1++;
-            EnemiesType1[iEnemy].Deactivate();
+            hud.score += 100;// update score if enemy type 1 is destroyed
+            enemy1Destroyed.Play(); // play enemy destroyed sound
+            endOfWave1++; // increment variable endOfWave1
+            EnemiesType1[iEnemy].Deactivate(); // deactivate destroyed enemy
             
         }
 
+        // destroy enemy of type 2
         protected void DestroyEnemy2(int iEnemy)
         {
-            hud.score += 200;// aarao 4-9-12
-            enemy1Destroyed.Play();
+            hud.score += 200;// update score
+            enemy1Destroyed.Play(); // play sound
             endOfWave2++;
             EnemiesType2[iEnemy].Deactivate();
         }
+
+        // destroy boss
+        protected void DestroyBoss()
+        {
+             hud.score += 500;
+            //bossDestroyed.Play();
+            isBossActive = false;
+            boss.Deactivate();
+            isBossDefeated =  true;
+            //CALL FOR GAME OVER SOUND AND SCREEN
+        }
            
+        //remove bullet
         protected void RemoveBullet(int iBullet)
         {
             bolts[iBullet].IsActive = false;
         }
-
+       
         //Method to check for bullet - enemy hits
         protected void CheckBulletHits()
         {
@@ -505,25 +612,90 @@ namespace Project_Starfighter
             {
                 if (bolts[i].IsActive)
                 {
-                    for (int x = 0; x < iTotalMaxEnemies; x++)
-                        if (EnemiesType1[x].IsActive)
-                            if (Intersects(bolts[i].BoundingBox,
-                                           EnemiesType1[x].CollisionBox))
+                    // check first if enemy 1 still exists
+                    if (!isWave1Over)
+                    {
+                        for (int x = 0; x < iTotalMaxEnemies; x++)
+                            if (EnemiesType1[x].IsActive)
+                                if (Intersects(bolts[i].BoundingBox,
+                                               EnemiesType1[x].CollisionBox))
+                                {
+                                    DestroyEnemy(x);
+                                    RemoveBullet(i);
+                                }
+                    }
+                    
+                    // check first if enemy 2 still exists
+                    if (!isWave2Over)
+                    {
+                        for (int x = 0; x < iTotalMaxEnemies2; x++)
+                            if (EnemiesType2[x].IsActive)
+                                if (Intersects(bolts[i].BoundingBox, EnemiesType2[x].CollisionBox))
+                                {
+                                    DestroyEnemy2(x);
+                                    RemoveBullet(i);
+                                }
+                    }
+                        // check first if the boss exists
+                        if (boss.IsActive)
+                        {
+                            if (Intersects(bolts[i].BoundingBox, boss.CollisionBox))
                             {
-                                DestroyEnemy(x);
-                                RemoveBullet(i);
-                            }
+                                youFiredSoundInstance.Play();
+                                boss.Life -= 10; // update boss's life
 
-                    for (int x = 0; x < iTotalMaxEnemies2; x++)
-                        if (EnemiesType2[x].IsActive)
-                            if (Intersects(bolts[i].BoundingBox, EnemiesType2[x].CollisionBox))
-                            {
-                                DestroyEnemy2(x);
+                                // if boss has no life left destroy it
+                                if (boss.Life <= 0)
+                                {
+                                    DestroyBoss();
+                                }
+                                
                                 RemoveBullet(i);
                             }
+                        }
+
                 }
             }
 
+            //check if boss's bullets hits player check if boss is active
+            if (boss.IsActive)
+            {
+                for (int k = 0; k < boss.TotalOfBullets; k++)
+                {
+                    //check only for valid bullets
+                    if (boss.bullets[k].IsActive)
+                    {
+                        if (Intersects(boss.bullets[k].BoundingBox, player.BoundingBox))
+                        {
+                            UpdateLives(); // subtract one life if player is hit by bullet
+
+                            if (!isOutOfLives) // in case player is hit and has life left
+                            {
+                                hitsByBoss += 1; // increase counter for sound purposes
+
+                                //// if player has been hit twice by boss do something
+                                //if (hitsByBoss == 2)
+                                //    isPlayerHitTwiceByBoss = true;
+
+                                //// make sure that boss will only say second sound effect if first sound effect is over - in case player gets hit my bullets in short time.
+                                //if (isPlayerHitTwiceByBoss && (DateTime.Now > youFiredTimeControll + youFiredSoundDuration))
+                                //{
+                                //    youFired.Play();
+                                //}
+                                //else
+                                //{
+                                //    youFired.Play();
+                                //    youFiredTimeControll = DateTime.Now;
+                                //}
+                            }
+                            boss.RemoveBullet(k);
+
+
+                        }
+                    }
+                }
+            }
+            
             
             //check if enemy2's bullet collides with player 5/19/2012
             for (int j = 0; j < iTotalMaxEnemies2; j++)
@@ -540,20 +712,20 @@ namespace Project_Starfighter
                             {
                                 UpdateLives();
 
-                                if (!outOfLivesFlag)
+                                if (!isOutOfLives)
                                 {
                                     hitsByEnemy2 += 1;
                                     if (hitsByEnemy2 == 2)
-                                        hitTwice = true;
+                                        isPlayerHitTwiceByEnemy2 = true;
                                     // make sure that enemy will only say second sound effect if first sound effect is over - in case player gets hit my bullets in short time.
-                                    if (hitTwice && (DateTime.Now.Second > maroonTimeControll + maroonSoundDuration))
+                                    if (isPlayerHitTwiceByEnemy2 && (DateTime.Now > maroonTimeControll + maroonSoundDuration))
                                     {
                                         ultraMaroonSoundInstance.Play();
                                     }
                                     else
                                     {
                                         maroonSoundInstance.Play();
-                                        maroonTimeControll = DateTime.Now.Second;                                        
+                                        maroonTimeControll = DateTime.Now;                                        
                                     }
                                 }
                                 EnemiesType2[j].RemoveBullet(k);
@@ -566,37 +738,29 @@ namespace Project_Starfighter
             }
         }
 
-        //public void ResetSoundEffects()
-        //{
-        //    //hitsByEnemy2 = 0;
-        //    //hitTwice = false;
-        //    enemy1DestroyedInstance.Pause();
-        //}
-
+        // method that draws the sprites 
         public override void Draw(GameTime gameTime)
         {
-            // Draw the background panel, offset by the player's location
-            spriteBatch.Draw(t2dBackground,
-                                new Rectangle(-1 * iBackgroundOffset,
+            // draw the background
+            spriteBatch.Draw(gameBackgroundImage,
+                                new Rectangle(-1 * gameBackgroundOffset,
                                 0, backgroundFileWidth,
                                 heightOfBackgroundToBeDisplayed),
                                 Color.White);
 
-            // If the right edge of the background panel will end 
-            // within the bounds of the display, draw a second copy 
-            // of the background at that location.
-            if (iBackgroundOffset > backgroundFileWidth - widthOfBackgroundToBeDisplayed)
+            // keep background constant 
+            if (gameBackgroundOffset > backgroundFileWidth - widthOfBackgroundToBeDisplayed)
             {
-                spriteBatch.Draw(t2dBackground,
+                spriteBatch.Draw(gameBackgroundImage,
                                     new Rectangle(
-                                    (-1 * iBackgroundOffset) + backgroundFileWidth,
+                                    (-1 * gameBackgroundOffset) + backgroundFileWidth,
                                     0,
                                     backgroundFileWidth,
                                     heightOfBackgroundToBeDisplayed),
                                     Color.White);
             }
-            //spriteBatch.Draw(image, imageRectangle, Color.White);
-            spriteBatch.Draw(t2dGameScreen, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUD" 
+
+            spriteBatch.Draw(gameHudImage, new Rectangle(0, 0, 800, 600), Color.White); // draw game "HUD" 
 
             // Pass drawing style to hud function
             hud.Draw(spriteBatch, spriteFont);
@@ -612,39 +776,54 @@ namespace Project_Starfighter
                 }
             }
 
-            for (int i = 0; i < maxEnemy1; i++)
+            for (int i = 0; i < numberOfEnemiesType1; i++)
             {
                 if (EnemiesType1[i].IsActive)
                     EnemiesType1[i].Draw(spriteBatch,
                       BackgroundOffset);
             }
 
-            for (int i = 0; i < maxEnemy2; i++)
+            // if wave 1 is over make sure enemy 2 bullets will be drawn
+            if (isWave1Over)
             {
-                EnemiesType2[i].DrawBullets(spriteBatch); //5/19/2012
-
-                if (EnemiesType2[i].IsActive)
+                for (int i = 0; i < numberOfEnemiesType2; i++)
                 {
-                    EnemiesType2[i].Draw(spriteBatch, BackgroundOffset);   
+                    EnemiesType2[i].DrawBullets(spriteBatch); //5/19/2012
+
+                    if (EnemiesType2[i].IsActive)
+                    {
+                        EnemiesType2[i].Draw(spriteBatch, BackgroundOffset);
+                    }
                 }
             }
+
+            // draw boss, and bosses bullets 
+            if (boss.IsActive)
+            {
+                boss.DrawBullets(spriteBatch);
+                boss.Draw(spriteBatch, BackgroundOffset);
+            }
+
 
             base.Draw(gameTime);
         }
 
+        // get and set the background offset
         public int BackgroundOffset
         {
-            get { return iBackgroundOffset; }
+            get { return gameBackgroundOffset; }
             set
             {
-                iBackgroundOffset = value;
-                if (iBackgroundOffset < 0)
+                gameBackgroundOffset = value;
+
+                // make sure that screen will never be without a background
+                if (gameBackgroundOffset < 0)
                 {
-                    iBackgroundOffset += backgroundFileWidth;
+                    gameBackgroundOffset += backgroundFileWidth;
                 }
-                if (iBackgroundOffset > backgroundFileWidth)
+                if (gameBackgroundOffset > backgroundFileWidth)
                 {
-                    iBackgroundOffset -= backgroundFileWidth;
+                    gameBackgroundOffset -= backgroundFileWidth;
                 }
             }
         }

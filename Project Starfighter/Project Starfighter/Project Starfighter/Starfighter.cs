@@ -25,6 +25,8 @@ namespace Project_Starfighter
         bool startMenuSong = true;
         Song levelOneSong;
         bool startLevelOneSong = false;
+        
+
 
         // create the instruction page stuff
         public Texture2D bookpages; //InstructionBook background
@@ -94,7 +96,7 @@ namespace Project_Starfighter
             //instruction menu test needs
             bookpages = Content.Load<Texture2D>("InstructionBook");
 
-
+            
 
             //  background = new Background(Content,
             //                        @"Textures\PrimaryBackground"); // call background constructor
@@ -175,7 +177,7 @@ namespace Project_Starfighter
         {
             keyboardState = Keyboard.GetState();
             // aarao
-            if (!actionScreen.outOfLivesFlag)
+            if (!(actionScreen.isOutOfLives || actionScreen.isBossDefeated ))
             {
                 if (activeScreen == startScreen)
                 {
@@ -204,7 +206,7 @@ namespace Project_Starfighter
             }
             else
             {
-                actionScreen.outOfLivesFlag = false;
+                actionScreen.isOutOfLives = false;
                 activeScreen.Hide();
                 activeScreen.Enabled = false;
                 activeScreen = startScreen;
@@ -213,6 +215,8 @@ namespace Project_Starfighter
                 //actionScreen.ResetSoundEffects();
                 actionScreen.Marron.Stop(); // stop enemy sound effect before playing menu sound
                 actionScreen.UltraMarron.Stop();// stop enemy sound effect before playing menu sound
+                actionScreen.YouFiredSound.Stop();
+                actionScreen.AlienSound.Stop();
                 //actionScreen.ResetSoundEffects();
                 //Components.Remove(actionScreen);
                 LoadContent(); // reset game and start from beginning
@@ -321,6 +325,12 @@ namespace Project_Starfighter
                 //actionScreen.StartNewWave();
                 //actionScreen.StartSecondWave();
                 startLevelOneSong = false;
+            }
+
+            if (actionScreen.isBossActive)
+            {
+                MediaPlayer.Stop();
+                //MediaPlayer.Play(bossSong);
             }
 
             if (CheckKey(Keys.Escape))

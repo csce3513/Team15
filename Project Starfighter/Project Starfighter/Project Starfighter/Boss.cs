@@ -5,31 +5,34 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
 
 namespace Project_Starfighter
 {
-    class Enemy2
+    class Boss
     {
         AnimatedSprite asSprite;
 
         private int xPosition = 0;
         private int yPosition = 0;
-        private int startY;
-        private static int MaxYChange = 50;
-        private bool isEnemyActive = false;
+        private int startY = 270;
+        private static int MaxYChange = 200;
+        private bool isBossActive = false;
         private bool changeDirection = false;
+        private int life = 100;
+
+        public int lowerLimitPosition;
+        public int upperLimitPosition;
 
         
-        private int verticalOffset = 30;   //added to ship position so it looks like it comes from front instead of cockpit
+        private int verticalOffset = 30;   //added to boss position so it looks like it comes from front instead of back
         private static int maximumBullets = 40;      // total number of bullets
-        public Ammo[] bolts = new Ammo[maximumBullets]; //array that holds the bullets
+        public Ammo[] bullets = new Ammo[maximumBullets]; //array that holds the bullets
         private float fBulletDelayTimer = 0.0f;     //timer delay for spriteanimator
         private float fFireDelay = 0.15f;           //timer delay for firing rate
         
 
-        // Constructor for Enemy2
-        public Enemy2(Texture2D texture, int X, int Y, int W, int H, int Frames)
+        // Constructor for Boss
+        public Boss(Texture2D texture, int X, int Y, int W, int H, int Frames)
         {
             asSprite = new AnimatedSprite(texture, X, Y, W, H, Frames);
         }
@@ -46,22 +49,22 @@ namespace Project_Starfighter
             // makes sure the bullets are in its correct position after fired
             for (int x = 0; x < maximumBullets; x++)
             {
-                if (bolts[x].IsActive)
-                    bolts[x].UpdateEnemyAmmo(gameTime);
+                if (bullets[x].IsActive)
+                    bullets[x].UpdateEnemyAmmo(gameTime);
             }
         }
 
         //Helper Function for Ammo Firing
         public void FireBullet(int iVerticalOffset, SoundEffect laserSound)
         {
-            if (this.isEnemyActive)
+            if (this.isBossActive)
             {
                 // Find and fire a free bullet
                 for (int x = 0; x < maximumBullets; x++)
                 {
-                    if (!bolts[x].IsActive)
+                    if (!bullets[x].IsActive)
                     {
-                        bolts[x].Fire(xPosition - 15, yPosition + verticalOffset + iVerticalOffset);
+                        bullets[x].Fire(xPosition - 15, yPosition + verticalOffset + iVerticalOffset);
                         laserSound.Play();
                         break;
                     }
@@ -71,7 +74,7 @@ namespace Project_Starfighter
 
         public void RemoveBullet(int iBullet)
         {
-            bolts[iBullet].IsActive = false;
+            bullets[iBullet].IsActive = false;
         }
 
         public float FireDelay
@@ -80,6 +83,11 @@ namespace Project_Starfighter
             set { fFireDelay = value; }
         }
 
+        public int Life
+        {
+            get { return life; }
+            set { life = value; }
+        }
         public float BulletDelayTimer
         {
             get { return fBulletDelayTimer; }
@@ -92,30 +100,22 @@ namespace Project_Starfighter
             for (int i = 0; i < maximumBullets; i++)
             {
                 // Only draw active bullets
-                if (bolts[i].IsActive)
+                if (bullets[i].IsActive)
                 {
-                    bolts[i].Draw(spbatch);
+                    bullets[i].Draw(spbatch);
                 }
             }
         }
 
-        public void InitializeBullets(Texture2D texture)
-        {
-            for (int j = 0; j < maximumBullets; j++)
-            {
-                bolts[j] = new Ammo(texture);
-            }
-        }
         public void Deactivate()
         {
-            isEnemyActive = false;
+            isBossActive = false;
         }
 
         public bool IsActive
         {
-            get { return isEnemyActive; }
+            get { return isBossActive; }
         }
-
 
 
         public int X
@@ -132,14 +132,14 @@ namespace Project_Starfighter
 
         public void Generate(int enemyNumber)
         {
-            xPosition = 750;
-
-            for (int a = 0; a <= enemyNumber; a++)
-            {
-                yPosition = a * 75 + 75;
-                startY = yPosition;
-            }
-            isEnemyActive = true;
+            xPosition = 600;
+            yPosition = 300;
+            //for (int a = 0; a <= enemyNumber; a++)
+            //{
+            //    yPosition = a * 75 + 75;
+            //    startY = yPosition;
+            //}
+            isBossActive = true;
         }
 
         public bool getChangeDirection
@@ -147,28 +147,53 @@ namespace Project_Starfighter
             get { return changeDirection; }
         }
 
+        // modify y position
         public int GetDrawY()
         {
             int Y = yPosition;
-            if (Y > (MaxYChange + startY))
+            if ((Y > (MaxYChange + startY)))
                 changeDirection = true;
-            if (Y < (startY - MaxYChange))
+            if ((Y < (startY - MaxYChange)))
                 changeDirection = false;
 
             return Y;
+        }
+
+        private bool isBossCrossingUpperBount()
+        {
+            if (yPosition >= upperLimitPosition)
+                return true;
+            else
+                return false;
+        }
+
+        private bool isBossCrossingLowerBount()
+        {
+            if (yPosition <= lowerLimitPosition)
+                return true;
+            else
+                return false;
+        }
+
+        public void InitializeBullets(Texture2D texture)
+        {
+            for (int j = 0; j < maximumBullets; j++)
+            {
+                bullets[j] = new Ammo(texture);
+            }
         }
 
         public Rectangle CollisionBox
         {
             get
             {
-                return new Rectangle(xPosition + 2, yPosition + 2, 42, 71);
+                return new Rectangle(xPosition + 2, yPosition + 2, 150, 104);
             }
         }
 
         public void Draw(SpriteBatch sb, int iLocation)
         {
-            if (isEnemyActive)
+            if (isBossActive)
             {
                 asSprite.Draw(sb, xPosition, GetDrawY(), false);
             }
@@ -178,11 +203,11 @@ namespace Project_Starfighter
         {
                 if (changeDirection == false)
                 {
-                    yPosition += 1;
+                    yPosition += 5;
                 }
                 else
                 {
-                    yPosition += -1;
+                    yPosition -= 5;
                 }
               
             asSprite.Update(gametime);
