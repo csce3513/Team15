@@ -257,7 +257,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\youFiredLoud.xnb</Output>
-      <Time>2012-04-27T22:19:45.9306693-05:00</Time>
+      <Time>2012-04-28T09:01:46.7766294-05:00</Time>
     </Item>
     <Item>
       <Source>Audio\Alien.wav</Source>
@@ -266,7 +266,16 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Alien.xnb</Output>
-      <Time>2012-04-27T23:44:34.0086907-05:00</Time>
+      <Time>2012-04-28T09:04:01.2934021-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\deal.wav</Source>
+      <Name>Audio\deal</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\deal.xnb</Output>
+      <Time>2012-04-28T09:35:13.2402752-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

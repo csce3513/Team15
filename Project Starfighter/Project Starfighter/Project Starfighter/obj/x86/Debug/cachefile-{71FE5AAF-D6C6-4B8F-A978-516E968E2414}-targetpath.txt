@@ -33,3 +33,4 @@ Content\Textures\boss.xnb
 Content\Textures\donald2.xnb
 Content\Audio\youFiredLoud.xnb
 Content\Audio\Alien.xnb
+Content\Audio\deal.xnb

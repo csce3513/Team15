@@ -21,11 +21,13 @@ namespace Project_Starfighter
         private SoundEffect enemy1Destroyed;
         private SoundEffect youFired;
         private SoundEffect alien;
+        private SoundEffect deal;
         private SoundEffectInstance maroonSoundInstance; // the type SoundEffectInstance gives options to modify values such as pitch and volume
         private SoundEffectInstance ultraMaroonSoundInstance; // the type SoundEffectInstance gives options to modify values such as pitch and volume
         private SoundEffectInstance sorrySoundInstance; // the type SoundEffectInstance gives options to modify values such as pitch and volume
         public SoundEffectInstance youFiredSoundInstance;
         private SoundEffectInstance alienSoundInstance;
+        private SoundEffectInstance dealSoundInstance;
         
         private TimeSpan maroonSoundDuration; // used to check the duration of the sound maroon. 
         private DateTime maroonTimeControll; // holds the datetime when the maroon sound is played
@@ -172,6 +174,10 @@ namespace Project_Starfighter
             alien = content.Load<SoundEffect>(@"Audio\Alien");
             alienSoundInstance = alien.CreateInstance();
             alienSoundInstance.Volume = 1;
+
+            deal = content.Load<SoundEffect>(@"Audio\deal");
+            dealSoundInstance = deal.CreateInstance();
+            dealSoundInstance.Volume = 1;
 
             youFiredSoundDuration = alien.Duration;
 
@@ -673,6 +679,7 @@ namespace Project_Starfighter
                             {
                                 hitsByBoss += 1; // increase counter for sound purposes
 
+                                dealSoundInstance.Play();
                                 //// if player has been hit twice by boss do something
                                 //if (hitsByBoss == 2)
                                 //    isPlayerHitTwiceByBoss = true;
