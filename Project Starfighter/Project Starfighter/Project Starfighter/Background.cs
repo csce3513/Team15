@@ -13,35 +13,41 @@ namespace Project_Starfighter
         // Textures to hold the two background images
         Texture2D t2dBackground;
 
+        // the next two lines hold the width and height of the background images. 
+        private int backgroundFileWidth = 0;
+        private int backgroundFileHeight = 0;
+
+        private int backgroundOffset;// will hold the initial background offset
+
         // the next two lines determine how large the background will have when displayed
         private int widthOfBackgroundToBeDisplayed = 1280;
         private int heightOfBackgroundToBeDisplayed = 720;
 
-        // the next four lines hold the width and height of the background images. 
-        private int backgroundFileWidth = 0;
-        private int backgroundFileHeight = 0;
-
-
-        // the next two lines defines how many pixels before the screen begins is the background image going to start
-        private int iBackgroundOffset;
-        private int iParallaxOffset;
-
-        public int BackgroundOffset
+        // draw the background
+        public void Draw(SpriteBatch spriteBatch)
         {
-            get { return iBackgroundOffset; }
-            set
+            // Draw the background panel, offset by the player's location
+            spriteBatch.Draw(t2dBackground,
+                                new Rectangle(-1 * backgroundOffset,
+                                0, backgroundFileWidth,
+                                heightOfBackgroundToBeDisplayed),
+                                Color.White);
+
+            // If the right edge of the background panel will end 
+            // within the bounds of the display, draw a second copy 
+            // of the background at that location.
+            if (backgroundOffset > backgroundFileWidth - widthOfBackgroundToBeDisplayed)
             {
-                iBackgroundOffset = value;
-                if (iBackgroundOffset < 0)
-                {
-                    iBackgroundOffset += backgroundFileWidth;
-                }
-                if (iBackgroundOffset > backgroundFileWidth)
-                {
-                    iBackgroundOffset -= backgroundFileWidth;
-                }
+                spriteBatch.Draw(t2dBackground,
+                                    new Rectangle(
+                                    (-1 * backgroundOffset) + backgroundFileWidth,
+                                    0,
+                                    backgroundFileWidth,
+                                    heightOfBackgroundToBeDisplayed),
+                                    Color.White);
             }
         }
+        
 
         public int BackgroundWidth
         {
@@ -67,13 +73,32 @@ namespace Project_Starfighter
             set { backgroundFileHeight = value; }
         }
 
+        // get/set the background offset
+        public int BackgroundOffset
+        {
+            get { return backgroundOffset; }
+
+            set
+            {
+                backgroundOffset = value;
+                if (backgroundOffset < 0) // if background offset is negative add the size of the file to the backgorund in order for the background to be continuously shown
+                {
+                    backgroundOffset += backgroundFileWidth;
+                }
+                if (backgroundOffset > backgroundFileWidth)// if background offset is bigger thatn the size of the background file subtract the size of the file from the backgorund in order for the background to be continuously shown
+                {
+                    backgroundOffset -= backgroundFileWidth;
+                }
+            }
+        }
+
         // constructor for testing 
         public Background()
         {
 
         }
 
-        // Constructor when passed a content manager and a single string
+        // constructor
         public Background(ContentManager content, string sBackground)
         {
 
@@ -82,28 +107,6 @@ namespace Project_Starfighter
             backgroundFileHeight = t2dBackground.Height;
         }
 
-        public void Draw(SpriteBatch spriteBatch)
-        {
-            // Draw the background panel, offset by the player's location
-            spriteBatch.Draw(t2dBackground,
-                                new Rectangle(-1 * iBackgroundOffset,
-                                0, backgroundFileWidth,
-                                heightOfBackgroundToBeDisplayed),
-                                Color.White);
-
-            // If the right edge of the background panel will end 
-            // within the bounds of the display, draw a second copy 
-            // of the background at that location.
-            if (iBackgroundOffset > backgroundFileWidth - widthOfBackgroundToBeDisplayed)
-            {
-                spriteBatch.Draw(t2dBackground,
-                                    new Rectangle(
-                                    (-1 * iBackgroundOffset) + backgroundFileWidth,
-                                    0,
-                                    backgroundFileWidth,
-                                    heightOfBackgroundToBeDisplayed),
-                                    Color.White);
-            }
-        }
+    
     }
 }

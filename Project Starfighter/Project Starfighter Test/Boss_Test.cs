@@ -23,6 +23,7 @@ namespace Project_Starfighter_Test
         static int Frames = 1;
         Boss boss = new Boss(texture, X, Y, W, H, Frames);
 
+        // test if boss can be deactivated
         [TestMethod]
         public void Deactivate_Test()
         {
@@ -30,12 +31,14 @@ namespace Project_Starfighter_Test
             Assert.IsFalse(boss.IsActive);
         }
 
+        // test if boss is initially set to inactive
         [TestMethod]
         public void IsActive_Test()
         {
             Assert.AreEqual(false, boss.IsActive);
         }
 
+        // test if boss's x position can be changed
         [TestMethod]
         public void X_Test()
         {
@@ -44,6 +47,7 @@ namespace Project_Starfighter_Test
             Assert.AreEqual(xtest, boss.X);
         }
 
+        // test if boss's x position can be changed
         [TestMethod]
         public void Y_Test()
         {
@@ -52,6 +56,7 @@ namespace Project_Starfighter_Test
             Assert.AreEqual(ytest, boss.Y);
         }
 
+        // test if the boss will be activated in the correct position 
         [TestMethod]
         public void Generate_Test()
         {
@@ -61,6 +66,7 @@ namespace Project_Starfighter_Test
             Assert.IsTrue(boss.IsActive);
         }
 
+        // check if the method that changes the boss's direction in case it is out of the limits is working
         [TestMethod]
         public void GetDrawY_Test()
         {
@@ -75,6 +81,7 @@ namespace Project_Starfighter_Test
 
         }
 
+        // test if the bounding box is the desired size of the boss's current image
         [TestMethod]
         public void BoundingBox_Test()
         {

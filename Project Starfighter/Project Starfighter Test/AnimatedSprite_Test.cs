@@ -11,14 +11,16 @@ namespace Project_Starfighter_Test
     [TestClass]
     public class AnimatedSprite_Test
     {
-        AnimatedSprite animatedSprite;
+        AnimatedSprite animatedSprite; // create new animated sprite
      
-
+        // constructor 
         public AnimatedSprite_Test()
         {
-            animatedSprite = new AnimatedSprite();
+            animatedSprite = new AnimatedSprite(); // initiate animated sprite
            
         }
+
+        // test if x position is being set correctly
         [TestMethod]
         public void XPosition_Test()
         {
@@ -26,6 +28,7 @@ namespace Project_Starfighter_Test
             Assert.IsTrue(11 == animatedSprite.X);
         }
 
+        // test if y position is being set correctly
         [TestMethod]
         public void YPosition_Test()
         {
@@ -33,20 +36,7 @@ namespace Project_Starfighter_Test
             Assert.IsTrue(12 == animatedSprite.Y);
         }
 
-        [TestMethod]
-        public void Frame_Test()
-        {
-            animatedSprite.Frame = 3;
-            Assert.IsTrue(3 == animatedSprite.Frame);
-        }
-
-        [TestMethod]
-        public void FrameLength_Test()
-        {
-            animatedSprite.FrameLength = 2;
-            Assert.IsTrue(2 == animatedSprite.FrameLength);
-        }
-
+        // test if bool is animating is being set properly
         [TestMethod]
         public void IsAnimating_Test()
         {
@@ -54,6 +44,7 @@ namespace Project_Starfighter_Test
             Assert.IsTrue(false == animatedSprite.IsAnimating);
         }
 
+        // test if rectangle that represents the sprite is being set properly
         [TestMethod]
         public void GetSourceRectangle_Test()
         {
@@ -62,15 +53,5 @@ namespace Project_Starfighter_Test
             Assert.AreEqual(r, r2);
         }
 
-        [TestMethod]
-        public void Update_Test()
-        {
-            animatedSprite.IsAnimating = true;
-            animatedSprite.Elapsed = 1;
-            animatedSprite.Frame = 2;
-         
-            Assert.IsTrue(2 == animatedSprite.Frame);
-
-        }
     }
 }

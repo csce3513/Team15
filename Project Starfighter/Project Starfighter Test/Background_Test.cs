@@ -13,10 +13,11 @@ namespace Project_Starfighter_Test
     [TestClass]
     public class Background_Test
     {
-        Background background;
+        Background background; // create background
+
         public Background_Test()
         {
-            background = new Background();
+            background = new Background(); // initiate background
         }
 
         private TestContext testContextInstance;
@@ -59,6 +60,7 @@ namespace Project_Starfighter_Test
         //
         #endregion
 
+        // test if the background offset value can be modified
         [TestMethod]
         public void BackgroundOffset_Test()
         {
@@ -66,6 +68,7 @@ namespace Project_Starfighter_Test
             Assert.IsTrue(1 == background.BackgroundOffset);
         }
 
+        // test if the background width can be modified to adjust to users preferences
         [TestMethod]
         public void BackgroundWidth_Test()
         {
@@ -73,25 +76,12 @@ namespace Project_Starfighter_Test
             Assert.IsTrue(2 == background.BackgroundWidth);
         }
 
+        // test if the background height can be modified to adjust to users preferences
         [TestMethod]
         public void BackgroundHeight_Test()
         {
             background.BackgroundHeight = 2;
             Assert.IsTrue(2 == background.BackgroundHeight);
-        }
-
-        [TestMethod]
-        public void BackgroundFileWidth_Test()
-        {
-            background.BackgroundFileWidth = 3;
-            Assert.IsTrue(3 == background.BackgroundFileWidth);
-        }
-
-        [TestMethod]
-        public void BackgroundFileHeight_Test()
-        {
-            background.BackgroundFileHeight = 4;
-            Assert.IsTrue(4 == background.BackgroundFileHeight);
         }
     }
 }

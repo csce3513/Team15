@@ -146,9 +146,7 @@ namespace Project_Starfighter
             boss = new Boss(content.Load<Texture2D>(@"Textures\donald2"), 0, 0, 150, 104, 1); // Create boss
             boss.InitializeBullets(content.Load<Texture2D>(@"Textures\PlayerAmmo")); // 4/27 innitialize sprites for the boss's bullets
 
-            // set boss's limits in y axes to limits of the ship
-            boss.lowerLimitPosition = lowerLimitShipPosition;
-            boss.upperLimitPosition = upperLimitShipPosition;
+            
 
             gameHudImage = content.Load<Texture2D>(@"Textures\hud"); // load "HUD"
             spriteFont = content.Load<SpriteFont>(@"Fonts\Pericles"); // load font
@@ -456,7 +454,7 @@ namespace Project_Starfighter
                 }
             }
 
-            // Update boss
+            // Update boss's position on the screen
             if (boss.IsActive)
                 boss.Update(gameTime);
 
@@ -830,6 +828,8 @@ namespace Project_Starfighter
             }
         }
 
+
+        // if you don't understand the next 4 methods you shouldn't be reading this
         public int BackgroundWidth
         {
             get { return widthOfBackgroundToBeDisplayed; }
