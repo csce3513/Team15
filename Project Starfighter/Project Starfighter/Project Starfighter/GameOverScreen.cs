@@ -14,7 +14,9 @@ namespace Project_Starfighter
         Rectangle imageRectangle;
         SpriteFont fontation;
         Vector2 position;
+        Vector2 position2;
         Color normal = Color.White;
+        string score = "0";
 
         /// <summary>
         /// Allows the game component to set and return which menu item was selected.
@@ -46,7 +48,10 @@ namespace Project_Starfighter
             fontation = spriteFont;
 
             position.X = 275;
-            position.Y = 400;
+            position.Y = 250;
+
+            position2.X = 275;
+            position2.Y = 300;
 
             imageRectangle = new Rectangle(0, 0, Game.Window.ClientBounds.Width, Game.Window.ClientBounds.Height);
 
@@ -64,6 +69,13 @@ namespace Project_Starfighter
             base.Update(gameTime);
         }
 
+        public void updateScore(int scoreCard)
+        {
+            int place = scoreCard;
+            score = "Your final score was: ";
+            score += place.ToString();
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -72,6 +84,7 @@ namespace Project_Starfighter
         {
             spriteBatch.Draw(image, imageRectangle, Color.White);
             spriteBatch.DrawString(fontation,"Game Over",position,normal);
+            spriteBatch.DrawString(fontation, score, position2, normal);
             base.Draw(gameTime);
         }
     }

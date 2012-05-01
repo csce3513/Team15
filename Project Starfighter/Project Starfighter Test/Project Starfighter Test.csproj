@@ -63,11 +63,13 @@
     <Compile Include="Boss_Test.cs" />
     <Compile Include="Enemy1_Test.cs" />
     <Compile Include="Enemy2_Test.cs" />
+    <Compile Include="GameOverScreen_Test.cs" />
     <Compile Include="MenuComponent_Test.cs" />
     <Compile Include="Player_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShipMovements.cs" />
     <Compile Include="Starfighter_Test.cs" />
+    <Compile Include="VictoryScreen_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Project Starfighter\Project Starfighter\Project Starfighter.csproj">

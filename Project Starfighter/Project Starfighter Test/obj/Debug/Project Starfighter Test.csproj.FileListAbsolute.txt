@@ -136,3 +136,5 @@ C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Star
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.dll
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\gameover.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\victory.xnb

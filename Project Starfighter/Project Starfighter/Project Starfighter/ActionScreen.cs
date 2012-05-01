@@ -108,13 +108,16 @@ namespace Project_Starfighter
         private Random randomNumber = new Random();
         private int hitsByEnemy2 = 0;
         public bool isPlayerHitTwiceByEnemy2 = false; // tells if player is hit twice by enemy2
-               
-        //// constructor for test purposes
-        //public ActionScreen()
-        //    : base(null, null)
-        //{
 
-        //}
+        //hold the value of the score to pass onto victory and game over screens.
+        public int passScore = 0;
+
+        // constructor for test purposes
+        public ActionScreen()
+            : base(null, null)
+        {
+
+        }
 
         public ActionScreen(Game game, SpriteBatch spriteBatch)
             :base(game,spriteBatch)
@@ -283,6 +286,7 @@ namespace Project_Starfighter
             }
             else
             {
+                passScore = hud.score;
                 isOutOfLives = true; // allow starfighter driver class to change screen to menu CALL GAME OVER SCREEN FROM HERE TOO
                 hud.resetHud(); // reset values in hud
             }
@@ -460,6 +464,8 @@ namespace Project_Starfighter
             if (boss.IsActive)
                 boss.Update(gameTime);
 
+            //update final score
+            //passScore = hud.score;
         }
 
         // update values for wave 1, and check if it is over
@@ -608,6 +614,7 @@ namespace Project_Starfighter
             isBossActive = false;
             boss.Deactivate();
             isBossDefeated =  true;
+            passScore = hud.score;
             //CALL FOR GAME OVER SOUND AND SCREEN
         }
            

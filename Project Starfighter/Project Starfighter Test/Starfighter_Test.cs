@@ -74,34 +74,34 @@ namespace Project_Starfighter_Test
             Assert.IsFalse(startLevelOneSong);
         }
 
-        [TestMethod]
-        public void HandleQuitScreen_Test
-        {
+        //[TestMethod]
+        //public void HandleQuitScreen_Test
+        //{
 
-        }
+        //}
 
-                [TestMethod]
-        public void HandleInstructionsScreen_Test
-        {
+        //        [TestMethod]
+        //public void HandleInstructionsScreen_Test
+        //{
 
-        }
+        //}
 
-                [TestMethod]
-        public void HandleCreditScreen_Test
-        {
+        //        [TestMethod]
+        //public void HandleCreditScreen_Test
+        //{
 
-        }
+        //}
 
-                [TestMethod]
-        public void HandleGameOverScreen_Test
-        {
+        //        [TestMethod]
+        //public void HandleGameOverScreen_Test
+        //{
 
-        }
+        //}
 
-        [TestMethod]
-        public void HandleVictoryScreen_Test
-        {
+        //[TestMethod]
+        //public void HandleVictoryScreen_Test
+        //{
 
-        }
+        //}
     }
 }

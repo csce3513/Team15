@@ -51,6 +51,8 @@ namespace Project_Starfighter
         private GameOverScreen gOverScreen; // create instance of the game over screen
         private VictoryScreen victoryScreen; // create instance of the victory screen
 
+        public int finalScore;
+
         /// <summary>
         /// 
         /// </summary>
@@ -128,13 +130,13 @@ namespace Project_Starfighter
                 this,
                 spriteBatch,
                 Content.Load<SpriteFont>("menufont"),
-                Content.Load<Texture2D>("alienmetal"));
+                Content.Load<Texture2D>(@"Textures\gameover"));
             Components.Add(gOverScreen);
             gOverScreen.Hide();
 
             victoryScreen = new VictoryScreen(this,spriteBatch,
                  Content.Load<SpriteFont>("menufont"),
-                 Content.Load<Texture2D>("alienmetal"));
+                 Content.Load<Texture2D>(@"Textures\victory"));
             Components.Add(victoryScreen);
             victoryScreen.Hide();
 
@@ -208,7 +210,7 @@ namespace Project_Starfighter
                 {
                     HandleVictoryScreen();
                 }
-
+                
             base.Update(gameTime);
             oldKeyboardState = keyboardState;
 
@@ -223,6 +225,7 @@ namespace Project_Starfighter
             {
                 actionScreen.isOutOfLives = false;
 
+                gOverScreen.updateScore(finalScore);
                 activeScreen.Enabled = false;
                 activeScreen = gOverScreen;
                 activeScreen.Show();
@@ -231,6 +234,7 @@ namespace Project_Starfighter
             {
                 actionScreen.isBossDefeated = false;
 
+                victoryScreen.updateScore(finalScore);
                 activeScreen.Enabled = false;
                 activeScreen = victoryScreen;
                 activeScreen.Show();
@@ -318,6 +322,7 @@ namespace Project_Starfighter
             }
             if (actionScreen.isOutOfLives)
             {
+                finalScore = actionScreen.passScore;
                 activeScreen.Hide(); // hide the active screen - the game screen
                 activeScreen.Enabled = false; // deseable the active screen - the game screen
                 activeScreen = startScreen; // set the active screen back to the start screen
@@ -335,6 +340,7 @@ namespace Project_Starfighter
             }
             else if (actionScreen.isBossDefeated)
             {
+                finalScore = actionScreen.passScore;
                 activeScreen.Hide(); // hide the active screen - the game screen
                 activeScreen.Enabled = false; // deseable the active screen - the game screen
                 activeScreen = startScreen; // set the active screen back to the start screen
@@ -350,6 +356,7 @@ namespace Project_Starfighter
                 MediaPlayer.Play(victrySong); // play victory song
                 activeScreen.Show(); // show screen
             }
+            
         }
 
         private void HandleQuitScreen()
@@ -383,6 +390,7 @@ namespace Project_Starfighter
                     activeScreen = startScreen; // sets the start screen to active
                     MediaPlayer.Play(mainMenuSong); //plays the menu song
                     activeScreen.Show(); // shows the start screen
+                    finalScore = 0;
                 }
             }
         }
@@ -401,6 +409,7 @@ namespace Project_Starfighter
                     activeScreen = startScreen; // sets the start screen to active
                     MediaPlayer.Play(mainMenuSong); //plays the menu song
                     activeScreen.Show(); // shows the start screen
+                    finalScore = 0;
                 }
             }
         }

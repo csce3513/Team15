@@ -190,3 +190,9 @@ C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Star
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.exe
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.pdb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\gameover.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\victory.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.exe.manifest
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.application
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.exe.manifest
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\obj\x86\Debug\Project Starfighter.application
