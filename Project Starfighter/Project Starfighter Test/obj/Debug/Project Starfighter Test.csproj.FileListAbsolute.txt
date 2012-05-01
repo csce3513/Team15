@@ -1,38 +1,3 @@
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\Hud.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PrimaryBackground.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\alienmetal.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\instruction.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\menu.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\menu.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PlayerShip.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\PlayerAmmo.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PlayerAmmo.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\TurtleRobot.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Fonts\Pericles.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\menufont.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\GameOver.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Intro.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\LevelOne.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Enemy1Explosion.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Laser.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\ShipExplosion.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\GameOver.wma
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Intro.wma
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\LevelOne.wma
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.wma
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.wma
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.wma
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.pdb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.exe
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.pdb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\spacerabbit.xnb
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\TurtleRobot.xnb
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Enemy1Explosion.xnb
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Laser.xnb
@@ -77,17 +42,6 @@ C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighte
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Alien.xnb
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\deal.xnb
 C:\Users\Goveia's\SoftEngv2\Team15\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Laser2.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\boss.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\donald2.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\maroonLouder.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\ultramaroonLouder.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\sorryLouder.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\youFiredLoud.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\deal.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Laser2.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Alien.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Victory.xnb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Victory.wma
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\Hud.xnb
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PrimaryBackground.xnb
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\alienmetal.xnb
@@ -135,6 +89,52 @@ C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Star
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
 C:\Users\Ben\Documents\School\Spring 12\Software Engineering\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb
-C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.dll
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\Hud.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PrimaryBackground.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\alienmetal.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\instruction.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\menu.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\menu.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PlayerShip.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\PlayerAmmo.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\PlayerAmmo.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\TurtleRobot.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\spacerabbit.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\boss.xnb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\gameover.xnb
 C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\victory.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Textures\donald2.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Fonts\Pericles.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\menufont.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\GameOver.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Intro.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\LevelOne.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Victory.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Enemy1Explosion.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Laser.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\ShipExplosion.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\maroonLouder.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\ultramaroonLouder.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\sorryLouder.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\youFiredLoud.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\deal.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Laser2.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Alien.xnb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\GameOver.wma
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Intro.wma
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\LevelOne.wma
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\GameOver.wma
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Intro.wma
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\LevelOne.wma
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Content\Audio\Victory.wma
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.dll
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter Test.pdb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.exe
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Rhino.Mocks.dll
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\bin\Debug\Project Starfighter.pdb
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.dll
+C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\obj\Debug\Project Starfighter Test.pdb

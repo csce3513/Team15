@@ -10,6 +10,9 @@ Content\Textures\PlayerAmmo.xnb
 Content\Textures\TurtleRobot.xnb
 Content\Textures\spacerabbit.xnb
 Content\Textures\boss.xnb
+Content\Textures\gameover.xnb
+Content\Textures\victory.xnb
+Content\Textures\donald2.xnb
 Content\Fonts\Pericles.xnb
 Content\menufont.xnb
 Content\GameOver.xnb
@@ -36,6 +39,3 @@ Content\Audio\youFiredLoud.xnb
 Content\Audio\deal.xnb
 Content\Audio\Laser2.xnb
 Content\Audio\Alien.xnb
-Content\Textures\gameover.xnb
-Content\Textures\victory.xnb
-Content\Textures\donald2.xnb

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
-  <asmv1:assemblyIdentity name="Project Starfighter.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="Project Starfighter.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="Game.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -59,22 +59,12 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.Xna.Framework.GamerServices" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="Microsoft.Xna.Framework.Graphics" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="x86" />
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="Microsoft.Xna.Framework.Input.Touch" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.Xna.Framework.Net" version="4.0.0.0" publicKeyToken="842CF8BE1DE50553" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -100,7 +90,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>x7kFF6jn0iiXOZi3LSe+yWszmJU=</dsig:DigestValue>
+        <dsig:DigestValue>cO20Nt9D8vBcVOsc2iJBlRv59l8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -146,7 +136,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>jF9WcHJzbkXtLJehfyCFpH6SEBU=</dsig:DigestValue>
+      <dsig:DigestValue>0UAjQhOU9MGV4dGIDAklgvcVdGg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Audio\GameOver.xnb" size="126">
@@ -164,7 +154,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>blSr392JTkHUnOr8AFsZaXCasoM=</dsig:DigestValue>
+      <dsig:DigestValue>bYG25U7Jcm/pg0TQTHU1vEsnTxA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Audio\Intro.xnb" size="123">
@@ -200,7 +190,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>FGaQsWBgwPxXsDddJp3O8mW3f7o=</dsig:DigestValue>
+      <dsig:DigestValue>dUJp7TkPZKpVj96j4fCgDjXC4qI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Audio\LevelOne.xnb" size="126">
@@ -254,7 +244,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ei9f+GmLEtLmdVS48CkkP0zSiFk=</dsig:DigestValue>
+      <dsig:DigestValue>bZ+fZL5018I9FmzOkX8vjolKTyg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Audio\Victory.xnb" size="125">
@@ -290,7 +280,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>28S35JrwCkJEVvr3dPh03ugBbEA=</dsig:DigestValue>
+      <dsig:DigestValue>KpzzDY4E0dleK/DxrpPRuKba92I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\GameOver.xnb" size="126">
@@ -317,7 +307,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>osVcEOBphWfTs8nKeGU5lXlCfQU=</dsig:DigestValue>
+      <dsig:DigestValue>3tUv0B+4AkdKmCSVx0AbXb5DAeA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Intro.xnb" size="123">
@@ -335,7 +325,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>6yV/2yIVOwPckcN5ZgmQQR+PpDw=</dsig:DigestValue>
+      <dsig:DigestValue>atUVoQozgjOJ25oL3TmYLq2zcY4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\LevelOne.xnb" size="126">

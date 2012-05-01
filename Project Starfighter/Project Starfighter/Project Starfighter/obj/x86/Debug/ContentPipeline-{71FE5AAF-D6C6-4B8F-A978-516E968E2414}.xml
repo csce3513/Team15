@@ -110,6 +110,33 @@
       <Time>2012-04-30T16:09:25.0756683-05:00</Time>
     </Item>
     <Item>
+      <Source>Textures\gameover.jpg</Source>
+      <Name>Textures\gameover</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\gameover.xnb</Output>
+      <Time>2012-05-01T04:38:41.2081821-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\victory.jpg</Source>
+      <Name>Textures\victory</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\victory.xnb</Output>
+      <Time>2012-05-01T04:43:09.4095223-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\donald2.png</Source>
+      <Name>Textures\donald2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\donald2.xnb</Output>
+      <Time>2012-05-01T05:00:52-05:00</Time>
+    </Item>
+    <Item>
       <Source>Fonts\Pericles.spritefont</Source>
       <Name>Fonts\Pericles</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -286,33 +313,6 @@
       <Options>None</Options>
       <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Audio\Alien.xnb</Output>
       <Time>2012-04-30T16:09:23.1575586-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\gameover.jpg</Source>
-      <Name>Textures\gameover</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\gameover.xnb</Output>
-      <Time>2012-05-01T04:38:41.2081821-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\victory.jpg</Source>
-      <Name>Textures\victory</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\victory.xnb</Output>
-      <Time>2012-05-01T04:43:09.4095223-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\donald2.png</Source>
-      <Name>Textures\donald2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Content\Textures\donald2.xnb</Output>
-      <Time>2012-05-01T05:00:52-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
