@@ -3,6 +3,11 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Project_Starfighter;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Rhino.Mocks;
+using Microsoft.Xna.Framework.Content;
 
 namespace Project_Starfighter_Test
 {
@@ -10,14 +15,8 @@ namespace Project_Starfighter_Test
     public class Starfighter_Test
     {
         bool startMenuSong = true;
-        bool startLevelOneSong = false; 
-
-         public Starfighter_Test()
-        {
-            Test_Load();
-            HandleStartScreen_Test();
-            HandleActionScreen_Test();
-        }
+        bool startLevelOneSong = false;
+        private Starfighter testGame;
 
         private TestContext testContextInstance;
 
@@ -37,27 +36,13 @@ namespace Project_Starfighter_Test
             }
         }
 
-        #region Additional test attributes
-        //
-        // You can use the following additional attributes as you write your tests:
-        //
-        // Use ClassInitialize to run code before running the first test in the class
-        // [ClassInitialize()]
-        // public static void MyClassInitialize(TestContext testContext) { }
-        //
-        // Use ClassCleanup to run code after all tests in a class have run
-        // [ClassCleanup()]
-        // public static void MyClassCleanup() { }
-        //
-        // Use TestInitialize to run code before running each test 
-        // [TestInitialize()]
-        // public void MyTestInitialize() { }
-        //
-        // Use TestCleanup to run code after each test has run
-        // [TestCleanup()]
-        // public void MyTestCleanup() { }
-        //
-        #endregion
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            Game game = MockRepository.GenerateStub<Game>();
+            testGame = new Starfighter(game);
+        }
 
         [TestMethod]
         public void Test_Load()
@@ -74,6 +59,7 @@ namespace Project_Starfighter_Test
         [TestMethod]
         public void HandleStartScreen_Test()
         {
+            startMenuSong = true;
             Assert.IsTrue(startMenuSong);
             startMenuSong = false;
             Assert.IsFalse(startMenuSong);
@@ -83,9 +69,39 @@ namespace Project_Starfighter_Test
         {
             Assert.IsFalse(startLevelOneSong);
             startLevelOneSong = true;
-            Assert.IsTrue(startMenuSong);
+            Assert.IsTrue(startLevelOneSong);
             startLevelOneSong = false;
             Assert.IsFalse(startLevelOneSong);
+        }
+
+        [TestMethod]
+        public void HandleQuitScreen_Test
+        {
+
+        }
+
+                [TestMethod]
+        public void HandleInstructionsScreen_Test
+        {
+
+        }
+
+                [TestMethod]
+        public void HandleCreditScreen_Test
+        {
+
+        }
+
+                [TestMethod]
+        public void HandleGameOverScreen_Test
+        {
+
+        }
+
+        [TestMethod]
+        public void HandleVictoryScreen_Test
+        {
+
         }
     }
 }

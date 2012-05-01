@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9e7c8d77-29e2-4ac3-b388-64a12e04a9fa" name="Ben@BENGOODING 2012-05-01 00:56:29" runUser="BenGooding\Ben" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8938d3c6-cbd1-4798-a27b-390f29bff55a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Ben_BENGOODING 2012-05-01 00_56_29">
+      <DeploymentItem filename="C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\Rhino.Mocks\Rhino.Mocks.dll" />
+      <DeploymentItem filename="C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-01T00:56:29.2466375-05:00" queuing="2012-05-01T00:56:29.3146414-05:00" start="2012-05-01T00:56:29.5476547-05:00" finish="2012-05-01T00:56:30.7937260-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BENGOODING" outcome="Warning" timestamp="2012-05-01T00:56:30.9347341-05:00">
+        <Text>Could not obtain result files from 'C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\TestResults\Ben_BENGOODING 2012-05-01 00_56_29\In'.</Text>
+        <Exception>System.UnauthorizedAccessException: Access to the path 'C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\TestResults\Ben_BENGOODING 2012-05-01 00_56_29\In\' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler)
+   at System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   at System.IO.Directory.GetFileSystemEntries(String path)
+   at Microsoft.VisualStudio.TestTools.Common.DirectoryTree.get_IsEmpty()
+   at Microsoft.VisualStudio.TestTools.TestManagement.Tmi.UpdateTestRunAndTestCaseResults(TestRun testRun)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="798d1d5a-9213-47c4-8368-636dacb2c5c2">
+      <Execution id="f5f077ac-449d-417c-a1f8-e8dd1f9eb155" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="CheckEndofWave1_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="554b502f-7bd3-cd93-5599-fcce79053ba0">
+      <Execution id="bb4610cd-6940-40a7-93fb-139b7dc404bc" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckEndofWave1_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundFileHeight_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="f20013ff-53eb-0523-1306-a65b387750a7">
+      <Execution id="be306321-c303-42b9-8e8a-2efc56940f3e" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackgroundFileHeight_Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="554b502f-7bd3-cd93-5599-fcce79053ba0" executionId="bb4610cd-6940-40a7-93fb-139b7dc404bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="798d1d5a-9213-47c4-8368-636dacb2c5c2" executionId="f5f077ac-449d-417c-a1f8-e8dd1f9eb155" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f20013ff-53eb-0523-1306-a65b387750a7" executionId="be306321-c303-42b9-8e8a-2efc56940f3e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bb4610cd-6940-40a7-93fb-139b7dc404bc" testId="554b502f-7bd3-cd93-5599-fcce79053ba0" testName="CheckEndofWave1_Test" computerName="BENGOODING" duration="00:00:00.3880193" startTime="2012-05-01T00:56:29.7296651-05:00" endTime="2012-05-01T00:56:30.4967090-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb4610cd-6940-40a7-93fb-139b7dc404bc">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method Project_Starfighter_Test.ActionScreen_Test.Initialize threw exception. System.Exception: System.Exception: Exception in constructor: System.NotSupportedException: The invoked member is not supported in a dynamic assembly.
+   at System.Reflection.Emit.InternalAssemblyBuilder.GetManifestResourceStream(String name)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ReadDefaultGraphicsProfile()
+   at Microsoft.Xna.Framework.GraphicsDeviceManager..ctor(Game game)
+   at Project_Starfighter.Starfighter..ctor(Game game) in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Starfighter.cs:line 65
+   at StarfighterProxy4228fb9ac7e74d3abb3d86c780406ff5..ctor(IInterceptor[] , Game ) ---&gt; System.NotSupportedException: The invoked member is not supported in a dynamic assembly..</Message>
+          <StackTrace>    at System.Reflection.Emit.InternalAssemblyBuilder.GetManifestResourceStream(String name)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ReadDefaultGraphicsProfile()
+   at Microsoft.Xna.Framework.GraphicsDeviceManager..ctor(Game game)
+   at Project_Starfighter.Starfighter..ctor(Game game) in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Starfighter.cs:line 65
+   at StarfighterProxy4228fb9ac7e74d3abb3d86c780406ff5..ctor(IInterceptor[] , Game )
+ --- End of inner exception stack trace ---
+    at Rhino.Mocks.MockRepository.MockClass(CreateMockState mockStateFactory, Type type, Type[] extras, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.CreateMockObject(Type type, CreateMockState factory, Type[] extras, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.Stub(Type type, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.&lt;&gt;c__DisplayClass1`1.&lt;GenerateStub&gt;b__0(MockRepository repo)
+   at Rhino.Mocks.MockRepository.CreateMockInReplay[T](Func`2 createMock)
+   at Rhino.Mocks.MockRepository.GenerateStub[T](Object[] argumentsForConstructor)
+   at Project_Starfighter_Test.ActionScreen_Test.Initialize() in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\ActionScreen_Test.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f5f077ac-449d-417c-a1f8-e8dd1f9eb155" testId="798d1d5a-9213-47c4-8368-636dacb2c5c2" testName="TestMethod1" computerName="BENGOODING" duration="00:00:00.0186895" startTime="2012-05-01T00:56:30.5137100-05:00" endTime="2012-05-01T00:56:30.5657129-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5f077ac-449d-417c-a1f8-e8dd1f9eb155">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method Project_Starfighter_Test.ActionScreen_Test.Initialize threw exception. System.Exception: System.Exception: Exception in constructor: System.NotSupportedException: The invoked member is not supported in a dynamic assembly.
+   at System.Reflection.Emit.InternalAssemblyBuilder.GetManifestResourceStream(String name)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ReadDefaultGraphicsProfile()
+   at Microsoft.Xna.Framework.GraphicsDeviceManager..ctor(Game game)
+   at Project_Starfighter.Starfighter..ctor(Game game) in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Starfighter.cs:line 65
+   at StarfighterProxy4228fb9ac7e74d3abb3d86c780406ff5..ctor(IInterceptor[] , Game ) ---&gt; System.NotSupportedException: The invoked member is not supported in a dynamic assembly..</Message>
+          <StackTrace>    at System.Reflection.Emit.InternalAssemblyBuilder.GetManifestResourceStream(String name)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ReadDefaultGraphicsProfile()
+   at Microsoft.Xna.Framework.GraphicsDeviceManager..ctor(Game game)
+   at Project_Starfighter.Starfighter..ctor(Game game) in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Starfighter.cs:line 65
+   at StarfighterProxy4228fb9ac7e74d3abb3d86c780406ff5..ctor(IInterceptor[] , Game )
+ --- End of inner exception stack trace ---
+    at Rhino.Mocks.MockRepository.MockClass(CreateMockState mockStateFactory, Type type, Type[] extras, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.CreateMockObject(Type type, CreateMockState factory, Type[] extras, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.Stub(Type type, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.&lt;&gt;c__DisplayClass1`1.&lt;GenerateStub&gt;b__0(MockRepository repo)
+   at Rhino.Mocks.MockRepository.CreateMockInReplay[T](Func`2 createMock)
+   at Rhino.Mocks.MockRepository.GenerateStub[T](Object[] argumentsForConstructor)
+   at Project_Starfighter_Test.ActionScreen_Test.Initialize() in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\ActionScreen_Test.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="be306321-c303-42b9-8e8a-2efc56940f3e" testId="f20013ff-53eb-0523-1306-a65b387750a7" testName="BackgroundFileHeight_Test" computerName="BENGOODING" duration="00:00:00.0437153" startTime="2012-05-01T00:56:30.5897143-05:00" endTime="2012-05-01T00:56:30.6617184-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be306321-c303-42b9-8e8a-2efc56940f3e">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method Project_Starfighter_Test.ActionScreen_Test.Initialize threw exception. System.Exception: System.Exception: Exception in constructor: System.NotSupportedException: The invoked member is not supported in a dynamic assembly.
+   at System.Reflection.Emit.InternalAssemblyBuilder.GetManifestResourceStream(String name)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ReadDefaultGraphicsProfile()
+   at Microsoft.Xna.Framework.GraphicsDeviceManager..ctor(Game game)
+   at Project_Starfighter.Starfighter..ctor(Game game) in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Starfighter.cs:line 65
+   at StarfighterProxy4228fb9ac7e74d3abb3d86c780406ff5..ctor(IInterceptor[] , Game ) ---&gt; System.NotSupportedException: The invoked member is not supported in a dynamic assembly..</Message>
+          <StackTrace>    at System.Reflection.Emit.InternalAssemblyBuilder.GetManifestResourceStream(String name)
+   at Microsoft.Xna.Framework.GraphicsDeviceManager.ReadDefaultGraphicsProfile()
+   at Microsoft.Xna.Framework.GraphicsDeviceManager..ctor(Game game)
+   at Project_Starfighter.Starfighter..ctor(Game game) in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\Starfighter.cs:line 65
+   at StarfighterProxy4228fb9ac7e74d3abb3d86c780406ff5..ctor(IInterceptor[] , Game )
+ --- End of inner exception stack trace ---
+    at Rhino.Mocks.MockRepository.MockClass(CreateMockState mockStateFactory, Type type, Type[] extras, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.CreateMockObject(Type type, CreateMockState factory, Type[] extras, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.Stub(Type type, Object[] argumentsForConstructor)
+   at Rhino.Mocks.MockRepository.&lt;&gt;c__DisplayClass1`1.&lt;GenerateStub&gt;b__0(MockRepository repo)
+   at Rhino.Mocks.MockRepository.CreateMockInReplay[T](Func`2 createMock)
+   at Rhino.Mocks.MockRepository.GenerateStub[T](Object[] argumentsForConstructor)
+   at Project_Starfighter_Test.ActionScreen_Test.Initialize() in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\ActionScreen_Test.cs:line 33
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

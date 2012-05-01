@@ -22,7 +22,7 @@ namespace Project_Starfighter
     /// </summary>
     public class Starfighter : Microsoft.Xna.Framework.Game
     {
-        private GraphicsDeviceManager graphics; // handles the configuration and management of the graphics device
+        public GraphicsDeviceManager graphics; // handles the configuration and management of the graphics device
         public SpriteBatch spriteBatch; // enables a group of sprites to be drawn using the same settings
         
         // creates the song 
@@ -30,6 +30,8 @@ namespace Project_Starfighter
         private bool startMenuSong = true; // make start menu sound playable from start of application
         private Song levelOneSong; // song for when the level one is played
         private bool startLevelOneSong = false; // make level one sound unplayable from start of applicaion
+        private Song gameOverSong; // song for when you lose
+        private Song victrySong; // song for winning
     
         // create the instruction page stuff
         public Texture2D bookpages; //InstructionBook background
@@ -46,8 +48,8 @@ namespace Project_Starfighter
         private ActionScreen actionScreen; // create instance of game screen that will hold the game 
         private InstructionsScreen instructionsScreen; // create instance of the instruction screen that will hold istructions for the game
         private CreditScreen creditScreen; // create instance of the credits screen that will hold the credits for the game 
-        private HighScoreScreen highScoreScreen; // create instance of the high score screen that will hold the highest scores in the game
-
+        private GameOverScreen gOverScreen; // create instance of the game over screen
+        private VictoryScreen victoryScreen; // create instance of the victory screen
 
         /// <summary>
         /// 
@@ -55,6 +57,13 @@ namespace Project_Starfighter
         public Starfighter()
         {
             graphics = new GraphicsDeviceManager(this);
+            Content.RootDirectory = "Content";
+        }
+
+        //ONLY USED FOR UNIT TESTING
+        public Starfighter(Game game)
+        {
+            //graphics = new GraphicsDeviceManager(game);
             Content.RootDirectory = "Content";
         }
 
@@ -82,6 +91,8 @@ namespace Project_Starfighter
             //load song info
             mainMenuSong = Content.Load<Song>(@"Audio\Intro"); // load menu song
             levelOneSong = Content.Load<Song>(@"Audio\LevelOne"); // load level one song
+            gameOverSong = Content.Load<Song>(@"Audio\GameOver"); // load game over song
+            victrySong = Content.Load<Song>(@"Audio\Victory"); // load victory song
             MediaPlayer.IsRepeating = true; // define that long is to restart once it is over
 
             
@@ -93,7 +104,7 @@ namespace Project_Starfighter
             Components.Add(startScreen);
             startScreen.Hide();
 
-            actionScreen = new ActionScreen(this, spriteBatch, Content.Load<Texture2D>(@"Textures\PrimaryBackground"), Content, @"Textures\PrimaryBackground");
+            actionScreen = new ActionScreen(this, spriteBatch, Content.Load<Texture2D>(@"Textures\PrimaryBackground"), Content);
             Components.Add(actionScreen);
             actionScreen.Hide();
 
@@ -105,10 +116,6 @@ namespace Project_Starfighter
             Components.Add(creditScreen);
             creditScreen.Hide();
 
-            highScoreScreen = new HighScoreScreen(this, spriteBatch, Content.Load<SpriteFont>("menufont"), Content.Load<Texture2D>("InstructionBook"));
-            Components.Add(highScoreScreen);
-            highScoreScreen.Hide();
-
             quitScreen = new PopUpScreen(
                 this,
                 spriteBatch,
@@ -116,6 +123,20 @@ namespace Project_Starfighter
                 Content.Load<Texture2D>("alienmetal"));
             Components.Add(quitScreen);
             quitScreen.Hide();
+
+            gOverScreen = new GameOverScreen(
+                this,
+                spriteBatch,
+                Content.Load<SpriteFont>("menufont"),
+                Content.Load<Texture2D>("alienmetal"));
+            Components.Add(gOverScreen);
+            gOverScreen.Hide();
+
+            victoryScreen = new VictoryScreen(this,spriteBatch,
+                 Content.Load<SpriteFont>("menufont"),
+                 Content.Load<Texture2D>("alienmetal"));
+            Components.Add(victoryScreen);
+            victoryScreen.Hide();
 
 
             actionScreen.desiredHeight = 600; // set the height of the action screen
@@ -158,9 +179,7 @@ namespace Project_Starfighter
         {
             keyboardState = Keyboard.GetState();
 
-            // if player is alive and boss was not defeated yet
-            if (!(actionScreen.isOutOfLives || actionScreen.isBossDefeated ))
-            {
+
                 if (activeScreen == startScreen)
                 {
                     HandleStartScreen();
@@ -181,29 +200,15 @@ namespace Project_Starfighter
                 {
                     HandleCreditScreen();
                 }
-                else if (activeScreen == highScoreScreen)
+                else if (activeScreen == gOverScreen)
                 {
-                    HandleHighScoreScreen();
+                    HandleGameOverScreen();
                 }
-            }
-            else // if the player is out of lifes or if player defeated the boss
-            {
-                actionScreen.isOutOfLives = false; // set out of lives variable back to false
-                activeScreen.Hide(); // hide the active screen - the game screen
-                activeScreen.Enabled = false; // deseable the active screen - the game screen
-                activeScreen = startScreen; // set the active screen back to the start screen
-                activeScreen.Enabled = true; // enable the active screen - now start screen - back
-                actionScreen.Marron.Stop(); // stop enemy 2 sound effect before playing menu sound
-                actionScreen.UltraMarron.Stop(); // stop enemy 2 sound effect before playing menu sound
-                actionScreen.YouFiredSound.Stop(); // stop boss's sound effect before playing menu sound
-                actionScreen.AlienSound.Stop(); // stop boss's phase "song" before playing menu sound (it is not a song it is a soundEffectInstance in a loop)
-                actionScreen.DealSound.Stop(); // stop boss's sound effect before playing menu sound
-                LoadContent(); // reset the game 
-                
-                MediaPlayer.Play(mainMenuSong); // play main menu song
-                activeScreen.Show(); // show screen
-                
-            }
+                else if (activeScreen == victoryScreen)
+                {
+                    HandleVictoryScreen();
+                }
+
             base.Update(gameTime);
             oldKeyboardState = keyboardState;
 
@@ -214,6 +219,22 @@ namespace Project_Starfighter
         /// </summary>
         private void HandleStartScreen()
         {
+            if (actionScreen.isOutOfLives)
+            {
+                actionScreen.isOutOfLives = false;
+
+                activeScreen.Enabled = false;
+                activeScreen = gOverScreen;
+                activeScreen.Show();
+            }
+            if (actionScreen.isBossDefeated)
+            {
+                actionScreen.isBossDefeated = false;
+
+                activeScreen.Enabled = false;
+                activeScreen = victoryScreen;
+                activeScreen.Show();
+            }
             if (startMenuSong == true)
             {
                 startMenuSong = false;
@@ -237,16 +258,10 @@ namespace Project_Starfighter
                 if (startScreen.SelectedIndex == 2)
                 {
                     activeScreen.Hide();
-                    activeScreen = highScoreScreen;
-                    activeScreen.Show();
-                }
-                if (startScreen.SelectedIndex == 3)
-                {
-                    activeScreen.Hide();
                     activeScreen = creditScreen;
                     activeScreen.Show();
                 }
-                if (startScreen.SelectedIndex == 4)
+                if (startScreen.SelectedIndex == 3)
                 {
                     this.Exit();
                 }
@@ -282,19 +297,6 @@ namespace Project_Starfighter
         /// <summary>
         /// 
         /// </summary>
-        private void HandleHighScoreScreen()
-        {
-            if (CheckKey(Keys.Escape))
-            {
-                activeScreen.Hide();
-                activeScreen = startScreen;
-                activeScreen.Show();
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
         private void HandleActionScreen()
         {
             if (startLevelOneSong == true)
@@ -314,6 +316,40 @@ namespace Project_Starfighter
                 activeScreen = quitScreen;
                 activeScreen.Show();
             }
+            if (actionScreen.isOutOfLives)
+            {
+                activeScreen.Hide(); // hide the active screen - the game screen
+                activeScreen.Enabled = false; // deseable the active screen - the game screen
+                activeScreen = startScreen; // set the active screen back to the start screen
+                activeScreen.Enabled = true; // enable the active screen - now start screen - back
+                actionScreen.Marron.Stop(); // stop enemy 2 sound effect before playing menu sound
+                actionScreen.UltraMarron.Stop(); // stop enemy 2 sound effect before playing menu sound
+                actionScreen.YouFiredSound.Stop(); // stop boss's sound effect before playing menu sound
+                actionScreen.AlienSound.Stop(); // stop boss's phase "song" before playing menu sound (it is not a song it is a soundEffectInstance in a loop)
+                actionScreen.DealSound.Stop(); // stop boss's sound effect before playing menu sound
+                LoadContent(); // reset the game 
+                actionScreen.isOutOfLives = true;
+
+                MediaPlayer.Play(gameOverSong); // play game over song
+                activeScreen.Show(); // show screen
+            }
+            else if (actionScreen.isBossDefeated)
+            {
+                activeScreen.Hide(); // hide the active screen - the game screen
+                activeScreen.Enabled = false; // deseable the active screen - the game screen
+                activeScreen = startScreen; // set the active screen back to the start screen
+                activeScreen.Enabled = true; // enable the active screen - now start screen - back
+                actionScreen.Marron.Stop(); // stop enemy 2 sound effect before playing menu sound
+                actionScreen.UltraMarron.Stop(); // stop enemy 2 sound effect before playing menu sound
+                actionScreen.YouFiredSound.Stop(); // stop boss's sound effect before playing menu sound
+                actionScreen.AlienSound.Stop(); // stop boss's phase "song" before playing menu sound (it is not a song it is a soundEffectInstance in a loop)
+                actionScreen.DealSound.Stop(); // stop boss's sound effect before playing menu sound
+                LoadContent(); // reset the game 
+                actionScreen.isBossDefeated = true; // resetting the boss to defeated so the victory screen appears
+
+                MediaPlayer.Play(victrySong); // play victory song
+                activeScreen.Show(); // show screen
+            }
         }
 
         private void HandleQuitScreen()
@@ -329,6 +365,42 @@ namespace Project_Starfighter
                     activeScreen.Hide();
                     activeScreen = actionScreen;
                     activeScreen.Show();
+                }
+            }
+        }
+
+        private void HandleGameOverScreen()
+        {
+            if (CheckKey(Keys.Enter))
+            {
+                if (gOverScreen.SelectedIndex == 0)
+                {
+                    this.Exit(); //exits the game
+                }
+                if (gOverScreen.SelectedIndex == 1)
+                {  
+                    activeScreen.Hide(); //hides the gameover screen
+                    activeScreen = startScreen; // sets the start screen to active
+                    MediaPlayer.Play(mainMenuSong); //plays the menu song
+                    activeScreen.Show(); // shows the start screen
+                }
+            }
+        }
+
+        private void HandleVictoryScreen()
+        {
+            if (CheckKey(Keys.Enter))
+            {
+                if (victoryScreen.SelectedIndex == 0)
+                {
+                    this.Exit(); //exits the game
+                }
+                if (victoryScreen.SelectedIndex == 1)
+                {
+                    activeScreen.Hide(); //hides the victory screen
+                    activeScreen = startScreen; // sets the start screen to active
+                    MediaPlayer.Play(mainMenuSong); //plays the menu song
+                    activeScreen.Show(); // shows the start screen
                 }
             }
         }

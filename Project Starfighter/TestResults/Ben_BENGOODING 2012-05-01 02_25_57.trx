@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="db9f28ea-03dd-473f-8110-7daba78c8160" name="Ben@BENGOODING 2012-05-01 02:25:57" runUser="BenGooding\Ben" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8938d3c6-cbd1-4798-a27b-390f29bff55a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Ben_BENGOODING 2012-05-01 02_25_57">
+      <DeploymentItem filename="C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\Rhino.Mocks\Rhino.Mocks.dll" />
+      <DeploymentItem filename="C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\bin\x86\Debug\Project Starfighter.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-01T02:25:57.4776827-05:00" queuing="2012-05-01T02:25:57.6446923-05:00" start="2012-05-01T02:25:57.6776942-05:00" finish="2012-05-01T02:25:58.9827688-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="8" executed="8" passed="6" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="BackgroundOffset_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="38aa6ff3-4fef-5c58-ec67-167ffda29a74">
+      <Execution id="4f941faa-dc63-42d6-b19c-ca5b0d69b702" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackgroundOffset_Test" />
+    </UnitTest>
+    <UnitTest name="CheckEndofWave2_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="76895bfd-ed4d-bf67-62cb-6ca41e8c9d66">
+      <Execution id="4ecc02e5-a61c-41ca-99c4-89d1415783a3" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckEndofWave2_Test" />
+    </UnitTest>
+    <UnitTest name="CheckIntersection_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="f57f25e2-496f-b71c-9570-ff01a4a507b6">
+      <Execution id="68b386ce-6c47-4cce-be9d-ddd189feb5c4" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckIntersection_Test" />
+    </UnitTest>
+    <UnitTest name="CheckEndofWave1_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="554b502f-7bd3-cd93-5599-fcce79053ba0">
+      <Execution id="99889565-c9f6-46f9-99b3-062e102ae4df" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckEndofWave1_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundFileWidth_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="bd837c2f-c83d-ae1e-7fa5-ecb50c4f6926">
+      <Execution id="8a8a4720-9d51-4ecb-83c5-0b6317d1ad7a" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackgroundFileWidth_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundWidth_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="0726ce1c-e070-c868-f588-cad58c7b9bb3">
+      <Execution id="fd69a5fa-a088-42df-8766-de75944b02c1" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackgroundWidth_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundHeight_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="1ccd8482-29a7-b453-8641-eb4db89e39ec">
+      <Execution id="28cd77bb-bbed-4ae2-8cd9-b3e9c632362b" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackgroundHeight_Test" />
+    </UnitTest>
+    <UnitTest name="BackgroundFileHeight_Test" storage="c:\users\ben\documents\school\spring 12\team15\project starfighter\project starfighter test\bin\debug\project starfighter test.dll" id="f20013ff-53eb-0523-1306-a65b387750a7">
+      <Execution id="3aad42a2-8f30-463a-835a-44d067b78ca4" />
+      <TestMethod codeBase="C:/Users/Ben/Documents/School/Spring 12/Team15/Project Starfighter/Project Starfighter Test/bin/Debug/Project Starfighter Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project_Starfighter_Test.ActionScreen_Test, Project Starfighter Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackgroundFileHeight_Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0726ce1c-e070-c868-f588-cad58c7b9bb3" executionId="fd69a5fa-a088-42df-8766-de75944b02c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ccd8482-29a7-b453-8641-eb4db89e39ec" executionId="28cd77bb-bbed-4ae2-8cd9-b3e9c632362b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38aa6ff3-4fef-5c58-ec67-167ffda29a74" executionId="4f941faa-dc63-42d6-b19c-ca5b0d69b702" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="554b502f-7bd3-cd93-5599-fcce79053ba0" executionId="99889565-c9f6-46f9-99b3-062e102ae4df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76895bfd-ed4d-bf67-62cb-6ca41e8c9d66" executionId="4ecc02e5-a61c-41ca-99c4-89d1415783a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd837c2f-c83d-ae1e-7fa5-ecb50c4f6926" executionId="8a8a4720-9d51-4ecb-83c5-0b6317d1ad7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f20013ff-53eb-0523-1306-a65b387750a7" executionId="3aad42a2-8f30-463a-835a-44d067b78ca4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f57f25e2-496f-b71c-9570-ff01a4a507b6" executionId="68b386ce-6c47-4cce-be9d-ddd189feb5c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fd69a5fa-a088-42df-8766-de75944b02c1" testId="0726ce1c-e070-c868-f588-cad58c7b9bb3" testName="BackgroundWidth_Test" computerName="BENGOODING" duration="00:00:00.3389229" startTime="2012-05-01T02:25:57.7086960-05:00" endTime="2012-05-01T02:25:58.3747341-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd69a5fa-a088-42df-8766-de75944b02c1">
+    </UnitTestResult>
+    <UnitTestResult executionId="28cd77bb-bbed-4ae2-8cd9-b3e9c632362b" testId="1ccd8482-29a7-b453-8641-eb4db89e39ec" testName="BackgroundHeight_Test" computerName="BENGOODING" duration="00:00:00.0226283" startTime="2012-05-01T02:25:58.3817345-05:00" endTime="2012-05-01T02:25:58.4107361-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28cd77bb-bbed-4ae2-8cd9-b3e9c632362b">
+    </UnitTestResult>
+    <UnitTestResult executionId="4f941faa-dc63-42d6-b19c-ca5b0d69b702" testId="38aa6ff3-4fef-5c58-ec67-167ffda29a74" testName="BackgroundOffset_Test" computerName="BENGOODING" duration="00:00:00.0233581" startTime="2012-05-01T02:25:58.4157364-05:00" endTime="2012-05-01T02:25:58.4427379-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f941faa-dc63-42d6-b19c-ca5b0d69b702">
+    </UnitTestResult>
+    <UnitTestResult executionId="99889565-c9f6-46f9-99b3-062e102ae4df" testId="554b502f-7bd3-cd93-5599-fcce79053ba0" testName="CheckEndofWave1_Test" computerName="BENGOODING" duration="00:00:00.0440284" startTime="2012-05-01T02:25:58.4467382-05:00" endTime="2012-05-01T02:25:58.4967410-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99889565-c9f6-46f9-99b3-062e102ae4df">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Project_Starfighter_Test.ActionScreen_Test.CheckEndofWave1_Test threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at Project_Starfighter.ActionScreen.CheckEndofWave1() in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter\Project Starfighter\ActionScreen.cs:line 472
+   at Project_Starfighter_Test.ActionScreen_Test.CheckEndofWave1_Test() in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\ActionScreen_Test.cs:line 54
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4ecc02e5-a61c-41ca-99c4-89d1415783a3" testId="76895bfd-ed4d-bf67-62cb-6ca41e8c9d66" testName="CheckEndofWave2_Test" computerName="BENGOODING" duration="00:00:00.0395101" startTime="2012-05-01T02:25:58.6207481-05:00" endTime="2012-05-01T02:25:58.6907521-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ecc02e5-a61c-41ca-99c4-89d1415783a3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. </Message>
+          <StackTrace>   at Project_Starfighter_Test.ActionScreen_Test.CheckEndofWave2_Test() in C:\Users\Ben\Documents\School\Spring 12\Team15\Project Starfighter\Project Starfighter Test\ActionScreen_Test.cs:line 64
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8a8a4720-9d51-4ecb-83c5-0b6317d1ad7a" testId="bd837c2f-c83d-ae1e-7fa5-ecb50c4f6926" testName="BackgroundFileWidth_Test" computerName="BENGOODING" duration="00:00:00.0384004" startTime="2012-05-01T02:25:58.7067530-05:00" endTime="2012-05-01T02:25:58.7507556-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a8a4720-9d51-4ecb-83c5-0b6317d1ad7a">
+    </UnitTestResult>
+    <UnitTestResult executionId="3aad42a2-8f30-463a-835a-44d067b78ca4" testId="f20013ff-53eb-0523-1306-a65b387750a7" testName="BackgroundFileHeight_Test" computerName="BENGOODING" duration="00:00:00.0350247" startTime="2012-05-01T02:25:58.7557559-05:00" endTime="2012-05-01T02:25:58.7997584-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3aad42a2-8f30-463a-835a-44d067b78ca4">
+    </UnitTestResult>
+    <UnitTestResult executionId="68b386ce-6c47-4cce-be9d-ddd189feb5c4" testId="f57f25e2-496f-b71c-9570-ff01a4a507b6" testName="CheckIntersection_Test" computerName="BENGOODING" duration="00:00:00.0376228" startTime="2012-05-01T02:25:58.8047587-05:00" endTime="2012-05-01T02:25:58.8557616-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="68b386ce-6c47-4cce-be9d-ddd189feb5c4">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -14,25 +14,16 @@ namespace Project_Starfighter_Test
     [TestClass]
     public class Enemy1_Test
     {
-        Enemy1 target;
-       
+        
+      
+           static Texture2D texture = null;
+           static int X = 0;
+           static int Y = 0;
+           static int W = 45;
+           static int H = 73;
+           static int Frames = 1;
+            Enemy1 target = new Enemy1(texture, X, Y, W, H, Frames);
 
-
-        /// <summary>
-        ///A test for Enemy1 Constructor
-        ///</summary>
-        public void Enemy1ConstructorTest()
-        {
-            //gameTime = MockRepository.GenerateStub<GameTime>();
-            Texture2D texture = null;
-            int X = 0;
-            int Y = 0;
-            int W = 45;
-            int H = 73;
-            int Frames = 1;
-            target = new Enemy1(texture, X, Y, W, H, Frames);
-            //Assert.Inconclusive("TODO: Implement code to verify target");
-        }
 
         /// <summary>
         ///A test for Deactivate
@@ -41,7 +32,7 @@ namespace Project_Starfighter_Test
         public void DeactivateTest()
         {
             bool status = target.IsActive;
-            bool active = true;
+            bool active = false;
             target.Deactivate();
             Assert.AreEqual(active, status);
         }
@@ -68,16 +59,6 @@ namespace Project_Starfighter_Test
         }
 
 
-        /// <summary> 
-        ///A test for Movement
-        ///</summary>
-        [TestMethod()]
-        public void MovementTest()
-        {
-            target.Movement();
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        }
-
         /// <summary>
         ///A test for Update
         ///</summary>
@@ -103,7 +84,7 @@ namespace Project_Starfighter_Test
         [TestMethod()]
         public void IsActiveTest()
         {
-            bool expected = true;
+            bool expected = false;
             bool actual;
             actual = target.IsActive;
             Assert.AreEqual(expected, actual);

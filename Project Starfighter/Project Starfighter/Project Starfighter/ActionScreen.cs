@@ -37,11 +37,7 @@ namespace Project_Starfighter
         //private DateTime youFiredTimeControll;
 
         private int startNewWaveCounter = 0; // Counter used to start the first wave
-        //KeyboardState keyboardState;
-        //private Texture2D image;
-        //Rectangle imageRectangle;
-
-        
+    
         private Texture2D gameBackgroundImage; // texture to hold background image
         private Texture2D gameHudImage; // texture to hold screen with game data
         private SpriteFont spriteFont; // pericles font
@@ -93,8 +89,8 @@ namespace Project_Starfighter
         //for keeping track of the end of a wave
         private int endOfWave1 = 0;
         private int endOfWave2 = 0;
-        private bool isWave1Over = false;
-        private bool isWave2Over = false;
+        public bool isWave1Over = false;
+        public bool isWave2Over = false;
 
         // create an instance of the class player
         private Player player;
@@ -113,15 +109,21 @@ namespace Project_Starfighter
         private int hitsByEnemy2 = 0;
         public bool isPlayerHitTwiceByEnemy2 = false; // tells if player is hit twice by enemy2
                
-        // constructor for test purposes
-        public ActionScreen()
-            : base(null, null)
-        {
+        //// constructor for test purposes
+        //public ActionScreen()
+        //    : base(null, null)
+        //{
 
+        //}
+
+        public ActionScreen(Game game, SpriteBatch spriteBatch)
+            :base(game,spriteBatch)
+        {
+            //default constructor
         }
 
         // Constructor
-        public ActionScreen(Game game, SpriteBatch spriteBatch, Texture2D background, ContentManager content, string sBackground)
+        public ActionScreen(Game game, SpriteBatch spriteBatch, Texture2D background, ContentManager content)
             : base(game, spriteBatch)
         {
             gameBackgroundImage = background; // give an image to the background
@@ -572,7 +574,7 @@ namespace Project_Starfighter
         }
 
         // method for detecting item collisions
-        protected bool Intersects(Rectangle rectA, Rectangle rectB)
+        public bool Intersects(Rectangle rectA, Rectangle rectB)
         {
             // Returns True if rectA and rectB contain any overlapping points
             return (rectA.Right > rectB.Left && rectA.Left < rectB.Right &&
@@ -807,6 +809,20 @@ namespace Project_Starfighter
 
             base.Draw(gameTime);
         }
+        
+        //get end of wave1
+        public int endofWave1Status
+        {
+           get { return endOfWave1; }
+           set { endOfWave1 = value; }
+        }
+
+        //get end of wave2
+        public int endofWave2Status
+        {
+            get { return endOfWave2; }
+            set { endOfWave2 = value; }
+        }
 
         // get and set the background offset
         public int BackgroundOffset
@@ -852,6 +868,12 @@ namespace Project_Starfighter
         {
             get { return backgroundFileHeight; }
             set { backgroundFileHeight = value; }
+        }
+
+        public int startNewWaveCounterStatus
+        {
+            get { return startNewWaveCounter; }
+            set { startNewWaveCounter = value; }
         }
 
 

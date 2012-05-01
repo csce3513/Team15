@@ -71,7 +71,7 @@ namespace Project_Starfighter
         /// <summary>
         /// Measures the game menu screen and finds the center.
         /// </summary>
-        private void MeasureMenu()
+        public void MeasureMenu()
         {
             height = 0;
             width = 0;

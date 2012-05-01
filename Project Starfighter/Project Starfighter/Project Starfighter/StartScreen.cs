@@ -22,7 +22,7 @@ namespace Project_Starfighter
         public StartScreen(Game game, SpriteBatch spriteBatch, SpriteFont spriteFont, Texture2D image)
             : base(game, spriteBatch)
         {
-            string[] menuItems = { "Start Game", "Instructions", "High Score", "Credits", "Quit" };
+            string[] menuItems = { "Start Game", "Instructions", "Credits", "Quit" };
             menuComponent = new MenuComponent(game, spriteBatch, spriteFont, menuItems);
             Components.Add(menuComponent);
             this.image = image;
